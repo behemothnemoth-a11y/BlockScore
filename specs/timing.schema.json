@@ -1,0 +1,190 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BlockScore Timing Configuration",
+  "type": "object",
+  "required": [
+    "timing_mode",
+    "tempo_map",
+    "meter_map"
+  ],
+  "properties": {
+    "timing_mode": {
+      "enum": [
+        "EXACT",
+        "SOURCE_TEMPO",
+        "NEAR_EXACT",
+        "GROOVE_PRESERVE",
+        "REDSTONE_OPTIMIZED",
+        "DUAL"
+      ]
+    },
+    "tempo_map": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "position_qn",
+          "bpm",
+          "beat_unit",
+          "transition"
+        ],
+        "properties": {
+          "position_qn": {
+            "type": [
+              "number",
+              "string"
+            ]
+          },
+          "bpm": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "beat_unit": {
+            "type": [
+              "number",
+              "string"
+            ]
+          },
+          "transition": {
+            "enum": [
+              "STEP",
+              "LINEAR_QPM"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "meter_map": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "measure",
+          "numerator",
+          "denominator"
+        ],
+        "properties": {
+          "measure": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "numerator": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "denominator": {
+            "enum": [
+              1,
+              2,
+              4,
+              8,
+              16,
+              32
+            ]
+          },
+          "grouping": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "minimum": 1
+            }
+          },
+          "label": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "anchors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "position_qn"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "position_qn": {
+            "type": [
+              "number",
+              "string"
+            ]
+          },
+          "role": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "priority_weights": {
+      "type": "object",
+      "properties": {
+        "P1": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "P2": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "P3": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "P4": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "P5": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "preroll_game_ticks": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "loop": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "start_qn": {
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "end_qn": {
+          "type": [
+            "number",
+            "string"
+          ]
+        }
+      },
+      "required": [
+        "start_qn",
+        "end_qn"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

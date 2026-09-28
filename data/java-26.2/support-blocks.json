@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "java-26.2",
+  "source": "data/java-26.2/instruments.json",
+  "mappings": {
+    "harp": {
+      "canonical_support_block": "minecraft:dirt",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "bass": {
+      "canonical_support_block": "minecraft:oak_planks",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "basedrum": {
+      "canonical_support_block": "minecraft:stone",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "snare": {
+      "canonical_support_block": "minecraft:sand",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "hat": {
+      "canonical_support_block": "minecraft:glass",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "guitar": {
+      "canonical_support_block": "minecraft:white_wool",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "flute": {
+      "canonical_support_block": "minecraft:clay",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "bell": {
+      "canonical_support_block": "minecraft:gold_block",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "chime": {
+      "canonical_support_block": "minecraft:packed_ice",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "xylophone": {
+      "canonical_support_block": "minecraft:bone_block",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "iron_xylophone": {
+      "canonical_support_block": "minecraft:iron_block",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "cow_bell": {
+      "canonical_support_block": "minecraft:soul_sand",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "didgeridoo": {
+      "canonical_support_block": "minecraft:pumpkin",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "bit": {
+      "canonical_support_block": "minecraft:emerald_block",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "banjo": {
+      "canonical_support_block": "minecraft:hay_block",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "pling": {
+      "canonical_support_block": "minecraft:glowstone",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "ESTABLISHED",
+        "stable_support_block": "NOT_APPLICABLE"
+      }
+    },
+    "trumpet": {
+      "canonical_support_block": "minecraft:copper_block",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "VERIFIED",
+        "stable_support_block": "TEST_REQUIRED"
+      }
+    },
+    "trumpet_exposed": {
+      "canonical_support_block": "minecraft:exposed_copper",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "VERIFIED",
+        "stable_support_block": "TEST_REQUIRED"
+      }
+    },
+    "trumpet_weathered": {
+      "canonical_support_block": "minecraft:weathered_copper",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "VERIFIED",
+        "stable_support_block": "TEST_REQUIRED"
+      }
+    },
+    "trumpet_oxidized": {
+      "canonical_support_block": "minecraft:oxidized_copper",
+      "stable_support_block": null,
+      "verification": {
+        "support_mapping": "VERIFIED",
+        "stable_support_block": "TEST_REQUIRED"
+      }
+    }
+  },
+  "notes": {
+    "canonical_support_block": "Reproducible build default; not an exhaustive material category.",
+    "copper_stability": "Trumpet stable_support_block remains null until CAL-002."
+  }
+}

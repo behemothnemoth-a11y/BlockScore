@@ -1,0 +1,221 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BlockScore Instrument",
+  "description": "One normal material-selected Minecraft note-block instrument entry.",
+  "type": "object",
+  "required": [
+    "id",
+    "index",
+    "minecraft_instrument",
+    "sound_event",
+    "class",
+    "family",
+    "canonical_support_block",
+    "note_state_min",
+    "note_state_max",
+    "pitch_mode",
+    "verification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "index": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "minecraft_instrument": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sound_event": {
+      "type": "string",
+      "pattern": "^minecraft:block\\.note_block\\."
+    },
+    "class": {
+      "enum": [
+        "pitched",
+        "percussion"
+      ]
+    },
+    "family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "canonical_support_block": {
+      "type": "string",
+      "pattern": "^minecraft:"
+    },
+    "stable_support_block": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "support_rule": {
+      "type": "string"
+    },
+    "note_state_min": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "note_state_max": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "low_pitch": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[A-G](#|b)?-?[0-9]+$"
+    },
+    "high_pitch": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[A-G](#|b)?-?[0-9]+$"
+    },
+    "register_offset_semitones": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "pitch_mode": {
+      "enum": [
+        "chromatic",
+        "percussion_index"
+      ]
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "existence",
+        "support_mapping",
+        "register"
+      ],
+      "properties": {
+        "existence": {
+          "enum": [
+            "VERIFIED",
+            "ESTABLISHED",
+            "PROVISIONAL",
+            "TEST_REQUIRED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "support_mapping": {
+          "enum": [
+            "VERIFIED",
+            "ESTABLISHED",
+            "PROVISIONAL",
+            "TEST_REQUIRED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "register": {
+          "enum": [
+            "VERIFIED",
+            "ESTABLISHED",
+            "PROVISIONAL",
+            "TEST_REQUIRED",
+            "NOT_APPLICABLE"
+          ]
+        },
+        "stable_support_block": {
+          "enum": [
+            "VERIFIED",
+            "ESTABLISHED",
+            "PROVISIONAL",
+            "TEST_REQUIRED",
+            "NOT_APPLICABLE"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "calibration_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "recommended_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "class": {
+            "const": "pitched"
+          }
+        },
+        "required": [
+          "class"
+        ]
+      },
+      "then": {
+        "properties": {
+          "low_pitch": {
+            "type": "string"
+          },
+          "high_pitch": {
+            "type": "string"
+          },
+          "register_offset_semitones": {
+            "type": "integer"
+          },
+          "pitch_mode": {
+            "const": "chromatic"
+          }
+        },
+        "required": [
+          "low_pitch",
+          "high_pitch",
+          "register_offset_semitones"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "class": {
+            "const": "percussion"
+          }
+        },
+        "required": [
+          "class"
+        ]
+      },
+      "then": {
+        "properties": {
+          "low_pitch": {
+            "type": "null"
+          },
+          "high_pitch": {
+            "type": "null"
+          },
+          "register_offset_semitones": {
+            "type": "null"
+          },
+          "pitch_mode": {
+            "const": "percussion_index"
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

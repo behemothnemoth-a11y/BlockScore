@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BlockScore Build Plan",
+  "type": "object",
+  "required": [
+    "profile",
+    "backend",
+    "status",
+    "origin",
+    "metrics",
+    "warnings"
+  ],
+  "properties": {
+    "profile": {
+      "type": "string",
+      "const": "java-26.2"
+    },
+    "backend": {
+      "enum": [
+        "REDSTONE_PHYSICAL",
+        "COMMAND_RAIL_PHYSICAL",
+        "COMMAND_RAIL_ENHANCED",
+        "DIGITAL_PLAYBACK",
+        "NBS_EXPORT",
+        "MIDI_EXPORT",
+        "STRUCTURE_EXPORT",
+        "LITEMATICA_EXPORT"
+      ]
+    },
+    "status": {
+      "enum": [
+        "DESIGNED",
+        "COMPILED",
+        "OFFLINE_VALIDATED",
+        "GAME_TESTED",
+        "USER_APPROVED",
+        "LOCKED"
+      ]
+    },
+    "origin": {
+      "type": "object",
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "properties": {
+        "x": {
+          "type": "integer"
+        },
+        "y": {
+          "type": "integer"
+        },
+        "z": {
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "performance_origin": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "x": {
+          "type": "number"
+        },
+        "y": {
+          "type": "number"
+        },
+        "z": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "x",
+        "y",
+        "z"
+      ],
+      "additionalProperties": false
+    },
+    "layout": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "NORTH",
+            "SOUTH",
+            "EAST",
+            "WEST"
+          ]
+        },
+        "options": {
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "materials": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 0
+      }
+    },
+    "metrics": {
+      "type": "object"
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "failures": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "calibration_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

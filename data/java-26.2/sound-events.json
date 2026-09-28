@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "java-26.2",
+  "source": "data/java-26.2/instruments.json",
+  "events": {
+    "harp": {
+      "index": 0,
+      "sound_event": "minecraft:block.note_block.harp",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "bass": {
+      "index": 1,
+      "sound_event": "minecraft:block.note_block.bass",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "basedrum": {
+      "index": 2,
+      "sound_event": "minecraft:block.note_block.basedrum",
+      "class": "percussion",
+      "verification": "VERIFIED"
+    },
+    "snare": {
+      "index": 3,
+      "sound_event": "minecraft:block.note_block.snare",
+      "class": "percussion",
+      "verification": "VERIFIED"
+    },
+    "hat": {
+      "index": 4,
+      "sound_event": "minecraft:block.note_block.hat",
+      "class": "percussion",
+      "verification": "VERIFIED"
+    },
+    "guitar": {
+      "index": 5,
+      "sound_event": "minecraft:block.note_block.guitar",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "flute": {
+      "index": 6,
+      "sound_event": "minecraft:block.note_block.flute",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "bell": {
+      "index": 7,
+      "sound_event": "minecraft:block.note_block.bell",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "chime": {
+      "index": 8,
+      "sound_event": "minecraft:block.note_block.chime",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "xylophone": {
+      "index": 9,
+      "sound_event": "minecraft:block.note_block.xylophone",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "iron_xylophone": {
+      "index": 10,
+      "sound_event": "minecraft:block.note_block.iron_xylophone",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "cow_bell": {
+      "index": 11,
+      "sound_event": "minecraft:block.note_block.cow_bell",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "didgeridoo": {
+      "index": 12,
+      "sound_event": "minecraft:block.note_block.didgeridoo",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "bit": {
+      "index": 13,
+      "sound_event": "minecraft:block.note_block.bit",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "banjo": {
+      "index": 14,
+      "sound_event": "minecraft:block.note_block.banjo",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "pling": {
+      "index": 15,
+      "sound_event": "minecraft:block.note_block.pling",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "trumpet": {
+      "index": 16,
+      "sound_event": "minecraft:block.note_block.trumpet",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "trumpet_exposed": {
+      "index": 17,
+      "sound_event": "minecraft:block.note_block.trumpet_exposed",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "trumpet_weathered": {
+      "index": 18,
+      "sound_event": "minecraft:block.note_block.trumpet_weathered",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    },
+    "trumpet_oxidized": {
+      "index": 19,
+      "sound_event": "minecraft:block.note_block.trumpet_oxidized",
+      "class": "pitched",
+      "verification": "VERIFIED"
+    }
+  },
+  "notes": {
+    "digital_backend": "DIGITAL_PLAYBACK should read these mappings instead of reconstructing event names."
+  }
+}

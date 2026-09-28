@@ -1,0 +1,220 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BlockScore Song State",
+  "type": "object",
+  "required": [
+    "song_id",
+    "title",
+    "composer",
+    "source_rights",
+    "minecraft_version",
+    "workflow_version",
+    "target_backends",
+    "status",
+    "current_section",
+    "voices",
+    "open_decisions",
+    "revision_log"
+  ],
+  "properties": {
+    "song_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "composer": {
+      "type": "string"
+    },
+    "arranger": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "source_rights": {
+      "enum": [
+        "PUBLIC_DOMAIN",
+        "LICENSED",
+        "USER_SUPPLIED",
+        "ORIGINAL",
+        "UNKNOWN"
+      ]
+    },
+    "minecraft_version": {
+      "type": "string",
+      "const": "26.2"
+    },
+    "minecraft_profile": {
+      "type": "string",
+      "const": "java-26.2"
+    },
+    "workflow_version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "arrangement_version": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "target_backends": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "REDSTONE_PHYSICAL",
+          "COMMAND_RAIL_PHYSICAL",
+          "COMMAND_RAIL_ENHANCED",
+          "DIGITAL_PLAYBACK",
+          "NBS_EXPORT",
+          "MIDI_EXPORT",
+          "STRUCTURE_EXPORT",
+          "LITEMATICA_EXPORT"
+        ]
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "status": {
+      "enum": [
+        "DESIGNED",
+        "TRANSCRIBED",
+        "ARRANGED",
+        "COMPILED",
+        "OFFLINE_VALIDATED",
+        "GAME_TESTED",
+        "USER_APPROVED",
+        "LOCKED"
+      ]
+    },
+    "source_tempo_map": {
+      "type": "array"
+    },
+    "source_meter_map": {
+      "type": "array"
+    },
+    "working_tempo_map": {
+      "type": "array"
+    },
+    "current_section": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "completed_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "locked_sections": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "voices": {
+      "type": "array",
+      "items": {
+        "$ref": "./voice.schema.json"
+      }
+    },
+    "instrument_map": {
+      "type": "object",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "priority_map": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": [
+          "P1",
+          "P2",
+          "P3",
+          "P4",
+          "P5"
+        ]
+      }
+    },
+    "range_warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "timing_warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "polyphony_warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "build_warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "calibration_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "open_decisions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "revision_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "summary"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

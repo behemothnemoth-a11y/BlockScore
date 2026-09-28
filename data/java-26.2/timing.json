@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "java-26.2",
+  "source": "docs/TIMING_MODEL.md",
+  "simulation": {
+    "target_game_ticks_per_second": 20,
+    "game_tick_seconds": 0.05,
+    "standard_redstone_ticks_per_second": 10,
+    "redstone_tick_seconds": 0.1,
+    "wall_clock_warning": "If runtime TPS drops below 20, simulation-relative timing can remain correct while real-time playback slows."
+  },
+  "musical_time": {
+    "canonical_unit": "quarter_note_units",
+    "abbreviation": "QN",
+    "measure_length_formula": "numerator * (4 / denominator)",
+    "constant_tempo_seconds_per_qn": "60 / QPM",
+    "game_ticks_per_qn": "1200 / QPM",
+    "redstone_ticks_per_qn": "600 / QPM"
+  },
+  "quantization": {
+    "method": "absolute_time",
+    "incremental_rounding_forbidden": true,
+    "onset_groups_quantize_together": true,
+    "event_order_must_not_reverse": true,
+    "sequence_collapse_warning": true,
+    "nearest_game_tick_max_nominal_error_ms": 25,
+    "nearest_redstone_tick_max_nominal_error_ms": 50
+  },
+  "timing_modes": [
+    "EXACT",
+    "SOURCE_TEMPO",
+    "NEAR_EXACT",
+    "GROOVE_PRESERVE",
+    "REDSTONE_OPTIMIZED",
+    "DUAL"
+  ],
+  "priority_weights": {
+    "P1": 1,
+    "P2": 2,
+    "P3": 4,
+    "P4": 8,
+    "P5": 16
+  },
+  "rhythmic_roles": [
+    "DOWNBEAT",
+    "METER_ACCENT",
+    "RIFF_ANCHOR",
+    "SYNCOPATION",
+    "BACKBEAT",
+    "POLYRHYTHM_ANCHOR",
+    "PHRASE_BOUNDARY",
+    "DECORATIVE"
+  ],
+  "warning_classes": [
+    "GRID_EXACT",
+    "QUANTIZED_LOW_RISK",
+    "GROOVE_CHANGE",
+    "SEQUENCE_COLLAPSE",
+    "ANCHOR_DISPLACEMENT",
+    "IOI_DISTORTION",
+    "LOOP_SEAM_WARNING",
+    "UNREPRESENTABLE_AT_CURRENT_GRID"
+  ],
+  "tempo_transitions": [
+    "STEP",
+    "LINEAR_QPM"
+  ],
+  "command_rail": {
+    "grid_game_ticks_per_second": 20,
+    "busy_window_game_ticks": 2,
+    "busy_window_verification": "PROVISIONAL",
+    "recommended_dense_controller": "persistent_tick_counter",
+    "calibration_dependencies": [
+      "CAL-003",
+      "CAL-004",
+      "CAL-005",
+      "CAL-006"
+    ]
+  },
+  "redstone_physical": {
+    "grid_redstone_ticks_per_second": 10,
+    "repeater_delay_rt_values": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "geometry_aware_second_pass_required": true
+  },
+  "digital_playback": {
+    "grid_game_ticks_per_second": 20,
+    "recommended_dense_controller": "persistent_tick_counter",
+    "calibration_dependencies": [
+      "CAL-008",
+      "CAL-009"
+    ]
+  },
+  "mars_test_001a": {
+    "command_rail_timing_mode": "SOURCE_TEMPO",
+    "redstone_timing_mode": "DUAL",
+    "p5_timing": [
+      "5/4 identity",
+      "opening ostinato",
+      "meter-defining accents",
+      "primary low pulse",
+      "major thematic attacks"
+    ]
+  }
+}

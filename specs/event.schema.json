@@ -1,0 +1,267 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BlockScore Event",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "musical",
+    "minecraft",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "position",
+        "voice_id"
+      ],
+      "properties": {
+        "position": {
+          "type": "object",
+          "required": [
+            "measure",
+            "beat"
+          ],
+          "properties": {
+            "measure": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "beat": {
+              "type": [
+                "integer",
+                "number",
+                "string"
+              ]
+            },
+            "subdivision": {
+              "type": [
+                "integer",
+                "number",
+                "string",
+                "null"
+              ]
+            },
+            "absolute_qn": {
+              "type": [
+                "number",
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "voice_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pitch": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "duration_qn": {
+          "type": [
+            "number",
+            "string",
+            "null"
+          ]
+        },
+        "dynamic": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "articulation": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "confidence": {
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "LOW"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "musical": {
+      "type": "object",
+      "required": [
+        "priority"
+      ],
+      "properties": {
+        "priority": {
+          "enum": [
+            "P1",
+            "P2",
+            "P3",
+            "P4",
+            "P5"
+          ]
+        },
+        "rhythmic_role": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "riff_cycle": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "phrase_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "micro_offset_ms": {
+          "type": "number"
+        },
+        "sustain_strategy": {
+          "enum": [
+            "NATURAL_DECAY",
+            "RETRIGGER",
+            "TREMOLO",
+            "LAYER",
+            "HARMONIC_REDUCTION",
+            "DIGITAL_ASSIST",
+            "UNSPECIFIED"
+          ]
+        },
+        "locked": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "minecraft": {
+      "type": "object",
+      "required": [
+        "instrument",
+        "note_state"
+      ],
+      "properties": {
+        "instrument": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "pitch": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "note_state": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 24
+        },
+        "percussion_function": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "origin": {
+          "enum": [
+            "PHYSICAL",
+            "DIGITAL_ASSIST",
+            "DIGITAL",
+            "UNASSIGNED"
+          ]
+        },
+        "verification_flags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "backend": {
+      "type": "object",
+      "properties": {
+        "compiled_game_tick": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "compiled_redstone_tick": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "onset_group": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "physical_lane": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "command_endpoint": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "status": {
+      "enum": [
+        "PRESERVED",
+        "TRANSFORMED",
+        "MERGED",
+        "REMOVED",
+        "UNRESOLVED",
+        "VALID"
+      ]
+    },
+    "loss_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "warning_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "additionalProperties": false
+}

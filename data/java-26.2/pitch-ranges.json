@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0.0",
+  "profile_id": "java-26.2",
+  "source": "data/java-26.2/instruments.json",
+  "note_state": {
+    "minimum": 0,
+    "maximum": 24,
+    "count": 25,
+    "semitones_per_step": 1
+  },
+  "ranges": {
+    "harp": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#3",
+      "high_pitch": "F#5",
+      "register_offset_semitones": 0,
+      "verification": "ESTABLISHED"
+    },
+    "bass": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#1",
+      "high_pitch": "F#3",
+      "register_offset_semitones": -24,
+      "verification": "ESTABLISHED"
+    },
+    "basedrum": {
+      "class": "percussion",
+      "pitch_mode": "percussion_index",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": null,
+      "high_pitch": null,
+      "register_offset_semitones": null,
+      "verification": "NOT_APPLICABLE"
+    },
+    "snare": {
+      "class": "percussion",
+      "pitch_mode": "percussion_index",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": null,
+      "high_pitch": null,
+      "register_offset_semitones": null,
+      "verification": "NOT_APPLICABLE"
+    },
+    "hat": {
+      "class": "percussion",
+      "pitch_mode": "percussion_index",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": null,
+      "high_pitch": null,
+      "register_offset_semitones": null,
+      "verification": "NOT_APPLICABLE"
+    },
+    "guitar": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#2",
+      "high_pitch": "F#4",
+      "register_offset_semitones": -12,
+      "verification": "ESTABLISHED"
+    },
+    "flute": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#4",
+      "high_pitch": "F#6",
+      "register_offset_semitones": 12,
+      "verification": "ESTABLISHED"
+    },
+    "bell": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#5",
+      "high_pitch": "F#7",
+      "register_offset_semitones": 24,
+      "verification": "ESTABLISHED"
+    },
+    "chime": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#5",
+      "high_pitch": "F#7",
+      "register_offset_semitones": 24,
+      "verification": "ESTABLISHED"
+    },
+    "xylophone": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#5",
+      "high_pitch": "F#7",
+      "register_offset_semitones": 24,
+      "verification": "ESTABLISHED"
+    },
+    "iron_xylophone": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#3",
+      "high_pitch": "F#5",
+      "register_offset_semitones": 0,
+      "verification": "ESTABLISHED"
+    },
+    "cow_bell": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#4",
+      "high_pitch": "F#6",
+      "register_offset_semitones": 12,
+      "verification": "ESTABLISHED"
+    },
+    "didgeridoo": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#1",
+      "high_pitch": "F#3",
+      "register_offset_semitones": -24,
+      "verification": "ESTABLISHED"
+    },
+    "bit": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#3",
+      "high_pitch": "F#5",
+      "register_offset_semitones": 0,
+      "verification": "ESTABLISHED"
+    },
+    "banjo": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#3",
+      "high_pitch": "F#5",
+      "register_offset_semitones": 0,
+      "verification": "ESTABLISHED"
+    },
+    "pling": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#3",
+      "high_pitch": "F#5",
+      "register_offset_semitones": 0,
+      "verification": "ESTABLISHED"
+    },
+    "trumpet": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#3",
+      "high_pitch": "F#5",
+      "register_offset_semitones": 0,
+      "verification": "PROVISIONAL"
+    },
+    "trumpet_exposed": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#3",
+      "high_pitch": "F#5",
+      "register_offset_semitones": 0,
+      "verification": "PROVISIONAL"
+    },
+    "trumpet_weathered": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#2",
+      "high_pitch": "F#4",
+      "register_offset_semitones": -12,
+      "verification": "PROVISIONAL"
+    },
+    "trumpet_oxidized": {
+      "class": "pitched",
+      "pitch_mode": "chromatic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#2",
+      "high_pitch": "F#4",
+      "register_offset_semitones": -12,
+      "verification": "PROVISIONAL"
+    }
+  },
+  "notes": {
+    "trumpet_registers": "PROVISIONAL until CAL-001.",
+    "percussion": "Absolute low/high pitches intentionally null; use percussion_index note-state tuning."
+  }
+}

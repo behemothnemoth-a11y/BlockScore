@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BlockScore Voice",
+  "type": "object",
+  "required": [
+    "voice_id",
+    "name",
+    "role",
+    "default_priority"
+  ],
+  "properties": {
+    "voice_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "role": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_instrument": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "minecraft_instrument": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "default_priority": {
+      "enum": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ]
+    },
+    "register_hint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "percussion_function": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "spatial_group": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "ACTIVE",
+        "MERGED",
+        "SPLIT",
+        "REMOVED",
+        "UNRESOLVED"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
