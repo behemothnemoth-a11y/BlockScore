@@ -17,7 +17,8 @@
     "VERIFIED",
     "ESTABLISHED",
     "PROVISIONAL",
-    "TEST_REQUIRED"
+    "TEST_REQUIRED",
+    "NOT_APPLICABLE"
   ],
   "default_rules": {
     "require_air_above_normal_note_block": true,
@@ -570,15 +571,15 @@
       "minecraft_instrument": "trumpet_oxidized",
       "sound_event": "minecraft:block.note_block.trumpet_oxidized",
       "class": "pitched",
-      "family": "brass_very_low",
+      "family": "brass_low",
       "canonical_support_block": "minecraft:oxidized_copper",
       "stable_support_block": null,
       "support_rule": "copper oxidation stage 3",
       "note_state_min": 0,
       "note_state_max": 24,
-      "low_pitch": "F#1",
-      "high_pitch": "F#3",
-      "register_offset_semitones": -24,
+      "low_pitch": "F#2",
+      "high_pitch": "F#4",
+      "register_offset_semitones": -12,
       "pitch_mode": "chromatic",
       "verification": {
         "existence": "VERIFIED",
@@ -591,10 +592,10 @@
         "WAXED_COPPER_EQUIVALENCE_PENDING"
       ],
       "recommended_roles": [
-        "very low brass",
-        "tuba-like brass reduction",
-        "brass pedal",
-        "dark low reinforcement"
+        "dark low brass",
+        "trombone/tuba-like reduction",
+        "brass pedal where in range",
+        "dark reinforcement"
       ]
     }
   ],
