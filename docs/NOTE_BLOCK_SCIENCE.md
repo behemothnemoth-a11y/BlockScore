@@ -136,7 +136,7 @@ This records whether the note block is currently powered.
 
 ## instrument
 
-The 26.2 instrument property includes normal instruments, the four copper trumpets, mob-head instruments, and custom-head behavior. Current version-specific data includes the trumpet values in the instrument state.
+The 26.2 instrument property includes normal instruments, the four copper trumpets, mob-head instruments, and custom-head behavior.
 
 BlockScore must never infer pitch solely from visible block appearance.
 
@@ -244,7 +244,6 @@ Y + 1 = air
 Y     = note block
 Y - 1 = instrument material
 ```
-
 
 ---
 
@@ -727,7 +726,7 @@ That role assignment is an arrangement heuristic, not a Minecraft rule.
 
 The trumpet family needs more careful handling than the established instruments.
 
-Current Open Note Block Studio development code maps MIDI instrument octave differences as:
+Current Open Note Block Studio development code applies the following octave adjustments during General MIDI import:
 
 ```text
 Trumpet            0
@@ -743,7 +742,11 @@ OpenNBS/NoteBlockStudio
 scripts/midi_instruments/midi_instruments.gml
 ```
 
-Interpreted as sample/register compensation, this strongly suggests the following BlockScore working model:
+These values are **MIDI import heuristics**. They help an importer choose useful Minecraft placements for General MIDI instruments, but they are not authoritative evidence of the absolute sounding register of the Minecraft note-block samples.
+
+BlockScore must therefore not derive physical note-block ranges directly from those import offsets.
+
+The current BlockScore working model is:
 
 ```text
 trumpet
@@ -756,7 +759,7 @@ trumpet_weathered
 F♯2 – F♯4
 
 trumpet_oxidized
-F♯1 – F♯3
+F♯2 – F♯4
 ```
 
 Status:
@@ -765,9 +768,23 @@ Status:
 PROVISIONAL
 ```
 
-Do not mark these sounding ranges `VERIFIED` until the Java 26.2 trumpet calibration fixture has been run in-game.
+The regular and exposed trumpet are currently treated as the higher pair. Weathered and oxidized trumpet are currently treated as the lower pair.
 
-The existence of the four instruments and their corresponding copper oxidation blocks is verified; the exact musician-facing octave labels are what remain under calibration.
+These octave labels remain provisional until the Java 26.2 trumpet calibration fixture is run in-game.
+
+The machine-readable registry at:
+
+```text
+data/java-26.2/instruments.json
+```
+
+must use the same provisional values.
+
+If CAL-001 produces different results, both this document and the registry must be updated together.
+
+The existence of the four instruments, their distinct sound events, and their corresponding copper oxidation support blocks are considered verified.
+
+The exact musician-facing sounding octaves remain under calibration.
 
 ---
 
