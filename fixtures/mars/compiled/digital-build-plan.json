@@ -1,0 +1,59 @@
+{
+  "profile": "java-26.2",
+  "backend": "DIGITAL_PLAYBACK",
+  "status": "OFFLINE_VALIDATED",
+  "origin": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "performance_origin": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "layout": {
+    "type": "MONO_REFERENCE",
+    "direction": "EAST",
+    "options": {
+      "position_mode": "LISTENER_CENTERED_REFERENCE",
+      "mixer_source": "block",
+      "targets": "@a"
+    }
+  },
+  "materials": {},
+  "metrics": {
+    "master_events": 349,
+    "playsound_commands": 349,
+    "active_game_ticks": 64,
+    "max_commands_one_tick": 10,
+    "timing": {
+      "event_count": 349,
+      "distinct_onsets": 64,
+      "distinct_backend_ticks": 64,
+      "sequence_collapses": 0,
+      "mean_abs_error_ms": 12.116871,
+      "rms_error_ms": 14.166329,
+      "weighted_rms_error_ms": 14.170744,
+      "max_abs_error_ms": 24.242424
+    },
+    "explicit_note_off_commands": 0,
+    "sustain_realization_pending_events": 16
+  },
+  "warnings": [
+    "CAL-008_ATTENUATION_COMPARISON_PENDING",
+    "CAL-009_RUNTIME_STRESS_PENDING",
+    "TAM_TAM_TREMOLO_RATE_UNSPECIFIED",
+    "THEME_A_NATURAL_DECAY_AUDITION_REQUIRED",
+    "TRUMPET_CALIBRATION_PENDING"
+  ],
+  "failures": [],
+  "calibration_dependencies": [
+    "CAL-001",
+    "CAL-008",
+    "CAL-009"
+  ],
+  "artifacts": [
+    "fixtures/mars/compiled/digital-schedule-m001-m008.yaml"
+  ]
+}

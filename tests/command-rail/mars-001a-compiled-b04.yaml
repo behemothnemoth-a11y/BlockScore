@@ -1,0 +1,23 @@
+test_id: COMMAND-RAIL-MARS-001A-COMPILED-B04
+build_plan: fixtures/mars/compiled/command-rail-build-plan.json
+endpoint_fixture: fixtures/mars/compiled/command-rail-endpoints-m001-m008.yaml
+schedule: fixtures/mars/compiled/command-rail-schedule-m001-m008.yaml
+expected:
+  master_events: 349
+  endpoint_keys: 15
+  endpoint_count: 16
+  largest_pool_size: 2
+  bass_g2_pool_size: 2
+  activate_actions: 349
+  reset_actions: 349
+  max_activate_actions_one_tick: 10
+  unique_note_positions: 16
+  max_listener_distance_lt_blocks: 14
+assertions:
+- ALL_MASTER_EVENTS_ASSIGNED
+- NO_ENDPOINT_DOUBLE_BOOKING_WITHIN_BUSY_WINDOW
+- ONLY_BASS_G2_REQUIRES_POOL_GREATER_THAN_ONE
+- ALL_ENDPOINT_POSITIONS_UNIQUE
+- ALL_SUPPORT_BLOCKS_FROM_REGISTRY
+- NO_NORMAL_ATTACK_USES_PLAYSOUND
+- CALIBRATION_DEPENDENCIES_REPORTED

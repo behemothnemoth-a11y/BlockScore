@@ -1,0 +1,22 @@
+test_id: REDSTONE-MARS-001A-COMPILED-B04
+build_plan: fixtures/mars/compiled/redstone-build-plan.json
+source_schedule: fixtures/mars/compiled/redstone-source-tempo-schedule-m001-m008.yaml
+dual_analysis: fixtures/mars/compiled/redstone-dual-analysis-m001-m008.yaml
+expected:
+  master_events: 349
+  timing_nodes: 64
+  sequence_collapses: 0
+  source_qpm: 132
+  source_rms_error_ms: 28.430002
+  source_weighted_rms_error_ms: 28.458289
+  source_max_abs_error_ms: 48.484848
+  note_blocks: 349
+  minimum_timing_trunk_repeaters: 75
+  geometry_status: PENDING
+assertions:
+- SOURCE_TEMPO_CANDIDATE_RETAINED
+- DUAL_OPTIMIZED_CANDIDATE_NOT_AUTO_SELECTED
+- ALL_MASTER_EVENTS_MAPPED_TO_TIMING_NODES
+- NO_SEQUENCE_COLLAPSE
+- FINAL_ROUTING_COUNTS_NOT_INVENTED
+- GEOMETRY_AWARE_SECOND_PASS_REQUIRED

@@ -1,0 +1,737 @@
+schema_version: 1.0.0
+backend: COMMAND_RAIL_PHYSICAL
+master: fixtures/mars/master-events-m001-m008.yaml
+busy_window_game_ticks: 2
+busy_window_verification: PROVISIONAL
+layout: SINGLE_LINE
+performance_origin:
+  x: 10.5
+  y: 1.0
+  z: -8.0
+endpoint_count: 16
+endpoint_keys: 15
+endpoints:
+- endpoint_id: bass_g1_01
+  instrument: bass
+  note_state: 1
+  pitch: G1
+  pool_index: 1
+  support_block: minecraft:oak_planks
+  note_position:
+    x: 0
+    y: 1
+    z: 0
+  support_position:
+    x: 0
+    y: 0
+    z: 0
+  driver_position:
+    x: 0
+    y: 1
+    z: 1
+  clearance_position:
+    x: 0
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: bass_g2_01
+  instrument: bass
+  note_state: 13
+  pitch: G2
+  pool_index: 1
+  support_block: minecraft:oak_planks
+  note_position:
+    x: 1
+    y: 1
+    z: 0
+  support_position:
+    x: 1
+    y: 0
+    z: 0
+  driver_position:
+    x: 1
+    y: 1
+    z: 1
+  clearance_position:
+    x: 1
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: bass_g2_02
+  instrument: bass
+  note_state: 13
+  pitch: G2
+  pool_index: 2
+  support_block: minecraft:oak_planks
+  note_position:
+    x: 2
+    y: 1
+    z: 0
+  support_position:
+    x: 2
+    y: 0
+    z: 0
+  driver_position:
+    x: 2
+    y: 1
+    z: 1
+  clearance_position:
+    x: 2
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: bass_db3_01
+  instrument: bass
+  note_state: 19
+  pitch: Db3
+  pool_index: 1
+  support_block: minecraft:oak_planks
+  note_position:
+    x: 3
+    y: 1
+    z: 0
+  support_position:
+    x: 3
+    y: 0
+    z: 0
+  driver_position:
+    x: 3
+    y: 1
+    z: 1
+  clearance_position:
+    x: 3
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: bass_d3_01
+  instrument: bass
+  note_state: 20
+  pitch: D3
+  pool_index: 1
+  support_block: minecraft:oak_planks
+  note_position:
+    x: 4
+    y: 1
+    z: 0
+  support_position:
+    x: 4
+    y: 0
+    z: 0
+  driver_position:
+    x: 4
+    y: 1
+    z: 1
+  clearance_position:
+    x: 4
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: basedrum_state00_01
+  instrument: basedrum
+  note_state: 0
+  pitch: null
+  pool_index: 1
+  support_block: minecraft:stone
+  note_position:
+    x: 6
+    y: 1
+    z: 0
+  support_position:
+    x: 6
+    y: 0
+    z: 0
+  driver_position:
+    x: 6
+    y: 1
+    z: 1
+  clearance_position:
+    x: 6
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: snare_state00_01
+  instrument: snare
+  note_state: 0
+  pitch: null
+  pool_index: 1
+  support_block: minecraft:sand
+  note_position:
+    x: 8
+    y: 1
+    z: 0
+  support_position:
+    x: 8
+    y: 0
+    z: 0
+  driver_position:
+    x: 8
+    y: 1
+    z: 1
+  clearance_position:
+    x: 8
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: guitar_g2_01
+  instrument: guitar
+  note_state: 1
+  pitch: G2
+  pool_index: 1
+  support_block: minecraft:white_wool
+  note_position:
+    x: 10
+    y: 1
+    z: 0
+  support_position:
+    x: 10
+    y: 0
+    z: 0
+  driver_position:
+    x: 10
+    y: 1
+    z: 1
+  clearance_position:
+    x: 10
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: didgeridoo_g1_01
+  instrument: didgeridoo
+  note_state: 1
+  pitch: G1
+  pool_index: 1
+  support_block: minecraft:pumpkin
+  note_position:
+    x: 12
+    y: 1
+    z: 0
+  support_position:
+    x: 12
+    y: 0
+    z: 0
+  driver_position:
+    x: 12
+    y: 1
+    z: 1
+  clearance_position:
+    x: 12
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: didgeridoo_db2_01
+  instrument: didgeridoo
+  note_state: 7
+  pitch: Db2
+  pool_index: 1
+  support_block: minecraft:pumpkin
+  note_position:
+    x: 13
+    y: 1
+    z: 0
+  support_position:
+    x: 13
+    y: 0
+    z: 0
+  driver_position:
+    x: 13
+    y: 1
+    z: 1
+  clearance_position:
+    x: 13
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: didgeridoo_d2_01
+  instrument: didgeridoo
+  note_state: 8
+  pitch: D2
+  pool_index: 1
+  support_block: minecraft:pumpkin
+  note_position:
+    x: 14
+    y: 1
+    z: 0
+  support_position:
+    x: 14
+    y: 0
+    z: 0
+  driver_position:
+    x: 14
+    y: 1
+    z: 1
+  clearance_position:
+    x: 14
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: didgeridoo_db3_01
+  instrument: didgeridoo
+  note_state: 19
+  pitch: Db3
+  pool_index: 1
+  support_block: minecraft:pumpkin
+  note_position:
+    x: 15
+    y: 1
+    z: 0
+  support_position:
+    x: 15
+    y: 0
+    z: 0
+  driver_position:
+    x: 15
+    y: 1
+    z: 1
+  clearance_position:
+    x: 15
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: banjo_g3_01
+  instrument: banjo
+  note_state: 1
+  pitch: G3
+  pool_index: 1
+  support_block: minecraft:hay_block
+  note_position:
+    x: 17
+    y: 1
+    z: 0
+  support_position:
+    x: 17
+    y: 0
+    z: 0
+  driver_position:
+    x: 17
+    y: 1
+    z: 1
+  clearance_position:
+    x: 17
+    y: 2
+    z: 0
+  verification_flags: []
+- endpoint_id: trumpet_weathered_g2_01
+  instrument: trumpet_weathered
+  note_state: 1
+  pitch: G2
+  pool_index: 1
+  support_block: minecraft:weathered_copper
+  note_position:
+    x: 19
+    y: 1
+    z: 0
+  support_position:
+    x: 19
+    y: 0
+    z: 0
+  driver_position:
+    x: 19
+    y: 1
+    z: 1
+  clearance_position:
+    x: 19
+    y: 2
+    z: 0
+  verification_flags:
+  - TRUMPET_CALIBRATION_PENDING
+  - COPPER_STABILITY_PENDING
+- endpoint_id: trumpet_weathered_db3_01
+  instrument: trumpet_weathered
+  note_state: 7
+  pitch: Db3
+  pool_index: 1
+  support_block: minecraft:weathered_copper
+  note_position:
+    x: 20
+    y: 1
+    z: 0
+  support_position:
+    x: 20
+    y: 0
+    z: 0
+  driver_position:
+    x: 20
+    y: 1
+    z: 1
+  clearance_position:
+    x: 20
+    y: 2
+    z: 0
+  verification_flags:
+  - TRUMPET_CALIBRATION_PENDING
+  - COPPER_STABILITY_PENDING
+- endpoint_id: trumpet_weathered_d3_01
+  instrument: trumpet_weathered
+  note_state: 8
+  pitch: D3
+  pool_index: 1
+  support_block: minecraft:weathered_copper
+  note_position:
+    x: 21
+    y: 1
+    z: 0
+  support_position:
+    x: 21
+    y: 0
+    z: 0
+  driver_position:
+    x: 21
+    y: 1
+    z: 1
+  clearance_position:
+    x: 21
+    y: 2
+    z: 0
+  verification_flags:
+  - TRUMPET_CALIBRATION_PENDING
+  - COPPER_STABILITY_PENDING
+event_assignment:
+  master-0001: bass_g1_01
+  master-0002: guitar_g2_01
+  master-0003: bass_g2_01
+  master-0004: banjo_g3_01
+  master-0005: basedrum_state00_01
+  master-0006: bass_g1_01
+  master-0007: guitar_g2_01
+  master-0008: bass_g2_01
+  master-0009: banjo_g3_01
+  master-0010: basedrum_state00_01
+  master-0011: bass_g1_01
+  master-0012: guitar_g2_01
+  master-0013: bass_g2_01
+  master-0014: banjo_g3_01
+  master-0015: basedrum_state00_01
+  master-0016: bass_g1_01
+  master-0017: guitar_g2_01
+  master-0018: bass_g2_01
+  master-0019: banjo_g3_01
+  master-0020: basedrum_state00_01
+  master-0021: bass_g1_01
+  master-0022: guitar_g2_01
+  master-0023: bass_g2_01
+  master-0024: banjo_g3_01
+  master-0025: basedrum_state00_01
+  master-0026: bass_g1_01
+  master-0027: guitar_g2_01
+  master-0028: bass_g2_01
+  master-0029: banjo_g3_01
+  master-0030: basedrum_state00_01
+  master-0031: bass_g1_01
+  master-0032: guitar_g2_01
+  master-0033: bass_g2_01
+  master-0034: banjo_g3_01
+  master-0035: basedrum_state00_01
+  master-0036: bass_g1_01
+  master-0037: guitar_g2_01
+  master-0038: bass_g2_01
+  master-0039: banjo_g3_01
+  master-0040: basedrum_state00_01
+  master-0041: bass_g1_01
+  master-0042: guitar_g2_01
+  master-0043: bass_g2_01
+  master-0044: banjo_g3_01
+  master-0045: basedrum_state00_01
+  master-0046: bass_g1_01
+  master-0047: guitar_g2_01
+  master-0048: bass_g2_01
+  master-0049: banjo_g3_01
+  master-0050: basedrum_state00_01
+  master-0051: bass_g1_01
+  master-0052: guitar_g2_01
+  master-0053: bass_g2_01
+  master-0054: banjo_g3_01
+  master-0055: basedrum_state00_01
+  master-0056: bass_g1_01
+  master-0057: guitar_g2_01
+  master-0058: bass_g2_01
+  master-0059: banjo_g3_01
+  master-0060: basedrum_state00_01
+  master-0061: bass_g1_01
+  master-0062: guitar_g2_01
+  master-0063: bass_g2_01
+  master-0064: banjo_g3_01
+  master-0065: basedrum_state00_01
+  master-0066: bass_g1_01
+  master-0067: guitar_g2_01
+  master-0068: bass_g2_01
+  master-0069: banjo_g3_01
+  master-0070: basedrum_state00_01
+  master-0071: bass_g1_01
+  master-0072: guitar_g2_01
+  master-0073: bass_g2_01
+  master-0074: banjo_g3_01
+  master-0075: basedrum_state00_01
+  master-0076: bass_g1_01
+  master-0077: guitar_g2_01
+  master-0078: bass_g2_01
+  master-0079: banjo_g3_01
+  master-0080: basedrum_state00_01
+  master-0081: bass_g1_01
+  master-0082: guitar_g2_01
+  master-0083: bass_g2_01
+  master-0084: banjo_g3_01
+  master-0085: basedrum_state00_01
+  master-0086: bass_g1_01
+  master-0087: guitar_g2_01
+  master-0088: bass_g2_01
+  master-0089: banjo_g3_01
+  master-0090: basedrum_state00_01
+  master-0091: bass_g1_01
+  master-0092: guitar_g2_01
+  master-0093: bass_g2_01
+  master-0094: banjo_g3_01
+  master-0095: basedrum_state00_01
+  master-0096: bass_g1_01
+  master-0097: guitar_g2_01
+  master-0098: bass_g2_01
+  master-0099: banjo_g3_01
+  master-0100: basedrum_state00_01
+  master-0101: bass_g1_01
+  master-0102: guitar_g2_01
+  master-0103: bass_g2_01
+  master-0104: banjo_g3_01
+  master-0105: basedrum_state00_01
+  master-0106: bass_g1_01
+  master-0107: guitar_g2_01
+  master-0108: bass_g2_01
+  master-0109: banjo_g3_01
+  master-0110: basedrum_state00_01
+  master-0111: bass_g1_01
+  master-0112: guitar_g2_01
+  master-0113: bass_g2_01
+  master-0114: banjo_g3_01
+  master-0115: basedrum_state00_01
+  master-0116: bass_g1_01
+  master-0117: guitar_g2_01
+  master-0118: bass_g2_01
+  master-0119: banjo_g3_01
+  master-0120: basedrum_state00_01
+  master-0121: bass_g1_01
+  master-0122: guitar_g2_01
+  master-0123: bass_g2_01
+  master-0124: banjo_g3_01
+  master-0125: basedrum_state00_01
+  master-0126: bass_g1_01
+  master-0127: guitar_g2_01
+  master-0128: bass_g2_01
+  master-0129: banjo_g3_01
+  master-0130: basedrum_state00_01
+  master-0131: bass_g1_01
+  master-0132: guitar_g2_01
+  master-0133: bass_g2_01
+  master-0134: banjo_g3_01
+  master-0135: basedrum_state00_01
+  master-0136: bass_g1_01
+  master-0137: guitar_g2_01
+  master-0138: bass_g2_01
+  master-0139: banjo_g3_01
+  master-0140: basedrum_state00_01
+  master-0141: bass_g1_01
+  master-0142: guitar_g2_01
+  master-0143: bass_g2_01
+  master-0144: banjo_g3_01
+  master-0145: basedrum_state00_01
+  master-0146: bass_g1_01
+  master-0147: guitar_g2_01
+  master-0148: bass_g2_01
+  master-0149: banjo_g3_01
+  master-0150: basedrum_state00_01
+  master-0151: bass_g1_01
+  master-0152: guitar_g2_01
+  master-0153: bass_g2_01
+  master-0154: banjo_g3_01
+  master-0155: basedrum_state00_01
+  master-0156: bass_g1_01
+  master-0157: guitar_g2_01
+  master-0158: bass_g2_01
+  master-0159: banjo_g3_01
+  master-0160: basedrum_state00_01
+  master-0161: bass_g1_01
+  master-0162: guitar_g2_01
+  master-0163: bass_g2_01
+  master-0164: banjo_g3_01
+  master-0165: basedrum_state00_01
+  master-0166: bass_g1_01
+  master-0167: guitar_g2_01
+  master-0168: bass_g2_01
+  master-0169: banjo_g3_01
+  master-0170: basedrum_state00_01
+  master-0171: bass_g1_01
+  master-0172: guitar_g2_01
+  master-0173: bass_g2_01
+  master-0174: banjo_g3_01
+  master-0175: basedrum_state00_01
+  master-0176: bass_g1_01
+  master-0177: guitar_g2_01
+  master-0178: bass_g2_01
+  master-0179: banjo_g3_01
+  master-0180: basedrum_state00_01
+  master-0181: bass_g1_01
+  master-0182: guitar_g2_01
+  master-0183: bass_g2_01
+  master-0184: banjo_g3_01
+  master-0185: basedrum_state00_01
+  master-0186: bass_g1_01
+  master-0187: guitar_g2_01
+  master-0188: bass_g2_01
+  master-0189: banjo_g3_01
+  master-0190: basedrum_state00_01
+  master-0191: bass_g1_01
+  master-0192: guitar_g2_01
+  master-0193: bass_g2_01
+  master-0194: banjo_g3_01
+  master-0195: basedrum_state00_01
+  master-0196: bass_g1_01
+  master-0197: guitar_g2_01
+  master-0198: bass_g2_01
+  master-0199: banjo_g3_01
+  master-0200: basedrum_state00_01
+  master-0201: bass_g1_01
+  master-0202: guitar_g2_01
+  master-0203: bass_g2_01
+  master-0204: banjo_g3_01
+  master-0205: basedrum_state00_01
+  master-0206: bass_g1_01
+  master-0207: guitar_g2_01
+  master-0208: bass_g2_01
+  master-0209: banjo_g3_01
+  master-0210: basedrum_state00_01
+  master-0211: bass_g1_01
+  master-0212: guitar_g2_01
+  master-0213: bass_g2_01
+  master-0214: banjo_g3_01
+  master-0215: basedrum_state00_01
+  master-0216: bass_g1_01
+  master-0217: guitar_g2_01
+  master-0218: bass_g2_01
+  master-0219: banjo_g3_01
+  master-0220: basedrum_state00_01
+  master-0221: bass_g1_01
+  master-0222: guitar_g2_01
+  master-0223: bass_g2_01
+  master-0224: banjo_g3_01
+  master-0225: basedrum_state00_01
+  master-0226: bass_g1_01
+  master-0227: guitar_g2_01
+  master-0228: bass_g2_01
+  master-0229: banjo_g3_01
+  master-0230: basedrum_state00_01
+  master-0231: bass_g1_01
+  master-0232: guitar_g2_01
+  master-0233: bass_g2_01
+  master-0234: banjo_g3_01
+  master-0235: basedrum_state00_01
+  master-0236: bass_g1_01
+  master-0237: guitar_g2_01
+  master-0238: bass_g2_01
+  master-0239: banjo_g3_01
+  master-0240: basedrum_state00_01
+  master-0241: bass_g1_01
+  master-0242: guitar_g2_01
+  master-0243: bass_g2_01
+  master-0244: banjo_g3_01
+  master-0245: basedrum_state00_01
+  master-0246: bass_g1_01
+  master-0247: guitar_g2_01
+  master-0248: bass_g2_01
+  master-0249: banjo_g3_01
+  master-0250: basedrum_state00_01
+  master-0251: bass_g1_01
+  master-0252: guitar_g2_01
+  master-0253: bass_g2_01
+  master-0254: banjo_g3_01
+  master-0255: basedrum_state00_01
+  master-0256: bass_g1_01
+  master-0257: guitar_g2_01
+  master-0258: bass_g2_01
+  master-0259: banjo_g3_01
+  master-0260: basedrum_state00_01
+  master-0261: bass_g1_01
+  master-0262: guitar_g2_01
+  master-0263: bass_g2_01
+  master-0264: banjo_g3_01
+  master-0265: basedrum_state00_01
+  master-0266: bass_g1_01
+  master-0267: guitar_g2_01
+  master-0268: bass_g2_01
+  master-0269: banjo_g3_01
+  master-0270: basedrum_state00_01
+  master-0271: bass_g1_01
+  master-0272: guitar_g2_01
+  master-0273: bass_g2_01
+  master-0274: banjo_g3_01
+  master-0275: basedrum_state00_01
+  master-0276: bass_g1_01
+  master-0277: guitar_g2_01
+  master-0278: bass_g2_01
+  master-0279: banjo_g3_01
+  master-0280: basedrum_state00_01
+  master-0281: bass_g1_01
+  master-0282: guitar_g2_01
+  master-0283: bass_g2_01
+  master-0284: banjo_g3_01
+  master-0285: basedrum_state00_01
+  master-0286: bass_g1_01
+  master-0287: guitar_g2_01
+  master-0288: bass_g2_01
+  master-0289: banjo_g3_01
+  master-0290: basedrum_state00_01
+  master-0291: bass_g1_01
+  master-0292: guitar_g2_01
+  master-0293: bass_g2_01
+  master-0294: banjo_g3_01
+  master-0295: basedrum_state00_01
+  master-0296: bass_g1_01
+  master-0297: guitar_g2_01
+  master-0298: bass_g2_01
+  master-0299: banjo_g3_01
+  master-0300: basedrum_state00_01
+  master-0301: bass_g1_01
+  master-0302: guitar_g2_01
+  master-0303: bass_g2_01
+  master-0304: banjo_g3_01
+  master-0305: basedrum_state00_01
+  master-0306: bass_g1_01
+  master-0307: guitar_g2_01
+  master-0308: bass_g2_01
+  master-0309: banjo_g3_01
+  master-0310: basedrum_state00_01
+  master-0311: bass_g1_01
+  master-0312: guitar_g2_01
+  master-0313: bass_g2_01
+  master-0314: banjo_g3_01
+  master-0315: basedrum_state00_01
+  master-0316: bass_g1_01
+  master-0317: guitar_g2_01
+  master-0318: bass_g2_01
+  master-0319: banjo_g3_01
+  master-0320: basedrum_state00_01
+  master-0321: snare_state00_01
+  master-0322: snare_state00_01
+  master-0323: snare_state00_01
+  master-0324: snare_state00_01
+  master-0325: snare_state00_01
+  master-0326: snare_state00_01
+  master-0327: snare_state00_01
+  master-0328: snare_state00_01
+  master-0329: snare_state00_01
+  master-0330: snare_state00_01
+  master-0331: snare_state00_01
+  master-0332: snare_state00_01
+  master-0333: snare_state00_01
+  master-0334: snare_state00_01
+  master-0335: snare_state00_01
+  master-0336: snare_state00_01
+  master-0337: didgeridoo_g1_01
+  master-0338: bass_g2_02
+  master-0339: trumpet_weathered_g2_01
+  master-0340: didgeridoo_d2_01
+  master-0341: bass_d3_01
+  master-0342: trumpet_weathered_d3_01
+  master-0343: didgeridoo_db2_01
+  master-0344: bass_db3_01
+  master-0345: trumpet_weathered_db3_01
+  master-0346: didgeridoo_g1_01
+  master-0347: bass_g2_02
+  master-0348: trumpet_weathered_g2_01
+  master-0349: didgeridoo_db3_01

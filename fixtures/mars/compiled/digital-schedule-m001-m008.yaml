@@ -1,0 +1,3164 @@
+schema_version: 1.0.0
+backend: DIGITAL_PLAYBACK
+mode: NOTE_BLOCK_FAITHFUL
+master: fixtures/mars/master-events-m001-m008.yaml
+benchmark_qpm: 132
+grid_hz: 20
+mixer_source: block
+targets: '@a'
+position_mode: MONO_REFERENCE
+timing_metrics:
+  event_count: 349
+  distinct_onsets: 64
+  distinct_backend_ticks: 64
+  sequence_collapses: 0
+  mean_abs_error_ms: 12.116871
+  rms_error_ms: 14.166329
+  weighted_rms_error_ms: 14.170744
+  max_abs_error_ms: 24.242424
+event_count: 349
+active_tick_count: 64
+max_commands_one_tick: 10
+schedule:
+- game_tick: 0
+  events:
+  - event_id: master-0001
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0002
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0003
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0004
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0005
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0321
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 3
+  events:
+  - event_id: master-0006
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0007
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0008
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0009
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0010
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 6
+  events:
+  - event_id: master-0011
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0012
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0013
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0014
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0015
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 9
+  events:
+  - event_id: master-0016
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0017
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0018
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0019
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0020
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 18
+  events:
+  - event_id: master-0021
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0022
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0023
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0024
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0025
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 27
+  events:
+  - event_id: master-0026
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0027
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0028
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0029
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0030
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0322
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 32
+  events:
+  - event_id: master-0031
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0032
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0033
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0034
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0035
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 36
+  events:
+  - event_id: master-0036
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0037
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0038
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0039
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0040
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 45
+  events:
+  - event_id: master-0041
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0042
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0043
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0044
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0045
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0323
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 48
+  events:
+  - event_id: master-0046
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0047
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0048
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0049
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0050
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 52
+  events:
+  - event_id: master-0051
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0052
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0053
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0054
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0055
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 55
+  events:
+  - event_id: master-0056
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0057
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0058
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0059
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0060
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 64
+  events:
+  - event_id: master-0061
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0062
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0063
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0064
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0065
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 73
+  events:
+  - event_id: master-0066
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0067
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0068
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0069
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0070
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0324
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 77
+  events:
+  - event_id: master-0071
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0072
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0073
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0074
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0075
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 82
+  events:
+  - event_id: master-0076
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0077
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0078
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0079
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0080
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 91
+  events:
+  - event_id: master-0081
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0082
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0083
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0084
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0085
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0325
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+  - event_id: master-0337
+    voice_id: THEME_A_LOW
+    instrument: didgeridoo
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.didgeridoo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0338
+    voice_id: THEME_A_MID
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0339
+    voice_id: THEME_A_HORN_COLOR
+    instrument: trumpet_weathered
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.trumpet_weathered block @a ~ ~ ~
+      1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 94
+  events:
+  - event_id: master-0086
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0087
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0088
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0089
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0090
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 97
+  events:
+  - event_id: master-0091
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0092
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0093
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0094
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0095
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 100
+  events:
+  - event_id: master-0096
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0097
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0098
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0099
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0100
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 109
+  events:
+  - event_id: master-0101
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0102
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0103
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0104
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0105
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 118
+  events:
+  - event_id: master-0106
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0107
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0108
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0109
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0110
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0326
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 123
+  events:
+  - event_id: master-0111
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0112
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0113
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0114
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0115
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 127
+  events:
+  - event_id: master-0116
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0117
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0118
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0119
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0120
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 136
+  events:
+  - event_id: master-0121
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0122
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0123
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0124
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0125
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0327
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 139
+  events:
+  - event_id: master-0126
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0127
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0128
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0129
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0130
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 142
+  events:
+  - event_id: master-0131
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0132
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0133
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0134
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0135
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 145
+  events:
+  - event_id: master-0136
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0137
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0138
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0139
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0140
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 155
+  events:
+  - event_id: master-0141
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0142
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0143
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0144
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0145
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 164
+  events:
+  - event_id: master-0146
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0147
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0148
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0149
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0150
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0328
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+  - event_id: master-0340
+    voice_id: THEME_A_LOW
+    instrument: didgeridoo
+    note_state: 8
+    pitch: D2
+    pitch_multiplier: 0.793701
+    command: playsound minecraft:block.note_block.didgeridoo block @a ~ ~ ~ 1 0.793701
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0341
+    voice_id: THEME_A_MID
+    instrument: bass
+    note_state: 20
+    pitch: D3
+    pitch_multiplier: 1.587401
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.587401 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0342
+    voice_id: THEME_A_HORN_COLOR
+    instrument: trumpet_weathered
+    note_state: 8
+    pitch: D3
+    pitch_multiplier: 0.793701
+    command: playsound minecraft:block.note_block.trumpet_weathered block @a ~ ~ ~
+      1 0.793701 0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 168
+  events:
+  - event_id: master-0151
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0152
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0153
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0154
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0155
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 173
+  events:
+  - event_id: master-0156
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0157
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0158
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0159
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0160
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 182
+  events:
+  - event_id: master-0161
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0162
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0163
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0164
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0165
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0329
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+  - event_id: master-0343
+    voice_id: THEME_A_LOW
+    instrument: didgeridoo
+    note_state: 7
+    pitch: Db2
+    pitch_multiplier: 0.749154
+    command: playsound minecraft:block.note_block.didgeridoo block @a ~ ~ ~ 1 0.749154
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0344
+    voice_id: THEME_A_MID
+    instrument: bass
+    note_state: 19
+    pitch: Db3
+    pitch_multiplier: 1.498307
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.498307 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0345
+    voice_id: THEME_A_HORN_COLOR
+    instrument: trumpet_weathered
+    note_state: 7
+    pitch: Db3
+    pitch_multiplier: 0.749154
+    command: playsound minecraft:block.note_block.trumpet_weathered block @a ~ ~ ~
+      1 0.749154 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0349
+    voice_id: THEME_A_DB_REINFORCEMENT
+    instrument: didgeridoo
+    note_state: 19
+    pitch: Db3
+    pitch_multiplier: 1.498307
+    command: playsound minecraft:block.note_block.didgeridoo block @a ~ ~ ~ 1 1.498307
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 185
+  events:
+  - event_id: master-0166
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0167
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0168
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0169
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0170
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 188
+  events:
+  - event_id: master-0171
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0172
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0173
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0174
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0175
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 191
+  events:
+  - event_id: master-0176
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0177
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0178
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0179
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0180
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 200
+  events:
+  - event_id: master-0181
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0182
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0183
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0184
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0185
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 209
+  events:
+  - event_id: master-0186
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0187
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0188
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0189
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0190
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0330
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 214
+  events:
+  - event_id: master-0191
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0192
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0193
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0194
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0195
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 218
+  events:
+  - event_id: master-0196
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0197
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0198
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0199
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0200
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 227
+  events:
+  - event_id: master-0201
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0202
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0203
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0204
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0205
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0331
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 230
+  events:
+  - event_id: master-0206
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0207
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0208
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0209
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0210
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 233
+  events:
+  - event_id: master-0211
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0212
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0213
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0214
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0215
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 236
+  events:
+  - event_id: master-0216
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0217
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0218
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0219
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0220
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 245
+  events:
+  - event_id: master-0221
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0222
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0223
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0224
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0225
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 255
+  events:
+  - event_id: master-0226
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0227
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0228
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0229
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0230
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0332
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 259
+  events:
+  - event_id: master-0231
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0232
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0233
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0234
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0235
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 264
+  events:
+  - event_id: master-0236
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0237
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0238
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0239
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0240
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 273
+  events:
+  - event_id: master-0241
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0242
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0243
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0244
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0245
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0333
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 276
+  events:
+  - event_id: master-0246
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0247
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0248
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0249
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0250
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 279
+  events:
+  - event_id: master-0251
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0252
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0253
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0254
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0255
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 282
+  events:
+  - event_id: master-0256
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0257
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0258
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0259
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0260
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 291
+  events:
+  - event_id: master-0261
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0262
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0263
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0264
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0265
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 300
+  events:
+  - event_id: master-0266
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0267
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0268
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0269
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0270
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0334
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 305
+  events:
+  - event_id: master-0271
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0272
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0273
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0274
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0275
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 309
+  events:
+  - event_id: master-0276
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0277
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0278
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0279
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0280
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 318
+  events:
+  - event_id: master-0281
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0282
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0283
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0284
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0285
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0335
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+  - event_id: master-0346
+    voice_id: THEME_A_LOW
+    instrument: didgeridoo
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.didgeridoo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0347
+    voice_id: THEME_A_MID
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0348
+    voice_id: THEME_A_HORN_COLOR
+    instrument: trumpet_weathered
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.trumpet_weathered block @a ~ ~ ~
+      1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 321
+  events:
+  - event_id: master-0286
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0287
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0288
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0289
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0290
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 324
+  events:
+  - event_id: master-0291
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0292
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0293
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0294
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0295
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 327
+  events:
+  - event_id: master-0296
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0297
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0298
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0299
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0300
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 336
+  events:
+  - event_id: master-0301
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0302
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0303
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0304
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0305
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 345
+  events:
+  - event_id: master-0306
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0307
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0308
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0309
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0310
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0336
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+    instrument: snare
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.snare block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: TREMOLO
+- game_tick: 350
+  events:
+  - event_id: master-0311
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0312
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0313
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0314
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0315
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+- game_tick: 355
+  events:
+  - event_id: master-0316
+    voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    note_state: 1
+    pitch: G1
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 0.529732 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0317
+    voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    note_state: 1
+    pitch: G2
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0318
+    voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    note_state: 13
+    pitch: G2
+    pitch_multiplier: 1.059463
+    command: playsound minecraft:block.note_block.bass block @a ~ ~ ~ 1 1.059463 0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0319
+    voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    note_state: 1
+    pitch: G3
+    pitch_multiplier: 0.529732
+    command: playsound minecraft:block.note_block.banjo block @a ~ ~ ~ 1 0.529732
+      0
+    sustain_strategy: NATURAL_DECAY
+  - event_id: master-0320
+    voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    note_state: 0
+    pitch: null
+    pitch_multiplier: 0.5
+    command: playsound minecraft:block.note_block.basedrum block @a ~ ~ ~ 1 0.500000
+      0
+    sustain_strategy: NATURAL_DECAY
+unrealized_sustain:
+- voice_id: TAM_TAM_UNDERLAY_MASTER
+  event_count: 16
+  strategy: TREMOLO
+  status: RATE_UNSPECIFIED

@@ -1,0 +1,52 @@
+schema_version: 1.0.0
+fixture_id: MARS-BACKEND-COMPARISON-M001-M008-B04
+master: fixtures/mars/master-events-m001-m008.yaml
+master_events: 349
+benchmark_qpm: 132
+backends:
+  COMMAND_RAIL_PHYSICAL:
+    timing: &id001
+      event_count: 349
+      distinct_onsets: 64
+      distinct_backend_ticks: 64
+      sequence_collapses: 0
+      mean_abs_error_ms: 12.116871
+      rms_error_ms: 14.166329
+      weighted_rms_error_ms: 14.170744
+      max_abs_error_ms: 24.242424
+    physical_note_blocks: 16
+    endpoint_keys: 15
+    max_endpoint_pool: 2
+    status: OFFLINE_VALIDATED
+  DIGITAL_PLAYBACK:
+    timing: *id001
+    playsound_commands: 349
+    physical_note_blocks: 0
+    status: OFFLINE_VALIDATED
+  REDSTONE_PHYSICAL:
+    timing:
+      event_count: 349
+      distinct_onsets: 64
+      distinct_backend_ticks: 64
+      sequence_collapses: 0
+      mean_abs_error_ms: 24.268473
+      rms_error_ms: 28.430002
+      weighted_rms_error_ms: 28.458289
+      max_abs_error_ms: 48.484848
+    physical_note_blocks: 349
+    timing_nodes: 64
+    status: COMPILED
+    geometry_pass: PENDING
+redstone_dual_candidate:
+  qpm: 120.059
+  metrics:
+    event_count: 349
+    distinct_onsets: 64
+    distinct_backend_ticks: 64
+    sequence_collapses: 0
+    mean_abs_error_ms: 15.919954
+    rms_error_ms: 22.627228
+    weighted_rms_error_ms: 22.891822
+    max_abs_error_ms: 49.140006
+  tempo_deviation_percent: -9.046212
+  selected: false

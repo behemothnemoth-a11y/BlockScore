@@ -1,0 +1,1679 @@
+schema_version: 1.0.0
+backend: COMMAND_RAIL_PHYSICAL
+master: fixtures/mars/master-events-m001-m008.yaml
+benchmark_qpm: 132
+grid_hz: 20
+reset_delay_game_ticks: 1
+next_legal_reuse_offset_game_ticks: 2
+timing_metrics:
+  event_count: 349
+  distinct_onsets: 64
+  distinct_backend_ticks: 64
+  sequence_collapses: 0
+  mean_abs_error_ms: 12.116871
+  rms_error_ms: 14.166329
+  weighted_rms_error_ms: 14.170744
+  max_abs_error_ms: 24.242424
+event_count: 349
+activate_action_count: 349
+reset_action_count: 349
+schedule:
+- game_tick: 0
+  activate:
+  - event_id: master-0001
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0002
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0003
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0004
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0005
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0321
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 1
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 3
+  activate:
+  - event_id: master-0006
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0007
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0008
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0009
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0010
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 4
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 6
+  activate:
+  - event_id: master-0011
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0012
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0013
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0014
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0015
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 7
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 9
+  activate:
+  - event_id: master-0016
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0017
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0018
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0019
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0020
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 10
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 18
+  activate:
+  - event_id: master-0021
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0022
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0023
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0024
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0025
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 19
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 27
+  activate:
+  - event_id: master-0026
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0027
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0028
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0029
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0030
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0322
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 28
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 32
+  activate:
+  - event_id: master-0031
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0032
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0033
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0034
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0035
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 33
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 36
+  activate:
+  - event_id: master-0036
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0037
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0038
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0039
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0040
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 37
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 45
+  activate:
+  - event_id: master-0041
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0042
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0043
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0044
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0045
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0323
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 46
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 48
+  activate:
+  - event_id: master-0046
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0047
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0048
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0049
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0050
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 49
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 52
+  activate:
+  - event_id: master-0051
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0052
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0053
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0054
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0055
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 53
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 55
+  activate:
+  - event_id: master-0056
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0057
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0058
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0059
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0060
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 56
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 64
+  activate:
+  - event_id: master-0061
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0062
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0063
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0064
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0065
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 65
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 73
+  activate:
+  - event_id: master-0066
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0067
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0068
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0069
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0070
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0324
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 74
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 77
+  activate:
+  - event_id: master-0071
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0072
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0073
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0074
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0075
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 78
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 82
+  activate:
+  - event_id: master-0076
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0077
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0078
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0079
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0080
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 83
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 91
+  activate:
+  - event_id: master-0081
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0082
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0083
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0084
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0085
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0325
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+  - event_id: master-0337
+    endpoint_id: didgeridoo_g1_01
+    voice_id: THEME_A_LOW
+  - event_id: master-0338
+    endpoint_id: bass_g2_02
+    voice_id: THEME_A_MID
+  - event_id: master-0339
+    endpoint_id: trumpet_weathered_g2_01
+    voice_id: THEME_A_HORN_COLOR
+- game_tick: 92
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - bass_g2_02
+  - didgeridoo_g1_01
+  - guitar_g2_01
+  - snare_state00_01
+  - trumpet_weathered_g2_01
+- game_tick: 94
+  activate:
+  - event_id: master-0086
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0087
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0088
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0089
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0090
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 95
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 97
+  activate:
+  - event_id: master-0091
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0092
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0093
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0094
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0095
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 98
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 100
+  activate:
+  - event_id: master-0096
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0097
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0098
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0099
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0100
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 101
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 109
+  activate:
+  - event_id: master-0101
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0102
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0103
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0104
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0105
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 110
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 118
+  activate:
+  - event_id: master-0106
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0107
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0108
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0109
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0110
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0326
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 119
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 123
+  activate:
+  - event_id: master-0111
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0112
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0113
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0114
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0115
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 124
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 127
+  activate:
+  - event_id: master-0116
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0117
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0118
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0119
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0120
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 128
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 136
+  activate:
+  - event_id: master-0121
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0122
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0123
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0124
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0125
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0327
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 137
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 139
+  activate:
+  - event_id: master-0126
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0127
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0128
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0129
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0130
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 140
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 142
+  activate:
+  - event_id: master-0131
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0132
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0133
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0134
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0135
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 143
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 145
+  activate:
+  - event_id: master-0136
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0137
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0138
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0139
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0140
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 146
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 155
+  activate:
+  - event_id: master-0141
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0142
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0143
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0144
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0145
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 156
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 164
+  activate:
+  - event_id: master-0146
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0147
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0148
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0149
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0150
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0328
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+  - event_id: master-0340
+    endpoint_id: didgeridoo_d2_01
+    voice_id: THEME_A_LOW
+  - event_id: master-0341
+    endpoint_id: bass_d3_01
+    voice_id: THEME_A_MID
+  - event_id: master-0342
+    endpoint_id: trumpet_weathered_d3_01
+    voice_id: THEME_A_HORN_COLOR
+- game_tick: 165
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_d3_01
+  - bass_g1_01
+  - bass_g2_01
+  - didgeridoo_d2_01
+  - guitar_g2_01
+  - snare_state00_01
+  - trumpet_weathered_d3_01
+- game_tick: 168
+  activate:
+  - event_id: master-0151
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0152
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0153
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0154
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0155
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 169
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 173
+  activate:
+  - event_id: master-0156
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0157
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0158
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0159
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0160
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 174
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 182
+  activate:
+  - event_id: master-0161
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0162
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0163
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0164
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0165
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0329
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+  - event_id: master-0343
+    endpoint_id: didgeridoo_db2_01
+    voice_id: THEME_A_LOW
+  - event_id: master-0344
+    endpoint_id: bass_db3_01
+    voice_id: THEME_A_MID
+  - event_id: master-0345
+    endpoint_id: trumpet_weathered_db3_01
+    voice_id: THEME_A_HORN_COLOR
+  - event_id: master-0349
+    endpoint_id: didgeridoo_db3_01
+    voice_id: THEME_A_DB_REINFORCEMENT
+- game_tick: 183
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_db3_01
+  - bass_g1_01
+  - bass_g2_01
+  - didgeridoo_db2_01
+  - didgeridoo_db3_01
+  - guitar_g2_01
+  - snare_state00_01
+  - trumpet_weathered_db3_01
+- game_tick: 185
+  activate:
+  - event_id: master-0166
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0167
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0168
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0169
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0170
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 186
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 188
+  activate:
+  - event_id: master-0171
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0172
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0173
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0174
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0175
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 189
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 191
+  activate:
+  - event_id: master-0176
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0177
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0178
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0179
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0180
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 192
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 200
+  activate:
+  - event_id: master-0181
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0182
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0183
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0184
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0185
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 201
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 209
+  activate:
+  - event_id: master-0186
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0187
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0188
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0189
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0190
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0330
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 210
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 214
+  activate:
+  - event_id: master-0191
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0192
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0193
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0194
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0195
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 215
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 218
+  activate:
+  - event_id: master-0196
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0197
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0198
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0199
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0200
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 219
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 227
+  activate:
+  - event_id: master-0201
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0202
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0203
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0204
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0205
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0331
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 228
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 230
+  activate:
+  - event_id: master-0206
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0207
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0208
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0209
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0210
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 231
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 233
+  activate:
+  - event_id: master-0211
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0212
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0213
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0214
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0215
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 234
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 236
+  activate:
+  - event_id: master-0216
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0217
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0218
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0219
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0220
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 237
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 245
+  activate:
+  - event_id: master-0221
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0222
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0223
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0224
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0225
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 246
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 255
+  activate:
+  - event_id: master-0226
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0227
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0228
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0229
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0230
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0332
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 256
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 259
+  activate:
+  - event_id: master-0231
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0232
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0233
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0234
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0235
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 260
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 264
+  activate:
+  - event_id: master-0236
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0237
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0238
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0239
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0240
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 265
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 273
+  activate:
+  - event_id: master-0241
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0242
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0243
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0244
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0245
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0333
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 274
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 276
+  activate:
+  - event_id: master-0246
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0247
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0248
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0249
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0250
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 277
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 279
+  activate:
+  - event_id: master-0251
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0252
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0253
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0254
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0255
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 280
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 282
+  activate:
+  - event_id: master-0256
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0257
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0258
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0259
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0260
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 283
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 291
+  activate:
+  - event_id: master-0261
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0262
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0263
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0264
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0265
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 292
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 300
+  activate:
+  - event_id: master-0266
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0267
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0268
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0269
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0270
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0334
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 301
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 305
+  activate:
+  - event_id: master-0271
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0272
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0273
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0274
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0275
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 306
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 309
+  activate:
+  - event_id: master-0276
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0277
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0278
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0279
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0280
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 310
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 318
+  activate:
+  - event_id: master-0281
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0282
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0283
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0284
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0285
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0335
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+  - event_id: master-0346
+    endpoint_id: didgeridoo_g1_01
+    voice_id: THEME_A_LOW
+  - event_id: master-0347
+    endpoint_id: bass_g2_02
+    voice_id: THEME_A_MID
+  - event_id: master-0348
+    endpoint_id: trumpet_weathered_g2_01
+    voice_id: THEME_A_HORN_COLOR
+- game_tick: 319
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - bass_g2_02
+  - didgeridoo_g1_01
+  - guitar_g2_01
+  - snare_state00_01
+  - trumpet_weathered_g2_01
+- game_tick: 321
+  activate:
+  - event_id: master-0286
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0287
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0288
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0289
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0290
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 322
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 324
+  activate:
+  - event_id: master-0291
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0292
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0293
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0294
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0295
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 325
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 327
+  activate:
+  - event_id: master-0296
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0297
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0298
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0299
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0300
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 328
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 336
+  activate:
+  - event_id: master-0301
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0302
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0303
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0304
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0305
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 337
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 345
+  activate:
+  - event_id: master-0306
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0307
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0308
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0309
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0310
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+  - event_id: master-0336
+    endpoint_id: snare_state00_01
+    voice_id: TAM_TAM_UNDERLAY_MASTER
+- game_tick: 346
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+  - snare_state00_01
+- game_tick: 350
+  activate:
+  - event_id: master-0311
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0312
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0313
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0314
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0315
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 351
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+- game_tick: 355
+  activate:
+  - event_id: master-0316
+    endpoint_id: bass_g1_01
+    voice_id: OSTINATO_LOW_G1
+  - event_id: master-0317
+    endpoint_id: guitar_g2_01
+    voice_id: OSTINATO_HARP_G2
+  - event_id: master-0318
+    endpoint_id: bass_g2_01
+    voice_id: OSTINATO_CELLO_G2
+  - event_id: master-0319
+    endpoint_id: banjo_g3_01
+    voice_id: OSTINATO_COL_LEGNO_G3
+  - event_id: master-0320
+    endpoint_id: basedrum_state00_01
+    voice_id: OSTINATO_TIMPANI_ATTACK
+- game_tick: 356
+  reset:
+  - banjo_g3_01
+  - basedrum_state00_01
+  - bass_g1_01
+  - bass_g2_01
+  - guitar_g2_01
+unrealized_sustain:
+- voice_id: TAM_TAM_UNDERLAY_MASTER
+  event_count: 16
+  strategy: TREMOLO
+  status: RATE_UNSPECIFIED
+  warning: Only event-start attacks are scheduled in Batch 04; tremolo subdivision
+    is not invented.

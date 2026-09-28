@@ -1,0 +1,15 @@
+test_id: BACKEND-COMPARISON-MARS-001A-B04
+comparison: fixtures/mars/compiled/backend-comparison-m001-m008.yaml
+assertions:
+- ALL_BACKENDS_REFERENCE_SAME_349_EVENT_MASTER
+- COMMAND_RAIL_AND_DIGITAL_TIMING_METRICS_MATCH
+- COMMAND_RAIL_PHYSICAL_NOTE_BLOCKS_LT_REDSTONE_PHYSICAL
+- COMMAND_RAIL_RMS_ERROR_LT_SOURCE_TEMPO_REDSTONE_RMS_ERROR
+- REDSTONE_OPTIMIZED_TEMPO_CHANGE_REQUIRES_USER_REVIEW
+- NO_BACKEND_MODIFIES_MASTER
+expected:
+  command_rail_note_blocks: 16
+  redstone_note_blocks: 349
+  physical_note_block_reduction_percent: 95.415473
+  command_and_digital_rms_error_ms: 14.166329
+  redstone_source_rms_error_ms: 28.430002

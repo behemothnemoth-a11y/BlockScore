@@ -1,0 +1,83 @@
+{
+  "profile": "java-26.2",
+  "backend": "REDSTONE_PHYSICAL",
+  "status": "COMPILED",
+  "origin": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "performance_origin": null,
+  "layout": {
+    "type": "SERPENTINE_TRACK",
+    "direction": "EAST",
+    "options": {
+      "geometry_pass": "PENDING",
+      "event_per_occurrence": true,
+      "timing_nodes": 64,
+      "max_simultaneous_note_events": 10,
+      "timing_trunk_repeater_lower_bound": 75
+    }
+  },
+  "materials": {
+    "minecraft:hay_block": 64,
+    "minecraft:note_block": 349,
+    "minecraft:oak_planks": 132,
+    "minecraft:pumpkin": 5,
+    "minecraft:sand": 16,
+    "minecraft:stone": 64,
+    "minecraft:weathered_copper": 4,
+    "minecraft:white_wool": 64
+  },
+  "metrics": {
+    "master_events": 349,
+    "physical_note_blocks": 349,
+    "timing_nodes": 64,
+    "max_simultaneous_events": 10,
+    "source_tempo_qpm": 132,
+    "source_tempo_timing": {
+      "event_count": 349,
+      "distinct_onsets": 64,
+      "distinct_backend_ticks": 64,
+      "sequence_collapses": 0,
+      "mean_abs_error_ms": 24.268473,
+      "rms_error_ms": 28.430002,
+      "weighted_rms_error_ms": 28.458289,
+      "max_abs_error_ms": 48.484848
+    },
+    "dual_candidate_qpm": 120.059,
+    "dual_candidate_timing": {
+      "event_count": 349,
+      "distinct_onsets": 64,
+      "distinct_backend_ticks": 64,
+      "sequence_collapses": 0,
+      "mean_abs_error_ms": 15.919954,
+      "rms_error_ms": 22.627228,
+      "weighted_rms_error_ms": 22.891822,
+      "max_abs_error_ms": 49.140006
+    },
+    "dual_candidate_tempo_deviation_percent": -9.046212,
+    "routing_repeater_count": "PENDING_GEOMETRY_PASS",
+    "redstone_dust_count": "PENDING_GEOMETRY_PASS",
+    "physical_footprint": "PENDING_GEOMETRY_PASS"
+  },
+  "warnings": [
+    "GEOMETRY_AWARE_SECOND_PASS_REQUIRED",
+    "ROUTING_MATERIAL_COUNT_PARTIAL",
+    "PHYSICAL_FOOTPRINT_PENDING",
+    "P5_REDSTONE_QUANTIZATION_PRESENT",
+    "DUAL_OPTIMIZED_CANDIDATE_NOT_AUTO_SELECTED",
+    "TAM_TAM_TREMOLO_RATE_UNSPECIFIED",
+    "CAL-001_TRUMPET_REGISTER_PENDING",
+    "CAL-002_COPPER_STABILITY_PENDING"
+  ],
+  "failures": [],
+  "calibration_dependencies": [
+    "CAL-001",
+    "CAL-002"
+  ],
+  "artifacts": [
+    "fixtures/mars/compiled/redstone-source-tempo-schedule-m001-m008.yaml",
+    "fixtures/mars/compiled/redstone-dual-analysis-m001-m008.yaml"
+  ]
+}

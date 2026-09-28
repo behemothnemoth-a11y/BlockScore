@@ -1,0 +1,86 @@
+{
+  "profile": "java-26.2",
+  "backend": "COMMAND_RAIL_PHYSICAL",
+  "status": "OFFLINE_VALIDATED",
+  "origin": {
+    "x": 0,
+    "y": 0,
+    "z": 0
+  },
+  "performance_origin": {
+    "x": 10.5,
+    "y": 1.0,
+    "z": -8.0
+  },
+  "layout": {
+    "type": "SINGLE_LINE",
+    "direction": "EAST",
+    "options": {
+      "instrument_gap": 1,
+      "endpoint_count": 16,
+      "x_min": 0,
+      "x_max": 21,
+      "bank_span_blocks": 22,
+      "driver_depth_blocks": 2,
+      "required_height_blocks": 3
+    }
+  },
+  "materials": {
+    "minecraft:hay_block": 1,
+    "minecraft:note_block": 16,
+    "minecraft:oak_planks": 5,
+    "minecraft:pumpkin": 4,
+    "minecraft:sand": 1,
+    "minecraft:stone": 1,
+    "minecraft:weathered_copper": 3,
+    "minecraft:white_wool": 1
+  },
+  "metrics": {
+    "master_events": 349,
+    "endpoint_count": 16,
+    "endpoint_keys": 15,
+    "largest_pool_size": 2,
+    "largest_pool_key": "bass:G2:state13",
+    "physical_reuse_ratio": 21.8125,
+    "game_tick_schedule_rows": 128,
+    "activate_actions": 349,
+    "reset_actions": 349,
+    "max_activate_actions_one_tick": 10,
+    "max_total_actions_one_tick": 10,
+    "max_listener_distance_blocks": 13.200379,
+    "timing": {
+      "event_count": 349,
+      "distinct_onsets": 64,
+      "distinct_backend_ticks": 64,
+      "sequence_collapses": 0,
+      "mean_abs_error_ms": 12.116871,
+      "rms_error_ms": 14.166329,
+      "weighted_rms_error_ms": 14.170744,
+      "max_abs_error_ms": 24.242424
+    },
+    "sustain_realization_pending_events": 16
+  },
+  "warnings": [
+    "CAL-001_TRUMPET_REGISTER_PENDING",
+    "CAL-002_COPPER_STABILITY_PENDING",
+    "CAL-003_DRIVER_BEHAVIOR_PENDING",
+    "CAL-004_ENDPOINT_RETRIGGER_PENDING",
+    "CAL-005_SAME_TICK_SYNC_PENDING",
+    "CAL-006_AUDIBILITY_GAME_TEST_PENDING",
+    "TAM_TAM_TREMOLO_RATE_UNSPECIFIED",
+    "THEME_A_NATURAL_DECAY_AUDITION_REQUIRED"
+  ],
+  "failures": [],
+  "calibration_dependencies": [
+    "CAL-001",
+    "CAL-002",
+    "CAL-003",
+    "CAL-004",
+    "CAL-005",
+    "CAL-006"
+  ],
+  "artifacts": [
+    "fixtures/mars/compiled/command-rail-endpoints-m001-m008.yaml",
+    "fixtures/mars/compiled/command-rail-schedule-m001-m008.yaml"
+  ]
+}

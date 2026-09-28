@@ -1,0 +1,18 @@
+test_id: DIGITAL-MARS-001A-COMPILED-B04
+build_plan: fixtures/mars/compiled/digital-build-plan.json
+schedule: fixtures/mars/compiled/digital-schedule-m001-m008.yaml
+expected:
+  master_events: 349
+  playsound_commands: 349
+  active_ticks: 64
+  max_commands_one_tick: 10
+  sequence_collapses: 0
+  rms_error_ms: 14.166329
+  max_abs_error_ms: 24.242424
+  explicit_stopsound_commands: 0
+assertions:
+- EVERY_MASTER_ATTACK_HAS_ONE_PLAYSOUND
+- PITCH_MULTIPLIERS_DERIVED_FROM_NOTE_STATE
+- NO_FAKE_NOTE_OFF
+- SAME_TICK_ONSET_GROUPS_SHARE_GAME_TICK
+- TAM_TAM_UNSPECIFIED_TREMOLO_NOT_INVENTED

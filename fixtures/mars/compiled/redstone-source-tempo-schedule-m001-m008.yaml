@@ -1,0 +1,1163 @@
+schema_version: 1.0.0
+backend: REDSTONE_PHYSICAL
+timing_mode: SOURCE_TEMPO
+qpm: 132
+grid_hz: 10
+timing_metrics:
+  event_count: 349
+  distinct_onsets: 64
+  distinct_backend_ticks: 64
+  sequence_collapses: 0
+  mean_abs_error_ms: 24.268473
+  rms_error_ms: 28.430002
+  weighted_rms_error_ms: 28.458289
+  max_abs_error_ms: 48.484848
+timing_node_count: 64
+last_attack_redstone_tick: 177
+timing_nodes:
+- redstone_tick: 0
+  absolute_qn: '0'
+  ideal_seconds: 0.0
+  signed_error_ms: 0.0
+  event_count: 6
+  event_ids:
+  - master-0001
+  - master-0002
+  - master-0003
+  - master-0004
+  - master-0005
+  - master-0321
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 2
+  absolute_qn: 1/3
+  ideal_seconds: 0.151515152
+  signed_error_ms: 48.484848
+  event_count: 5
+  event_ids:
+  - master-0006
+  - master-0007
+  - master-0008
+  - master-0009
+  - master-0010
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 3
+  absolute_qn: 2/3
+  ideal_seconds: 0.303030303
+  signed_error_ms: -3.030303
+  event_count: 5
+  event_ids:
+  - master-0011
+  - master-0012
+  - master-0013
+  - master-0014
+  - master-0015
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 5
+  absolute_qn: '1'
+  ideal_seconds: 0.454545455
+  signed_error_ms: 45.454545
+  event_count: 5
+  event_ids:
+  - master-0016
+  - master-0017
+  - master-0018
+  - master-0019
+  - master-0020
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 9
+  absolute_qn: '2'
+  ideal_seconds: 0.909090909
+  signed_error_ms: -9.090909
+  event_count: 5
+  event_ids:
+  - master-0021
+  - master-0022
+  - master-0023
+  - master-0024
+  - master-0025
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 14
+  absolute_qn: '3'
+  ideal_seconds: 1.363636364
+  signed_error_ms: 36.363636
+  event_count: 6
+  event_ids:
+  - master-0026
+  - master-0027
+  - master-0028
+  - master-0029
+  - master-0030
+  - master-0322
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 16
+  absolute_qn: 7/2
+  ideal_seconds: 1.590909091
+  signed_error_ms: 9.090909
+  event_count: 5
+  event_ids:
+  - master-0031
+  - master-0032
+  - master-0033
+  - master-0034
+  - master-0035
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 18
+  absolute_qn: '4'
+  ideal_seconds: 1.818181818
+  signed_error_ms: -18.181818
+  event_count: 5
+  event_ids:
+  - master-0036
+  - master-0037
+  - master-0038
+  - master-0039
+  - master-0040
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 23
+  absolute_qn: '5'
+  ideal_seconds: 2.272727273
+  signed_error_ms: 27.272727
+  event_count: 6
+  event_ids:
+  - master-0041
+  - master-0042
+  - master-0043
+  - master-0044
+  - master-0045
+  - master-0323
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 24
+  absolute_qn: 16/3
+  ideal_seconds: 2.424242424
+  signed_error_ms: -24.242424
+  event_count: 5
+  event_ids:
+  - master-0046
+  - master-0047
+  - master-0048
+  - master-0049
+  - master-0050
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 26
+  absolute_qn: 17/3
+  ideal_seconds: 2.575757576
+  signed_error_ms: 24.242424
+  event_count: 5
+  event_ids:
+  - master-0051
+  - master-0052
+  - master-0053
+  - master-0054
+  - master-0055
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 27
+  absolute_qn: '6'
+  ideal_seconds: 2.727272727
+  signed_error_ms: -27.272727
+  event_count: 5
+  event_ids:
+  - master-0056
+  - master-0057
+  - master-0058
+  - master-0059
+  - master-0060
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 32
+  absolute_qn: '7'
+  ideal_seconds: 3.181818182
+  signed_error_ms: 18.181818
+  event_count: 5
+  event_ids:
+  - master-0061
+  - master-0062
+  - master-0063
+  - master-0064
+  - master-0065
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 36
+  absolute_qn: '8'
+  ideal_seconds: 3.636363636
+  signed_error_ms: -36.363636
+  event_count: 6
+  event_ids:
+  - master-0066
+  - master-0067
+  - master-0068
+  - master-0069
+  - master-0070
+  - master-0324
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 39
+  absolute_qn: 17/2
+  ideal_seconds: 3.863636364
+  signed_error_ms: 36.363636
+  event_count: 5
+  event_ids:
+  - master-0071
+  - master-0072
+  - master-0073
+  - master-0074
+  - master-0075
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 41
+  absolute_qn: '9'
+  ideal_seconds: 4.090909091
+  signed_error_ms: 9.090909
+  event_count: 5
+  event_ids:
+  - master-0076
+  - master-0077
+  - master-0078
+  - master-0079
+  - master-0080
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 45
+  absolute_qn: '10'
+  ideal_seconds: 4.545454545
+  signed_error_ms: -45.454545
+  event_count: 9
+  event_ids:
+  - master-0081
+  - master-0082
+  - master-0083
+  - master-0084
+  - master-0085
+  - master-0325
+  - master-0337
+  - master-0338
+  - master-0339
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+  - THEME_A_LOW
+  - THEME_A_MID
+  - THEME_A_HORN_COLOR
+- redstone_tick: 47
+  absolute_qn: 31/3
+  ideal_seconds: 4.696969697
+  signed_error_ms: 3.030303
+  event_count: 5
+  event_ids:
+  - master-0086
+  - master-0087
+  - master-0088
+  - master-0089
+  - master-0090
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 48
+  absolute_qn: 32/3
+  ideal_seconds: 4.848484848
+  signed_error_ms: -48.484848
+  event_count: 5
+  event_ids:
+  - master-0091
+  - master-0092
+  - master-0093
+  - master-0094
+  - master-0095
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 50
+  absolute_qn: '11'
+  ideal_seconds: 5.0
+  signed_error_ms: 0.0
+  event_count: 5
+  event_ids:
+  - master-0096
+  - master-0097
+  - master-0098
+  - master-0099
+  - master-0100
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 55
+  absolute_qn: '12'
+  ideal_seconds: 5.454545455
+  signed_error_ms: 45.454545
+  event_count: 5
+  event_ids:
+  - master-0101
+  - master-0102
+  - master-0103
+  - master-0104
+  - master-0105
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 59
+  absolute_qn: '13'
+  ideal_seconds: 5.909090909
+  signed_error_ms: -9.090909
+  event_count: 6
+  event_ids:
+  - master-0106
+  - master-0107
+  - master-0108
+  - master-0109
+  - master-0110
+  - master-0326
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 61
+  absolute_qn: 27/2
+  ideal_seconds: 6.136363636
+  signed_error_ms: -36.363636
+  event_count: 5
+  event_ids:
+  - master-0111
+  - master-0112
+  - master-0113
+  - master-0114
+  - master-0115
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 64
+  absolute_qn: '14'
+  ideal_seconds: 6.363636364
+  signed_error_ms: 36.363636
+  event_count: 5
+  event_ids:
+  - master-0116
+  - master-0117
+  - master-0118
+  - master-0119
+  - master-0120
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 68
+  absolute_qn: '15'
+  ideal_seconds: 6.818181818
+  signed_error_ms: -18.181818
+  event_count: 6
+  event_ids:
+  - master-0121
+  - master-0122
+  - master-0123
+  - master-0124
+  - master-0125
+  - master-0327
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 70
+  absolute_qn: 46/3
+  ideal_seconds: 6.96969697
+  signed_error_ms: 30.30303
+  event_count: 5
+  event_ids:
+  - master-0126
+  - master-0127
+  - master-0128
+  - master-0129
+  - master-0130
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 71
+  absolute_qn: 47/3
+  ideal_seconds: 7.121212121
+  signed_error_ms: -21.212121
+  event_count: 5
+  event_ids:
+  - master-0131
+  - master-0132
+  - master-0133
+  - master-0134
+  - master-0135
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 73
+  absolute_qn: '16'
+  ideal_seconds: 7.272727273
+  signed_error_ms: 27.272727
+  event_count: 5
+  event_ids:
+  - master-0136
+  - master-0137
+  - master-0138
+  - master-0139
+  - master-0140
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 77
+  absolute_qn: '17'
+  ideal_seconds: 7.727272727
+  signed_error_ms: -27.272727
+  event_count: 5
+  event_ids:
+  - master-0141
+  - master-0142
+  - master-0143
+  - master-0144
+  - master-0145
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 82
+  absolute_qn: '18'
+  ideal_seconds: 8.181818182
+  signed_error_ms: 18.181818
+  event_count: 9
+  event_ids:
+  - master-0146
+  - master-0147
+  - master-0148
+  - master-0149
+  - master-0150
+  - master-0328
+  - master-0340
+  - master-0341
+  - master-0342
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+  - THEME_A_LOW
+  - THEME_A_MID
+  - THEME_A_HORN_COLOR
+- redstone_tick: 84
+  absolute_qn: 37/2
+  ideal_seconds: 8.409090909
+  signed_error_ms: -9.090909
+  event_count: 5
+  event_ids:
+  - master-0151
+  - master-0152
+  - master-0153
+  - master-0154
+  - master-0155
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 86
+  absolute_qn: '19'
+  ideal_seconds: 8.636363636
+  signed_error_ms: -36.363636
+  event_count: 5
+  event_ids:
+  - master-0156
+  - master-0157
+  - master-0158
+  - master-0159
+  - master-0160
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 91
+  absolute_qn: '20'
+  ideal_seconds: 9.090909091
+  signed_error_ms: 9.090909
+  event_count: 10
+  event_ids:
+  - master-0161
+  - master-0162
+  - master-0163
+  - master-0164
+  - master-0165
+  - master-0329
+  - master-0343
+  - master-0344
+  - master-0345
+  - master-0349
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+  - THEME_A_LOW
+  - THEME_A_MID
+  - THEME_A_HORN_COLOR
+  - THEME_A_DB_REINFORCEMENT
+- redstone_tick: 92
+  absolute_qn: 61/3
+  ideal_seconds: 9.242424242
+  signed_error_ms: -42.424242
+  event_count: 5
+  event_ids:
+  - master-0166
+  - master-0167
+  - master-0168
+  - master-0169
+  - master-0170
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 94
+  absolute_qn: 62/3
+  ideal_seconds: 9.393939394
+  signed_error_ms: 6.060606
+  event_count: 5
+  event_ids:
+  - master-0171
+  - master-0172
+  - master-0173
+  - master-0174
+  - master-0175
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 95
+  absolute_qn: '21'
+  ideal_seconds: 9.545454545
+  signed_error_ms: -45.454545
+  event_count: 5
+  event_ids:
+  - master-0176
+  - master-0177
+  - master-0178
+  - master-0179
+  - master-0180
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 100
+  absolute_qn: '22'
+  ideal_seconds: 10.0
+  signed_error_ms: 0.0
+  event_count: 5
+  event_ids:
+  - master-0181
+  - master-0182
+  - master-0183
+  - master-0184
+  - master-0185
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 105
+  absolute_qn: '23'
+  ideal_seconds: 10.454545455
+  signed_error_ms: 45.454545
+  event_count: 6
+  event_ids:
+  - master-0186
+  - master-0187
+  - master-0188
+  - master-0189
+  - master-0190
+  - master-0330
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 107
+  absolute_qn: 47/2
+  ideal_seconds: 10.681818182
+  signed_error_ms: 18.181818
+  event_count: 5
+  event_ids:
+  - master-0191
+  - master-0192
+  - master-0193
+  - master-0194
+  - master-0195
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 109
+  absolute_qn: '24'
+  ideal_seconds: 10.909090909
+  signed_error_ms: -9.090909
+  event_count: 5
+  event_ids:
+  - master-0196
+  - master-0197
+  - master-0198
+  - master-0199
+  - master-0200
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 114
+  absolute_qn: '25'
+  ideal_seconds: 11.363636364
+  signed_error_ms: 36.363636
+  event_count: 6
+  event_ids:
+  - master-0201
+  - master-0202
+  - master-0203
+  - master-0204
+  - master-0205
+  - master-0331
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 115
+  absolute_qn: 76/3
+  ideal_seconds: 11.515151515
+  signed_error_ms: -15.151515
+  event_count: 5
+  event_ids:
+  - master-0206
+  - master-0207
+  - master-0208
+  - master-0209
+  - master-0210
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 117
+  absolute_qn: 77/3
+  ideal_seconds: 11.666666667
+  signed_error_ms: 33.333333
+  event_count: 5
+  event_ids:
+  - master-0211
+  - master-0212
+  - master-0213
+  - master-0214
+  - master-0215
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 118
+  absolute_qn: '26'
+  ideal_seconds: 11.818181818
+  signed_error_ms: -18.181818
+  event_count: 5
+  event_ids:
+  - master-0216
+  - master-0217
+  - master-0218
+  - master-0219
+  - master-0220
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 123
+  absolute_qn: '27'
+  ideal_seconds: 12.272727273
+  signed_error_ms: 27.272727
+  event_count: 5
+  event_ids:
+  - master-0221
+  - master-0222
+  - master-0223
+  - master-0224
+  - master-0225
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 127
+  absolute_qn: '28'
+  ideal_seconds: 12.727272727
+  signed_error_ms: -27.272727
+  event_count: 6
+  event_ids:
+  - master-0226
+  - master-0227
+  - master-0228
+  - master-0229
+  - master-0230
+  - master-0332
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 130
+  absolute_qn: 57/2
+  ideal_seconds: 12.954545455
+  signed_error_ms: 45.454545
+  event_count: 5
+  event_ids:
+  - master-0231
+  - master-0232
+  - master-0233
+  - master-0234
+  - master-0235
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 132
+  absolute_qn: '29'
+  ideal_seconds: 13.181818182
+  signed_error_ms: 18.181818
+  event_count: 5
+  event_ids:
+  - master-0236
+  - master-0237
+  - master-0238
+  - master-0239
+  - master-0240
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 136
+  absolute_qn: '30'
+  ideal_seconds: 13.636363636
+  signed_error_ms: -36.363636
+  event_count: 6
+  event_ids:
+  - master-0241
+  - master-0242
+  - master-0243
+  - master-0244
+  - master-0245
+  - master-0333
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 138
+  absolute_qn: 91/3
+  ideal_seconds: 13.787878788
+  signed_error_ms: 12.121212
+  event_count: 5
+  event_ids:
+  - master-0246
+  - master-0247
+  - master-0248
+  - master-0249
+  - master-0250
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 139
+  absolute_qn: 92/3
+  ideal_seconds: 13.939393939
+  signed_error_ms: -39.393939
+  event_count: 5
+  event_ids:
+  - master-0251
+  - master-0252
+  - master-0253
+  - master-0254
+  - master-0255
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 141
+  absolute_qn: '31'
+  ideal_seconds: 14.090909091
+  signed_error_ms: 9.090909
+  event_count: 5
+  event_ids:
+  - master-0256
+  - master-0257
+  - master-0258
+  - master-0259
+  - master-0260
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 145
+  absolute_qn: '32'
+  ideal_seconds: 14.545454545
+  signed_error_ms: -45.454545
+  event_count: 5
+  event_ids:
+  - master-0261
+  - master-0262
+  - master-0263
+  - master-0264
+  - master-0265
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 150
+  absolute_qn: '33'
+  ideal_seconds: 15.0
+  signed_error_ms: 0.0
+  event_count: 6
+  event_ids:
+  - master-0266
+  - master-0267
+  - master-0268
+  - master-0269
+  - master-0270
+  - master-0334
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 152
+  absolute_qn: 67/2
+  ideal_seconds: 15.227272727
+  signed_error_ms: -27.272727
+  event_count: 5
+  event_ids:
+  - master-0271
+  - master-0272
+  - master-0273
+  - master-0274
+  - master-0275
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 155
+  absolute_qn: '34'
+  ideal_seconds: 15.454545455
+  signed_error_ms: 45.454545
+  event_count: 5
+  event_ids:
+  - master-0276
+  - master-0277
+  - master-0278
+  - master-0279
+  - master-0280
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 159
+  absolute_qn: '35'
+  ideal_seconds: 15.909090909
+  signed_error_ms: -9.090909
+  event_count: 9
+  event_ids:
+  - master-0281
+  - master-0282
+  - master-0283
+  - master-0284
+  - master-0285
+  - master-0335
+  - master-0346
+  - master-0347
+  - master-0348
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+  - THEME_A_LOW
+  - THEME_A_MID
+  - THEME_A_HORN_COLOR
+- redstone_tick: 161
+  absolute_qn: 106/3
+  ideal_seconds: 16.060606061
+  signed_error_ms: 39.393939
+  event_count: 5
+  event_ids:
+  - master-0286
+  - master-0287
+  - master-0288
+  - master-0289
+  - master-0290
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 162
+  absolute_qn: 107/3
+  ideal_seconds: 16.212121212
+  signed_error_ms: -12.121212
+  event_count: 5
+  event_ids:
+  - master-0291
+  - master-0292
+  - master-0293
+  - master-0294
+  - master-0295
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 164
+  absolute_qn: '36'
+  ideal_seconds: 16.363636364
+  signed_error_ms: 36.363636
+  event_count: 5
+  event_ids:
+  - master-0296
+  - master-0297
+  - master-0298
+  - master-0299
+  - master-0300
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 168
+  absolute_qn: '37'
+  ideal_seconds: 16.818181818
+  signed_error_ms: -18.181818
+  event_count: 5
+  event_ids:
+  - master-0301
+  - master-0302
+  - master-0303
+  - master-0304
+  - master-0305
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 173
+  absolute_qn: '38'
+  ideal_seconds: 17.272727273
+  signed_error_ms: 27.272727
+  event_count: 6
+  event_ids:
+  - master-0306
+  - master-0307
+  - master-0308
+  - master-0309
+  - master-0310
+  - master-0336
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+  - TAM_TAM_UNDERLAY_MASTER
+- redstone_tick: 175
+  absolute_qn: 77/2
+  ideal_seconds: 17.5
+  signed_error_ms: 0.0
+  event_count: 5
+  event_ids:
+  - master-0311
+  - master-0312
+  - master-0313
+  - master-0314
+  - master-0315
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
+- redstone_tick: 177
+  absolute_qn: '39'
+  ideal_seconds: 17.727272727
+  signed_error_ms: -27.272727
+  event_count: 5
+  event_ids:
+  - master-0316
+  - master-0317
+  - master-0318
+  - master-0319
+  - master-0320
+  voices:
+  - OSTINATO_LOW_G1
+  - OSTINATO_HARP_G2
+  - OSTINATO_CELLO_G2
+  - OSTINATO_COL_LEGNO_G3
+  - OSTINATO_TIMPANI_ATTACK
