@@ -14,11 +14,16 @@
       "type": "string",
       "minLength": 1
     },
+    "master_voice_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
     "source": {
       "type": "object",
       "required": [
-        "position",
-        "voice_id"
+        "position"
       ],
       "properties": {
         "position": {
@@ -61,6 +66,24 @@
           "type": "string",
           "minLength": 1
         },
+        "voice_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "event_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
         "pitch": {
           "type": [
             "string",
@@ -94,6 +117,18 @@
           ]
         }
       },
+      "anyOf": [
+        {
+          "required": [
+            "voice_id"
+          ]
+        },
+        {
+          "required": [
+            "voice_ids"
+          ]
+        }
+      ],
       "additionalProperties": false
     },
     "musical": {

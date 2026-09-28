@@ -1,0 +1,41 @@
+test_id: ARRANGEMENT-MARS-001A-P5-PRESERVATION
+source_fixture: fixtures/mars/source-score-m001-m008.yaml
+master_fixture: fixtures/mars/minecraft-master-m001-m008.yaml
+requirements:
+  five_four_meter_preserved: true
+  three_plus_two_identity_preserved: true
+  ostinato_attack_offsets_preserved:
+  - '0'
+  - 1/3
+  - 2/3
+  - '1'
+  - '2'
+  - '3'
+  - 7/2
+  - '4'
+  ostinato_octaves_preserved:
+  - G1
+  - G2
+  - G3
+  theme_low_contour_preserved:
+  - G1
+  - D2
+  - Db2
+  - G1
+  theme_mid_contour_preserved:
+  - G2
+  - D3
+  - Db3
+  - G2
+  theme_attack_times_abs_qn:
+  - '10'
+  - '18'
+  - '20'
+  - '35'
+  p5_source_event_removal_allowed: false
+assertions:
+- P5_RHYTHM_EXACT_IN_MASTER_TIME
+- P5_PITCH_CLASS_EXACT
+- P5_REGISTER_EXACT_FOR_TONAL_LINES
+- NO_P5_VOICE_DROP_WITHOUT_RECORD
+- SUSTAIN_APPROXIMATION_REPORTED

@@ -1,0 +1,86 @@
+schema_version: 1.0.0
+fixture_id: MARS-ARRANGEMENT-DECISIONS-M001-M008-A
+status: PROPOSED_FOR_TEST
+decisions:
+- id: DEC-001
+  scope: OSTINATO_LOW_G1
+  decision: Merge contrabass G1 with the lower member of the two-harp octave pair
+    into one bass G1 voice.
+  reason: Exact G1 register and rhythm are preserved; duplicate low attacks would
+    add density with little extra identity.
+  priority: P5
+  status: PROPOSED_FOR_TEST
+- id: DEC-002
+  scope: OSTINATO_HARP_G2
+  decision: Map the upper harp octave G2 to guitar G2.
+  reason: Minecraft harp cannot play G2; guitar preserves exact pitch and a plucked
+    envelope.
+  priority: P5
+  status: PROPOSED_FOR_TEST
+- id: DEC-003
+  scope: OSTINATO_CELLO_G2
+  decision: Keep a separate bass G2 body layer for the cellos instead of fully merging
+    all G2 material.
+  reason: Maintains weight and separates plucked-harp color from lower-string body.
+  priority: P5
+  status: PROPOSED_FOR_TEST
+- id: DEC-004
+  scope: OSTINATO_COL_LEGNO_G3
+  decision: Merge Violins I, Violins II, and Violas into one banjo G3 layer.
+  reason: All three carry the same G3 attack; banjo preserves pitch and supplies a
+    short woody/plucked transient appropriate to col legno.
+  priority: P5
+  status: PROPOSED_FOR_TEST
+- id: DEC-005
+  scope: OSTINATO_TIMPANI_ATTACK
+  decision: Represent Timpani I with basedrum state 0 while retaining exact G2 tonal
+    information in the simultaneous G2 master layers.
+  reason: Preserves the attack role without falsely assigning an absolute melodic
+    pitch to Minecraft basedrum.
+  priority: P5
+  status: PROPOSED_FOR_TEST
+- id: DEC-006
+  scope: TAM_TAM_UNDERLAY_MASTER
+  decision: Use low snare/noise color with TREMOLO sustain strategy for the quiet
+    tam-tam underlay.
+  reason: Closest vanilla note-block noise texture; exact roll implementation remains
+    a listening-test decision.
+  priority: P4
+  status: USER_REVIEW_REQUIRED
+- id: DEC-007
+  scope: THEME_A_LOW
+  decision: Map contrabassoon G1/D2/Db2 to didgeridoo at exact pitch.
+  reason: Exact low register is preserved with a dark sustained-ish Minecraft timbre.
+  priority: P5
+  status: PROPOSED_FOR_TEST
+- id: DEC-008
+  scope: THEME_A_MID
+  decision: Merge Bassoons I-II into one bass G2/D3/Db3 line.
+  reason: Exact pitch and phrase rhythm are preserved; the source parts are an a2
+    doubling.
+  priority: P5
+  status: PROPOSED_FOR_TEST
+- id: DEC-009
+  scope: THEME_A_HORN_COLOR
+  decision: Merge Horns V-VI into one weathered-trumpet G2/D3/Db3 line.
+  reason: Preserves exact pitch while retaining a dark brass identity. This choice
+    remains calibration-dependent.
+  priority: P5
+  status: USER_REVIEW_REQUIRED
+  calibration_dependencies:
+  - CAL-001
+  - CAL-002
+- id: DEC-010
+  scope: THEME_A_DB_REINFORCEMENT
+  decision: Merge Bassoon III and Bass Oboe reinforcement into didgeridoo Db3.
+  reason: Exact reinforcement pitch is preserved with a dark low-wind color.
+  priority: P4
+  status: PROPOSED_FOR_TEST
+- id: DEC-011
+  scope: THEME_A_SUSTAIN
+  decision: Retain source durations in Master metadata but use NATURAL_DECAY as the
+    initial Minecraft sustain strategy.
+  reason: Avoids inventing a strong repeated pulse before listening tests establish
+    a musically acceptable retrigger pattern.
+  priority: P5
+  status: USER_REVIEW_REQUIRED

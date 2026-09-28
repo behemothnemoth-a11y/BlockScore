@@ -1,0 +1,67 @@
+test_id: ARRANGEMENT-MARS-001A-PITCH
+fixture: fixtures/mars/minecraft-master-m001-m008.yaml
+vectors:
+- voice: OSTINATO_LOW_G1
+  instrument: bass
+  pitch: G1
+  note_state: 1
+- voice: OSTINATO_HARP_G2
+  instrument: guitar
+  pitch: G2
+  note_state: 1
+- voice: OSTINATO_CELLO_G2
+  instrument: bass
+  pitch: G2
+  note_state: 13
+- voice: OSTINATO_COL_LEGNO_G3
+  instrument: banjo
+  pitch: G3
+  note_state: 1
+- voice: THEME_A_LOW
+  instrument: didgeridoo
+  pitch: G1
+  note_state: 1
+- voice: THEME_A_LOW
+  instrument: didgeridoo
+  pitch: D2
+  note_state: 8
+- voice: THEME_A_LOW
+  instrument: didgeridoo
+  pitch: Db2
+  note_state: 7
+- voice: THEME_A_MID
+  instrument: bass
+  pitch: G2
+  note_state: 13
+- voice: THEME_A_MID
+  instrument: bass
+  pitch: D3
+  note_state: 20
+- voice: THEME_A_MID
+  instrument: bass
+  pitch: Db3
+  note_state: 19
+- voice: THEME_A_HORN_COLOR
+  instrument: trumpet_weathered
+  pitch: G2
+  note_state: 1
+  verification: PROVISIONAL
+- voice: THEME_A_HORN_COLOR
+  instrument: trumpet_weathered
+  pitch: D3
+  note_state: 8
+  verification: PROVISIONAL
+- voice: THEME_A_HORN_COLOR
+  instrument: trumpet_weathered
+  pitch: Db3
+  note_state: 7
+  verification: PROVISIONAL
+- voice: THEME_A_DB_REINFORCEMENT
+  instrument: didgeridoo
+  pitch: Db3
+  note_state: 19
+assertions:
+- ALL_PITCHED_MASTER_EVENTS_IN_RANGE
+- NO_OCTAVE_SHIFT_IN_P5_TONAL_LINES
+- DB_SOURCE_SPELLING_PRESERVED
+- WEATHERED_TRUMPET_EVENTS_CARRY_CALIBRATION_WARNING

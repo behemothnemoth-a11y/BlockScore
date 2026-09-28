@@ -1,0 +1,16 @@
+test_id: ARRANGEMENT-MARS-001A-BACKEND-NEUTRALITY
+fixture: fixtures/mars/master-events-m001-m008.yaml
+forbidden_at_master_stage:
+  compiled_game_tick: must be null
+  compiled_redstone_tick: must be null
+  physical_lane: must be null
+  command_endpoint: must be null
+allowed:
+  onset_group: logical musical grouping only
+  minecraft_instrument: arrangement choice
+  note_state: arrangement/range choice
+assertions:
+- NO_REDSTONE_QUANTIZATION_IN_MASTER
+- NO_COMMAND_RAIL_POOL_ALLOCATION_IN_MASTER
+- NO_DIGITAL_ONLY_TIMING_IN_MASTER
+- ALL_BACKENDS_COMPILE_FROM_SAME_MASTER

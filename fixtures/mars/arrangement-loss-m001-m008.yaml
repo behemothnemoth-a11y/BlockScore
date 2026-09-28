@@ -1,0 +1,136 @@
+schema_version: 1.0.0
+fixture_id: MARS-ARRANGEMENT-LOSS-M001-M008-A
+status: DRAFT_REVIEW
+losses:
+- loss_id: LOSS-001
+  category: VOICE_MERGE
+  severity: MODERATE
+  priority: P5
+  scope: Contrabasses + lower harp octave -> OSTINATO_LOW_G1
+  effect: Two source functions share one exact-pitch G1 Minecraft voice.
+  pitch_loss: false
+  rhythm_loss: false
+  status: REVIEW_REQUIRED
+- loss_id: LOSS-002
+  category: TIMBRE_SUBSTITUTION
+  severity: MODERATE
+  priority: P5
+  scope: upper harp octave G2 -> guitar G2
+  effect: Exact pitch/rhythm retained; harp timbre replaced by plucked guitar.
+  pitch_loss: false
+  rhythm_loss: false
+  status: REVIEW_REQUIRED
+- loss_id: LOSS-003
+  category: TIMBRE_SUBSTITUTION
+  severity: MODERATE
+  priority: P5
+  scope: cellos G2 -> bass G2
+  effect: Exact pitch/rhythm retained; bowed/col-legno string color replaced by bass.
+  pitch_loss: false
+  rhythm_loss: false
+  status: REVIEW_REQUIRED
+- loss_id: LOSS-004
+  category: VOICE_MERGE
+  severity: MODERATE
+  priority: P5
+  scope: Violins I-II + Violas -> banjo G3
+  effect: Three identical G3 string doublings become one Minecraft voice.
+  pitch_loss: false
+  rhythm_loss: false
+  status: REVIEW_REQUIRED
+- loss_id: LOSS-005
+  category: ARTICULATION_APPROXIMATION
+  severity: MODERATE
+  priority: P5
+  scope: col legno strings -> banjo
+  effect: Short woody attack is approximated but not literally reproduced.
+  pitch_loss: false
+  rhythm_loss: false
+  status: REVIEW_REQUIRED
+- loss_id: LOSS-006
+  category: PERCUSSION_SUBSTITUTION
+  severity: MODERATE
+  priority: P5
+  scope: Timpani I G2 -> basedrum state 0
+  effect: Timpani attack retained; exact G2 pitch is carried by simultaneous tonal
+    layers rather than the percussion voice itself.
+  pitch_loss: LOCAL_ONLY
+  rhythm_loss: false
+  status: REVIEW_REQUIRED
+- loss_id: LOSS-007
+  category: PERCUSSION_SUBSTITUTION
+  severity: HIGH
+  priority: P4
+  scope: tam-tam underlay -> snare/tremolo strategy
+  effect: Dark gong roll is approximated with vanilla note-block noise.
+  pitch_loss: NOT_APPLICABLE
+  rhythm_loss: ROLL_DETAIL_PENDING
+  status: USER_REVIEW_REQUIRED
+- loss_id: LOSS-008
+  category: VOICE_MERGE
+  severity: LOW
+  priority: P5
+  scope: Bassoons I-II -> THEME_A_MID
+  effect: a2 source doubling becomes one exact-pitch Minecraft line.
+  pitch_loss: false
+  rhythm_loss: false
+  status: REVIEW_REQUIRED
+- loss_id: LOSS-009
+  category: TIMBRE_SUBSTITUTION
+  severity: MODERATE
+  priority: P5
+  scope: Contrabassoon/bassoons -> didgeridoo/bass
+  effect: Exact low theme pitches retained with Minecraft low timbres.
+  pitch_loss: false
+  rhythm_loss: false
+  status: REVIEW_REQUIRED
+- loss_id: LOSS-010
+  category: VOICE_MERGE
+  severity: LOW
+  priority: P5
+  scope: Horns V-VI -> THEME_A_HORN_COLOR
+  effect: Horn doubling becomes one dark-brass line.
+  pitch_loss: false
+  rhythm_loss: false
+  status: REVIEW_REQUIRED
+- loss_id: LOSS-011
+  category: TIMBRE_SUBSTITUTION
+  severity: MODERATE
+  priority: P5
+  scope: Horns V-VI -> weathered trumpet
+  effect: Exact pitch retained; horn color approximated by provisional weathered-trumpet
+    timbre/register.
+  pitch_loss: false
+  rhythm_loss: false
+  status: USER_REVIEW_REQUIRED
+  warnings:
+  - TRUMPET_CALIBRATION_PENDING
+  - COPPER_STABILITY_PENDING
+- loss_id: LOSS-012
+  category: VOICE_MERGE
+  severity: LOW
+  priority: P4
+  scope: Bassoon III + Bass Oboe -> didgeridoo Db3
+  effect: Two reinforcement voices become one exact-pitch reinforcement.
+  pitch_loss: false
+  rhythm_loss: false
+  status: REVIEW_REQUIRED
+- loss_id: LOSS-013
+  category: SUSTAIN_APPROXIMATION
+  severity: HIGH
+  priority: P5
+  scope: Theme A long notes
+  effect: Source durations are retained in Master metadata, but initial audible strategy
+    is natural sample decay rather than continuous orchestral sustain.
+  pitch_loss: false
+  rhythm_loss: ATTACKS_PRESERVED_DURATION_APPROXIMATED
+  status: USER_REVIEW_REQUIRED
+summary:
+  source_events_removed: 0
+  p5_source_events_removed: 0
+  silent_changes: 0
+  critical_unresolved_conflicts: 0
+  user_review_required:
+  - LOSS-007
+  - LOSS-011
+  - LOSS-013

@@ -1,0 +1,162 @@
+schema_version: 1.0.0
+fixture_id: MARS-MASTER-VOICES-M001-M008
+voices:
+- voice_id: OSTINATO_LOW_G1
+  name: Mars Ostinato Low G1
+  role: low octave foundation
+  source_instrument: Contrabasses + lower harp octave
+  minecraft_instrument: bass
+  default_priority: P5
+  register_hint: G1
+  percussion_function: null
+  spatial_group: ostinato_low
+  tags:
+  - OSTINATO_MARS_A
+  - PITCH_EXACT
+  - VOICE_MERGE
+  notes: Preserves the G1 foundation while merging contrabass and the lower member
+    of the two-harp octave pair.
+  status: ACTIVE
+- voice_id: OSTINATO_HARP_G2
+  name: Mars Ostinato Harp G2
+  role: plucked middle-octave ostinato
+  source_instrument: upper harp octave
+  minecraft_instrument: guitar
+  default_priority: P5
+  register_hint: G2
+  percussion_function: null
+  spatial_group: ostinato_mid
+  tags:
+  - OSTINATO_MARS_A
+  - PITCH_EXACT
+  - TIMBRE_SUBSTITUTION
+  notes: Guitar is used for the upper harp octave because the Minecraft harp instrument
+    cannot reach G2.
+  status: ACTIVE
+- voice_id: OSTINATO_CELLO_G2
+  name: Mars Ostinato Cello G2
+  role: middle-octave body
+  source_instrument: Violoncellos
+  minecraft_instrument: bass
+  default_priority: P5
+  register_hint: G2
+  percussion_function: null
+  spatial_group: ostinato_mid
+  tags:
+  - OSTINATO_MARS_A
+  - PITCH_EXACT
+  - TIMBRE_SUBSTITUTION
+  notes: Retains a separate G2 body layer instead of folding the cellos completely
+    into the harp layer.
+  status: ACTIVE
+- voice_id: OSTINATO_COL_LEGNO_G3
+  name: Mars Ostinato Col Legno G3
+  role: upper wooden attack
+  source_instrument: Violins I-II + Violas
+  minecraft_instrument: banjo
+  default_priority: P5
+  register_hint: G3
+  percussion_function: null
+  spatial_group: ostinato_upper
+  tags:
+  - OSTINATO_MARS_A
+  - PITCH_EXACT
+  - VOICE_MERGE
+  - ARTICULATION_APPROXIMATION
+  notes: Banjo gives a short woody/plucked attack while preserving the exact G3 register.
+  status: ACTIVE
+- voice_id: OSTINATO_TIMPANI_ATTACK
+  name: Mars Timpani Attack
+  role: low percussive attack
+  source_instrument: Timpani I
+  minecraft_instrument: basedrum
+  default_priority: P5
+  register_hint: source pitch G2 carried elsewhere in the same onset
+  percussion_function: TIMPANI
+  spatial_group: ostinato_percussion
+  tags:
+  - OSTINATO_MARS_A
+  - PERCUSSION_SUBSTITUTION
+  notes: The basedrum preserves the attack function; exact G2 pitch is not claimed
+    by this percussion voice.
+  status: ACTIVE
+- voice_id: TAM_TAM_UNDERLAY_MASTER
+  name: Mars Tam-tam Underlay
+  role: quiet 3+2 metallic underlay
+  source_instrument: Tam-tam / Gong
+  minecraft_instrument: snare
+  default_priority: P4
+  register_hint: null
+  percussion_function: METALLIC
+  spatial_group: percussion_underlay
+  tags:
+  - TREMOLO
+  - SOURCE_REVIEW_PENDING
+  - PERCUSSION_SUBSTITUTION
+  notes: Initial low snare/noise color. Exact roll implementation remains a listening-test
+    decision.
+  status: ACTIVE
+- voice_id: THEME_A_LOW
+  name: Theme A Low Foundation
+  role: contrabassoon register theme
+  source_instrument: Contrabassoon
+  minecraft_instrument: didgeridoo
+  default_priority: P5
+  register_hint: G1/D2/Db2
+  percussion_function: null
+  spatial_group: theme_low
+  tags:
+  - THEME_A_FRAGMENT
+  - PITCH_EXACT
+  - TIMBRE_SUBSTITUTION
+  notes: Exact low register retained.
+  status: ACTIVE
+- voice_id: THEME_A_MID
+  name: Theme A Bassoon Layer
+  role: bassoon-register theme
+  source_instrument: Bassoons I-II
+  minecraft_instrument: bass
+  default_priority: P5
+  register_hint: G2/D3/Db3
+  percussion_function: null
+  spatial_group: theme_mid
+  tags:
+  - THEME_A_FRAGMENT
+  - PITCH_EXACT
+  - VOICE_MERGE
+  - TIMBRE_SUBSTITUTION
+  notes: Bassoons I-II are merged to one exact-pitch Minecraft bass line.
+  status: ACTIVE
+- voice_id: THEME_A_HORN_COLOR
+  name: Theme A Horn Color
+  role: dark brass theme layer
+  source_instrument: Horns V-VI
+  minecraft_instrument: trumpet_weathered
+  default_priority: P5
+  register_hint: G2/D3/Db3
+  percussion_function: null
+  spatial_group: theme_brass
+  tags:
+  - THEME_A_FRAGMENT
+  - PITCH_EXACT
+  - VOICE_MERGE
+  - PROVISIONAL_REGISTER
+  notes: Weathered trumpet is the closest current dark-brass candidate, but its register
+    remains CAL-001 dependent.
+  status: ACTIVE
+- voice_id: THEME_A_DB_REINFORCEMENT
+  name: Theme A Db Reinforcement
+  role: m5-m6 low woodwind reinforcement
+  source_instrument: Bassoon III + Bass Oboe
+  minecraft_instrument: didgeridoo
+  default_priority: P4
+  register_hint: Db3
+  percussion_function: null
+  spatial_group: theme_mid
+  tags:
+  - THEME_A_FRAGMENT
+  - PITCH_EXACT
+  - VOICE_MERGE
+  - TIMBRE_SUBSTITUTION
+  notes: Retains the exact Db3 reinforcement while merging the two source doublings.
+  status: ACTIVE

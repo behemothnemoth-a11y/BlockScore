@@ -1,0 +1,136 @@
+schema_version: 1.0.0
+fixture_id: MARS-MINECRAFT-MASTER-M001-M008-A
+arrangement_version: 0.1.0
+status: ARRANGED_DRAFT
+minecraft_profile: java-26.2
+source_fixture: fixtures/mars/source-score-m001-m008.yaml
+source_events: fixtures/mars/source-events-m001-m008.yaml
+preset: FAITHFUL
+scope:
+  start_measure: 1
+  end_measure: 8
+  start_abs_qn: '0'
+  end_abs_qn: '40'
+governing_principles:
+- P5 rhythm preserved exactly in Master time
+- P5 absolute pitch/register preserved where the source is pitched
+- No backend timing constraints applied at Master stage
+- Redundant orchestral doublings may be merged only with explicit accounting
+- No source event is silently removed
+master_voices:
+- OSTINATO_LOW_G1
+- OSTINATO_HARP_G2
+- OSTINATO_CELLO_G2
+- OSTINATO_COL_LEGNO_G3
+- OSTINATO_TIMPANI_ATTACK
+- TAM_TAM_UNDERLAY_MASTER
+- THEME_A_LOW
+- THEME_A_MID
+- THEME_A_HORN_COLOR
+- THEME_A_DB_REINFORCEMENT
+ostinato_mapping:
+  pattern: OSTINATO_MARS_A
+  master_attack_groups: 64
+  voices_per_attack_group: 5
+  master_events: 320
+  layers:
+  - voice_id: OSTINATO_LOW_G1
+    instrument: bass
+    pitch: G1
+    note_state: 1
+  - voice_id: OSTINATO_HARP_G2
+    instrument: guitar
+    pitch: G2
+    note_state: 1
+  - voice_id: OSTINATO_CELLO_G2
+    instrument: bass
+    pitch: G2
+    note_state: 13
+  - voice_id: OSTINATO_COL_LEGNO_G3
+    instrument: banjo
+    pitch: G3
+    note_state: 1
+  - voice_id: OSTINATO_TIMPANI_ATTACK
+    instrument: basedrum
+    pitch: null
+    note_state: 0
+    percussion_function: TIMPANI
+tam_tam_mapping:
+  voice_id: TAM_TAM_UNDERLAY_MASTER
+  instrument: snare
+  note_state: 0
+  percussion_function: METALLIC
+  sustain_strategy: TREMOLO
+  status: PROPOSED_FOR_TEST
+  source_review_dependency: REVIEW-TAMTAM-001
+theme_a_mapping:
+  sustain_strategy: NATURAL_DECAY
+  sustain_status: PROPOSED_FOR_TEST
+  layers:
+  - voice_id: THEME_A_LOW
+    instrument: didgeridoo
+    pitches:
+    - G1
+    - D2
+    - Db2
+    states:
+    - 1
+    - 8
+    - 7
+  - voice_id: THEME_A_MID
+    instrument: bass
+    pitches:
+    - G2
+    - D3
+    - Db3
+    states:
+    - 13
+    - 20
+    - 19
+  - voice_id: THEME_A_HORN_COLOR
+    instrument: trumpet_weathered
+    pitches:
+    - G2
+    - D3
+    - Db3
+    states:
+    - 1
+    - 8
+    - 7
+    verification_flags:
+    - TRUMPET_CALIBRATION_PENDING
+    - COPPER_STABILITY_PENDING
+  - voice_id: THEME_A_DB_REINFORCEMENT
+    instrument: didgeridoo
+    pitches:
+    - Db3
+    states:
+    - 19
+metrics:
+  source_events: 550
+  master_events: 349
+  source_events_removed: 0
+  source_events_accounted_for: 550
+  master_p5_events: 332
+  master_p4_events: 17
+  ostinato_master_events: 320
+  tam_tam_master_events: 16
+  theme_master_events: 13
+  unique_minecraft_instruments:
+  - bass
+  - guitar
+  - banjo
+  - basedrum
+  - snare
+  - didgeridoo
+  - trumpet_weathered
+calibration_dependencies:
+- CAL-001
+- CAL-002
+open_review:
+- Audition the weathered trumpet horn-color layer.
+- Audition NATURAL_DECAY versus controlled retriggering for Theme A sustain.
+- Audition snare-based tam-tam approximation after source roll detail is fully reviewed.
+approval:
+  user_approved: false
+  locked: false
