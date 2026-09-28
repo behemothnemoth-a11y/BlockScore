@@ -1,0 +1,26 @@
+test_id: PROTOTYPE-MARS-COMMAND-RAIL-01
+prototype: prototypes/mars-command-rail-01/prototype-manifest.yaml
+expected:
+  endpoint_count: 16
+  song_event_count: 349
+  normal_attack_playsound_commands: 0
+  pack_min_format:
+  - 107
+  - 1
+  pack_max_format:
+  - 107
+  - 1
+  function_directory: data/blockscore/function
+  function_tag_directory: data/minecraft/tags/function
+  last_schedule_tick: 356
+assertions:
+- PACK_JSON_VALID
+- LOAD_TAG_PRESENT
+- TICK_TAG_PRESENT
+- ALL_16_ENDPOINTS_PLACED
+- ALL_349_MASTER_ATTACKS_DISPATCHED
+- ALL_NORMAL_ATTACKS_USE_PHYSICAL_DRIVERS
+- NO_SETBLOCK_STRICT_ON_DRIVER_TRANSITIONS
+- CAL_003_PRESENT
+- CAL_004_PRESENT
+- CAL_005_PRESENT

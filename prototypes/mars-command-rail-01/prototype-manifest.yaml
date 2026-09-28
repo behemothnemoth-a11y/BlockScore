@@ -1,0 +1,24 @@
+schema_version: 1.0.0
+prototype_id: MARS-COMMAND-RAIL-PROTOTYPE-01
+minecraft_version: '26.2'
+data_pack_version: '107.1'
+master: fixtures/mars/master-events-m001-m008.yaml
+compiled_plan: fixtures/mars/compiled/command-rail-build-plan.json
+endpoint_count: 16
+endpoint_key_count: 15
+song_event_count: 349
+last_schedule_tick: 356
+normal_attack_playsound_commands: 0
+physical_driver: adjacent temporary minecraft:redstone_block
+driver_status: TEST_REQUIRED
+calibration_functions:
+- blockscore:cal/003_driver
+- blockscore:cal/004_retrigger_1tick
+- blockscore:cal/004_retrigger_2tick
+- blockscore:cal/005_same_tick_chord
+calibration_dependencies:
+- CAL-001
+- CAL-002
+- CAL-003
+- CAL-004
+- CAL-005
