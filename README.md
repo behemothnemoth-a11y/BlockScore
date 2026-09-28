@@ -1,6 +1,4 @@
 # BlockScore
-Chat-native Minecraft note block composition, arrangement, timing and build compiler 
-# BlockScore
 
 **Chat-native Minecraft note block composition, arrangement, timing, and build compiler.**
 
@@ -344,13 +342,13 @@ BlockScore currently targets the Java 26.2 note block system.
 
 The registry includes the established note block timbres plus the copper trumpet family introduced in the 26.x generation.
 
-The canonical registry will live at:
+The canonical registry lives at:
 
 ```text
 data/java-26.2/instruments.json
 ```
 
-Instrument information will include:
+Instrument information includes:
 
 - BlockScore ID
 - Minecraft instrument identifier
@@ -764,7 +762,7 @@ These may not be silently simplified.
 Planned structure:
 
 ```text
-blockscore/
+BlockScore/
 │
 ├── README.md
 ├── CHANGELOG.md
