@@ -1,0 +1,69 @@
+test_id: TIMING-MARS-001A-REDSTONE
+fixture: fixtures/mars/test-001a.yaml
+backend_grid: REDSTONE_TICK_10_HZ
+
+benchmark_qpm: 132
+
+derived:
+  redstone_ticks_per_qn: "50/11"
+  nominal_tick_ms: 100
+
+ostinato_offsets_qn:
+  - "0"
+  - "1/3"
+  - "2/3"
+  - "1"
+  - "2"
+  - "3"
+  - "7/2"
+  - "4"
+
+first_measure_expected_redstone_ticks:
+  - 0
+  - 2
+  - 3
+  - 5
+  - 9
+  - 14
+  - 16
+  - 18
+
+first_measure_expected_signed_error_ms:
+  - 0.0
+  - 48.484848
+  - -3.030303
+  - 45.454545
+  - -9.090909
+  - 36.363636
+  - 9.090909
+  - -18.181818
+
+absolute_bar_start_expectations:
+  - { measure: 1, qn: "0",  tick: 0,   signed_error_ms: 0.0 }
+  - { measure: 2, qn: "5",  tick: 23,  signed_error_ms: 27.272727 }
+  - { measure: 3, qn: "10", tick: 45,  signed_error_ms: -45.454545 }
+  - { measure: 4, qn: "15", tick: 68,  signed_error_ms: -18.181818 }
+  - { measure: 5, qn: "20", tick: 91,  signed_error_ms: 9.090909 }
+  - { measure: 6, qn: "25", tick: 114, signed_error_ms: 36.363636 }
+  - { measure: 7, qn: "30", tick: 136, signed_error_ms: -36.363636 }
+  - { measure: 8, qn: "35", tick: 159, signed_error_ms: -9.090909 }
+  - { measure: 9, qn: "40", tick: 182, signed_error_ms: 18.181818 }
+
+eight_measure_metrics_expected_approximately:
+  event_count: 64
+  max_abs_onset_error_ms: 48.484848
+  mean_abs_onset_error_ms: 24.479167
+  rms_onset_error_ms: 28.600366
+
+dual_mode_reference:
+  exact_grid_sanity_qpm: 100
+  reason: "At 100 QPM, one quarter note equals 6 redstone ticks, so both 1/3-QN triplet spacing and 1/2-QN eighth spacing are integer redstone-tick distances."
+  arrangement_recommendation: false
+  note: "This is a solver sanity reference, not permission to slow the source to 100 QPM."
+
+assertions:
+  - ABSOLUTE_QUANTIZATION
+  - NO_INCREMENTAL_DRIFT
+  - EVENT_ORDER_PRESERVED
+  - P5_TIMING_WARNINGS_REPORTED
+  - DUAL_MODE_DOES_NOT_SILENTLY_REPLACE_SOURCE_TEMPO

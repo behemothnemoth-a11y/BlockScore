@@ -1,0 +1,50 @@
+test_id: COMMAND-RAIL-MARS-001A
+fixture: fixtures/mars/test-001a.yaml
+backend: COMMAND_RAIL_PHYSICAL
+
+settings:
+  benchmark_qpm: 132
+  busy_window_game_ticks: 2
+  busy_window_verification: PROVISIONAL
+
+cases:
+  - case_id: SINGLE_OSTINATO_ENDPOINT_REUSE
+    endpoint_key:
+      instrument: guitar
+      pitch: G3
+      note_state: 13
+    first_measure_attack_ticks:
+      - 0
+      - 3
+      - 6
+      - 9
+      - 18
+      - 27
+      - 32
+      - 36
+    expected:
+      minimum_tick_spacing: 3
+      required_pool_size: 1
+      pool_overflow: false
+    note: >
+      At the Batch 01 benchmark tempo, the closest compiled ostinato
+      attacks are three game ticks apart, which is greater than the current
+      provisional two-tick busy window.
+
+  - case_id: SIMULTANEOUS_DUPLICATE_STRESS
+    endpoint_key:
+      instrument: guitar
+      pitch: G3
+      note_state: 13
+    attacks:
+      - { tick: 91, source_voice: SOURCE_LAYER_A }
+      - { tick: 91, source_voice: SOURCE_LAYER_B }
+    expected:
+      required_pool_size: 2
+      automatic_voice_merge: false
+
+assertions:
+  - ENDPOINT_POOL_IS_DETERMINISTIC
+  - BUSY_WINDOW_IS_RESPECTED
+  - SIMULTANEOUS_IDENTICAL_ATTACKS_REQUIRE_DISTINCT_ENDPOINTS
+  - BACKEND_DOES_NOT_MERGE_MUSIC_TO_SAVE_BLOCKS

@@ -1,0 +1,63 @@
+test_id: TIMING-MARS-001A-COMMAND
+fixture: fixtures/mars/test-001a.yaml
+backend_grid: GAME_TICK_20_HZ
+
+benchmark_qpm: 132
+
+derived:
+  game_ticks_per_qn: "100/11"
+  nominal_tick_ms: 50
+
+ostinato_offsets_qn:
+  - "0"
+  - "1/3"
+  - "2/3"
+  - "1"
+  - "2"
+  - "3"
+  - "7/2"
+  - "4"
+
+first_measure_expected_game_ticks:
+  - 0
+  - 3
+  - 6
+  - 9
+  - 18
+  - 27
+  - 32
+  - 36
+
+first_measure_expected_signed_error_ms:
+  - 0.0
+  - -1.515152
+  - -3.030303
+  - -4.545455
+  - -9.090909
+  - -13.636364
+  - 9.090909
+  - -18.181818
+
+absolute_bar_start_expectations:
+  - { measure: 1, qn: "0",  tick: 0,   signed_error_ms: 0.0 }
+  - { measure: 2, qn: "5",  tick: 45,  signed_error_ms: -22.727273 }
+  - { measure: 3, qn: "10", tick: 91,  signed_error_ms: 4.545455 }
+  - { measure: 4, qn: "15", tick: 136, signed_error_ms: -18.181818 }
+  - { measure: 5, qn: "20", tick: 182, signed_error_ms: 9.090909 }
+  - { measure: 6, qn: "25", tick: 227, signed_error_ms: -13.636364 }
+  - { measure: 7, qn: "30", tick: 273, signed_error_ms: 13.636364 }
+  - { measure: 8, qn: "35", tick: 318, signed_error_ms: -9.090909 }
+  - { measure: 9, qn: "40", tick: 364, signed_error_ms: 18.181818 }
+
+eight_measure_metrics_expected_approximately:
+  event_count: 64
+  max_abs_onset_error_ms: 24.242424
+  mean_abs_onset_error_ms: 12.192235
+  rms_onset_error_ms: 14.270051
+
+assertions:
+  - ABSOLUTE_QUANTIZATION
+  - NO_INCREMENTAL_DRIFT
+  - NO_SEQUENCE_COLLAPSE
+  - EVENT_ORDER_PRESERVED
+  - EIGHT_ATTACKS_PER_MEASURE

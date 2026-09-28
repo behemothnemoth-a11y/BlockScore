@@ -1,0 +1,37 @@
+test_id: POLYPHONY-MARS-001A
+fixture: fixtures/mars/test-001a.yaml
+
+cases:
+  - case_id: THEME_ENTRY_WITH_OSTINATO
+    description: >
+      Theme A enters after the two opening ostinato bars. The theme entry
+      and the ostinato attack at the beginning of measure 3 share the same
+      musical time and must remain one onset group.
+    absolute_qn: "10"
+    benchmark_game_tick: 91
+    events:
+      - voice: OSTINATO_MARS_A
+        priority: P5
+      - voice: THEME_A_FRAGMENT
+        priority: P5
+    expected:
+      onset_group_count: 1
+      allowed_backend_spread_ticks: 0
+      event_order_reversal: false
+
+  - case_id: DUPLICATE_VOICE_IDENTITY
+    description: >
+      Two logical voices may intentionally share pitch and timbre.
+      BlockScore must retain both source voice identities even if a later
+      arrangement decision chooses to merge them.
+    events:
+      - { voice: SOURCE_LAYER_A, instrument: guitar, pitch: G3 }
+      - { voice: SOURCE_LAYER_B, instrument: guitar, pitch: G3 }
+    expected:
+      source_voice_count: 2
+      automatic_merge_without_arrangement_record: false
+
+assertions:
+  - ONSET_GROUPS_PRESERVED
+  - VOICE_IDENTITY_PRESERVED
+  - MERGE_IS_ARRANGEMENT_DECISION

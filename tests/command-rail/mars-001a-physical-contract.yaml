@@ -1,0 +1,25 @@
+test_id: COMMAND-RAIL-MARS-001A-PHYSICAL-CONTRACT
+fixture: fixtures/mars/test-001a.yaml
+backend: COMMAND_RAIL_PHYSICAL
+
+required_contract:
+  physical_sound_source: true
+  playsound_allowed_for_normal_attacks: false
+  note_block_required: true
+  support_block_required: true
+  top_clearance_required: true
+  real_power_transition_required: true
+  driver_behavior_status: TEST_REQUIRED
+
+calibration_dependencies:
+  - CAL-003
+  - CAL-004
+  - CAL-005
+  - CAL-006
+
+acceptance:
+  no_fake_physical_playback: true
+  no_undeclared_digital_assist: true
+  driver_collision_check_required: true
+  endpoint_positions_unique: true
+  support_mapping_from_registry: true

@@ -1,0 +1,60 @@
+test_id: PITCH-MARS-001A
+fixture: fixtures/mars/test-001a.yaml
+profile: java-26.2
+
+purpose: >
+  Representative solver vectors for low G-centered Mars material.
+  These pitches are test vectors for registry/range math and do not
+  claim that every listed octave is the final source transcription.
+
+vectors:
+  - instrument: bass
+    pitch: G2
+    expected_note_state: 13
+    expected_in_range: true
+
+  - instrument: didgeridoo
+    pitch: G2
+    expected_note_state: 13
+    expected_in_range: true
+
+  - instrument: guitar
+    pitch: G3
+    expected_note_state: 13
+    expected_in_range: true
+
+  - instrument: harp
+    pitch: G4
+    expected_note_state: 13
+    expected_in_range: true
+
+  - instrument: bass
+    pitch: D2
+    expected_note_state: 8
+    expected_in_range: true
+
+  - instrument: bass
+    pitch: C#2
+    expected_note_state: 7
+    expected_in_range: true
+
+  - instrument: didgeridoo
+    pitch: D2
+    expected_note_state: 8
+    expected_in_range: true
+
+  - instrument: didgeridoo
+    pitch: C#2
+    expected_note_state: 7
+    expected_in_range: true
+
+  - instrument: guitar
+    pitch: G5
+    expected_note_state: null
+    expected_in_range: false
+
+assertions:
+  - NEVER_CLAMP_OUT_OF_RANGE
+  - STATE_ZERO_IS_INSTRUMENT_LOW_PITCH
+  - CHROMATIC_DISTANCE_EQUALS_NOTE_STATE
+  - THEME_CONTOUR_CAN_BE_TESTED_WITHOUT_LOCKING_SOURCE_OCTAVE

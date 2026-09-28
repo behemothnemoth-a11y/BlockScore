@@ -1,0 +1,128 @@
+schema_version: "1.0.0"
+
+test_id: TEST-001A
+title: Mars Opening Measures 1-8
+piece:
+  title: Mars, the Bringer of War
+  work: The Planets, Op. 32
+  composer: Gustav Holst
+  source_rights: PUBLIC_DOMAIN
+
+minecraft_profile: java-26.2
+
+scope:
+  start_measure: 1
+  end_measure: 8
+  measure_count: 8
+  source_lock_status: PARTIAL_LOCK
+
+source:
+  primary_index: "https://imslp.org/wiki/The_Planets_Op.32_(Holst,_Gustav)"
+  pay_smith_item: "#1038645"
+  pay_smith_plate: "H.11069"
+  pay_smith_publication_year: 1924
+  tempo_marking: Allegro
+  printed_qpm: null
+
+benchmark_tempo:
+  qpm: 132
+  status: BENCHMARK_VALUE_NOT_SOURCE_CLAIM
+
+meter:
+  numerator: 5
+  denominator: 4
+  grouping: [3, 2]
+  measure_length_qn: "5"
+
+ostinato:
+  id: OSTINATO_MARS_A
+  status: LOCKED
+  priority: P5
+  pitch_class: G
+  absolute_pitch: null
+  absolute_pitch_status: UNLOCKED
+  attacks_per_measure: 8
+  attack_offsets_qn:
+    - "0"
+    - "1/3"
+    - "2/3"
+    - "1"
+    - "2"
+    - "3"
+    - "7/2"
+    - "4"
+  notation_summary:
+    - TRIPLET_EIGHTH
+    - TRIPLET_EIGHTH
+    - TRIPLET_EIGHTH
+    - QUARTER
+    - QUARTER
+    - EIGHTH
+    - EIGHTH
+    - QUARTER
+  repeat_through_scope: true
+
+theme_a:
+  id: THEME_A_FRAGMENT
+  status: STRUCTURAL_LOCK
+  priority: P5
+  entry_measure: 3
+  structural_duration_measures: 4
+  structural_duration_qn: "20"
+  pitch_classes:
+    - G
+    - D
+    - Db
+  interval_contour:
+    - P5_UP
+    - M2_DOWN
+  absolute_register: null
+  exact_event_durations: null
+  exact_event_transcription_status: SOURCE_TRANSCRIPTION_PENDING
+
+opening_texture:
+  measures: [1, 2]
+  structural_description: exposed_ostinato_before_theme_a
+  detailed_orchestration_status: SOURCE_TRANSCRIPTION_PENDING
+
+p5_requirements:
+  - FIVE_FOUR_METER
+  - THREE_PLUS_TWO_GROUPING
+  - OSTINATO_ATTACK_PATTERN
+  - OSTINATO_CYCLE_PHASE
+  - METER_DEFINING_ACCENTS
+  - LOW_PULSE_IDENTITY
+  - THEME_A_INTERVAL_CONTOUR
+
+backend_targets:
+  command_rail:
+    backend: COMMAND_RAIL_PHYSICAL
+    timing_mode: SOURCE_TEMPO
+    grid_hz: 20
+  redstone:
+    backend: REDSTONE_PHYSICAL
+    timing_mode: DUAL
+    grid_hz: 10
+  digital:
+    backend: DIGITAL_PLAYBACK
+    timing_mode: SOURCE_TEMPO
+    grid_hz: 20
+
+acceptance:
+  source:
+    no_unmarked_invented_notes: true
+    unresolved_source_fields_may_remain_null: true
+  timing:
+    use_absolute_quantization: true
+    cumulative_rounding_drift_allowed: false
+    onset_order_reversal_allowed: false
+  arrangement:
+    silent_p5_deletion_allowed: false
+    silent_rhythm_change_allowed: false
+
+next_stage:
+  - COMPLETE_M1_8_SOURCE_TRANSCRIPTION
+  - BUILD_MINECRAFT_MASTER
+  - COMPILE_COMMAND_RAIL
+  - COMPILE_REDSTONE_PHYSICAL
+  - COMPILE_DIGITAL_REFERENCE
