@@ -1,0 +1,34 @@
+test_id: SOURCE-MARS-001A-FORCES
+fixture: fixtures/mars/source-forces-m001-m008.yaml
+required_active:
+  m1_m2:
+  - Timpani I
+  - Harp I
+  - Harp II
+  - Violins I
+  - Violins II
+  - Violas
+  - Violoncellos
+  - Contrabasses
+  - Tam-tam / Gong
+  m3_m4_add:
+  - Bassoon I
+  - Bassoon II
+  - Contrabassoon
+  - Horn V in F
+  - Horn VI in F
+  m5_m6_add:
+  - Bassoon III
+  - Bass Oboe
+  m8_restart:
+  - Bassoon I
+  - Bassoon II
+  - Contrabassoon
+  - Horn V in F
+  - Horn VI in F
+assertions:
+- NO_EARLY_FULL_ORCHESTRA
+- THEME_ENTERS_FROM_LOW_WINDS_AND_LOW_HORNS
+- BASS_OBOE_DOES_NOT_ENTER_BEFORE_M5
+- BASSOON_3_REINFORCEMENT_DOES_NOT_ENTER_BEFORE_M5
+- OSTINATO_FORCES_REMAIN_ACTIVE_THROUGH_M8

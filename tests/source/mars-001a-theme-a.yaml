@@ -1,0 +1,47 @@
+test_id: SOURCE-MARS-001A-THEME-A
+fixture: fixtures/mars/source-score-m001-m008.yaml
+concert_pitch_expectations:
+  bassoon_1_2_and_horns_5_6:
+  - start_abs_qn: '10'
+    pitch: G2
+    duration_qn: '8'
+  - start_abs_qn: '18'
+    pitch: D3
+    duration_qn: '2'
+  - start_abs_qn: '20'
+    pitch: Db3
+    duration_qn: '8'
+  - start_abs_qn: '35'
+    pitch: G2
+    continues_beyond_scope: true
+  contrabassoon:
+  - start_abs_qn: '10'
+    pitch: G1
+    duration_qn: '8'
+  - start_abs_qn: '18'
+    pitch: D2
+    duration_qn: '2'
+  - start_abs_qn: '20'
+    pitch: Db2
+    duration_qn: '8'
+  - start_abs_qn: '35'
+    pitch: G1
+    continues_beyond_scope: true
+  reinforcement:
+  - instrument: Bassoon III
+    start_abs_qn: '20'
+    pitch: Db3
+    duration_qn: '8'
+  - instrument: Bass Oboe
+    start_abs_qn: '20'
+    pitch: Db3
+    duration_qn: '8'
+intervals:
+  G_to_D: P5_UP
+  D_to_Db: m2_DOWN
+assertions:
+- SOURCE_SPELLING_DB_NOT_CSHARP
+- M6_LAST_TWO_BEATS_ARE_THEME_REST
+- M7_PRIMARY_THEME_TACET
+- M8_RESTART_AT_BARLINE
+- HORN_PITCHES_STORED_AS_CONCERT_PITCH

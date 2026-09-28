@@ -1,0 +1,362 @@
+schema_version: 1.0.0
+fixture_id: MARS-SOURCE-M001-M008
+piece:
+  title: Mars, the Bringer of War
+  work: The Planets, Op. 32
+  composer: Gustav Holst
+  source_rights: PUBLIC_DOMAIN
+scope:
+  start_measure: 1
+  end_measure: 8
+  measure_count: 8
+  start_abs_qn: '0'
+  end_abs_qn: '40'
+source_authority:
+  primary:
+  - id: IMSLP-24899
+    description: 1921 first-edition/reprint full score, Mars movement
+    url: https://imslp.org/wiki/The_Planets_Op.32_(Holst,_Gustav)
+    status: PRIMARY_SCORE
+  - id: OPENSCORE-5271023
+    description: OpenScore CC0 engraving based on the public-domain score
+    url: https://musescore.com/openscore/scores/5271023
+    status: PRIMARY_CROSSCHECK
+    license: CC0-1.0
+  secondary_transcription_aid:
+  - id: MARS11-1-MIDI
+    description: Publicly available orchestral MIDI used only to cross-check exact
+      sounding register/timing against the score
+    url: https://github.com/gregwa1953/FCM-191/blob/main/MARS11-1.mid
+    status: SECONDARY_ONLY
+    authority: NEVER_OVERRIDES_SCORE
+meter:
+  numerator: 5
+  denominator: 4
+  grouping:
+  - 3
+  - 2
+  measure_length_qn: '5'
+  tempo_marking: Allegro
+notation_convention:
+  pitch_names: scientific_pitch_notation
+  middle_c: C4
+  source_pitch_spelling_preserved: true
+  quarter_note_units: QN
+  event_times_are_absolute_from_measure_1: true
+patterns:
+  OSTINATO_MARS_A:
+    priority: P5
+    repeat_measures:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    attack_offsets_qn:
+    - '0'
+    - 1/3
+    - 2/3
+    - '1'
+    - '2'
+    - '3'
+    - 7/2
+    - '4'
+    durations_qn:
+    - 1/3
+    - 1/3
+    - 1/3
+    - '1'
+    - '1'
+    - 1/2
+    - 1/2
+    - '1'
+    rhythm_lock: LOCKED
+  TAM_TAM_GROUPING:
+    priority: P4
+    repeat_measures:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    attack_offsets_qn:
+    - '0'
+    - '3'
+    durations_qn:
+    - '3'
+    - '2'
+    articulation: ROLL/TREMOLO
+    transcription_confidence: MEDIUM
+    review_status: SOURCE_REVIEW_REQUIRED
+ostinato_layers:
+- voice_id: TIMPANI_1_OSTINATO
+  source_instrument: Timpani I
+  pattern: OSTINATO_MARS_A
+  pitch_cycle:
+  - G2
+  dynamic_start: p
+  articulation: wooden sticks
+  priority: P5
+  confidence: HIGH
+- voice_id: HARP_1_OSTINATO
+  source_instrument: Harp I
+  pattern: OSTINATO_MARS_A
+  pitch_cycle:
+  - G2
+  - G1
+  - G2
+  - G1
+  - G2
+  - G1
+  - G2
+  - G1
+  dynamic_start: p
+  priority: P5
+  confidence: HIGH
+- voice_id: HARP_2_OSTINATO
+  source_instrument: Harp II
+  pattern: OSTINATO_MARS_A
+  pitch_cycle:
+  - G1
+  - G2
+  - G1
+  - G2
+  - G1
+  - G2
+  - G1
+  - G2
+  dynamic_start: p
+  priority: P5
+  confidence: HIGH
+- voice_id: VIOLIN_1_OSTINATO
+  source_instrument: Violins I
+  pattern: OSTINATO_MARS_A
+  pitch_cycle:
+  - G3
+  dynamic_start: p
+  articulation: col legno
+  priority: P5
+  confidence: HIGH
+- voice_id: VIOLIN_2_OSTINATO
+  source_instrument: Violins II
+  pattern: OSTINATO_MARS_A
+  pitch_cycle:
+  - G3
+  dynamic_start: p
+  articulation: col legno
+  priority: P5
+  confidence: HIGH
+- voice_id: VIOLA_OSTINATO
+  source_instrument: Violas
+  pattern: OSTINATO_MARS_A
+  pitch_cycle:
+  - G3
+  dynamic_start: p
+  articulation: col legno
+  priority: P5
+  confidence: HIGH
+- voice_id: CELLO_OSTINATO
+  source_instrument: Violoncellos
+  pattern: OSTINATO_MARS_A
+  pitch_cycle:
+  - G2
+  dynamic_start: p
+  articulation: col legno
+  priority: P5
+  confidence: HIGH
+- voice_id: DOUBLE_BASS_OSTINATO
+  source_instrument: Contrabasses
+  pattern: OSTINATO_MARS_A
+  pitch_cycle:
+  - G1
+  pitch_representation: sounding
+  dynamic_start: p
+  articulation: col legno
+  priority: P5
+  confidence: HIGH
+unpitched_layers:
+- voice_id: TAM_TAM_UNDERLAY
+  source_instrument: Tam-tam / Gong
+  pattern: TAM_TAM_GROUPING
+  dynamic_start: pp
+  priority: P4
+  confidence: MEDIUM
+  review_status: SOURCE_REVIEW_REQUIRED
+theme_a_layers:
+- voice_id: THEME_A_BASSOON_1
+  source_instrument: Bassoon I
+  priority: P5
+  confidence: HIGH
+  events:
+  - pitch: G2
+    start_abs_qn: '10'
+    duration_qn: '8'
+    start: m3 b1
+    end: m4 after b3
+  - pitch: D3
+    start_abs_qn: '18'
+    duration_qn: '2'
+    start: m4 b4
+    end: m5
+  - pitch: Db3
+    start_abs_qn: '20'
+    duration_qn: '8'
+    start: m5 b1
+    end: m6 after b3
+  - pitch: G2
+    start_abs_qn: '35'
+    duration_qn: '8'
+    start: m8 b1
+    continues_beyond_scope: true
+- voice_id: THEME_A_BASSOON_2
+  source_instrument: Bassoon II
+  priority: P5
+  confidence: HIGH
+  events:
+  - pitch: G2
+    start_abs_qn: '10'
+    duration_qn: '8'
+  - pitch: D3
+    start_abs_qn: '18'
+    duration_qn: '2'
+  - pitch: Db3
+    start_abs_qn: '20'
+    duration_qn: '8'
+  - pitch: G2
+    start_abs_qn: '35'
+    duration_qn: '8'
+    continues_beyond_scope: true
+- voice_id: THEME_A_CONTRABASSOON
+  source_instrument: Contrabassoon
+  priority: P5
+  confidence: HIGH
+  events:
+  - pitch: G1
+    start_abs_qn: '10'
+    duration_qn: '8'
+  - pitch: D2
+    start_abs_qn: '18'
+    duration_qn: '2'
+  - pitch: Db2
+    start_abs_qn: '20'
+    duration_qn: '8'
+  - pitch: G1
+    start_abs_qn: '35'
+    duration_qn: '8'
+    continues_beyond_scope: true
+- voice_id: THEME_A_HORN_5
+  source_instrument: Horn V in F
+  pitch_representation: concert/sounding
+  priority: P5
+  confidence: HIGH
+  events:
+  - pitch: G2
+    start_abs_qn: '10'
+    duration_qn: '8'
+  - pitch: D3
+    start_abs_qn: '18'
+    duration_qn: '2'
+  - pitch: Db3
+    start_abs_qn: '20'
+    duration_qn: '8'
+  - pitch: G2
+    start_abs_qn: '35'
+    duration_qn: '8'
+    continues_beyond_scope: true
+- voice_id: THEME_A_HORN_6
+  source_instrument: Horn VI in F
+  pitch_representation: concert/sounding
+  priority: P5
+  confidence: HIGH
+  events:
+  - pitch: G2
+    start_abs_qn: '10'
+    duration_qn: '8'
+  - pitch: D3
+    start_abs_qn: '18'
+    duration_qn: '2'
+  - pitch: Db3
+    start_abs_qn: '20'
+    duration_qn: '8'
+  - pitch: G2
+    start_abs_qn: '35'
+    duration_qn: '8'
+    continues_beyond_scope: true
+- voice_id: THEME_A_BASSOON_3_REINFORCEMENT
+  source_instrument: Bassoon III
+  priority: P4
+  confidence: HIGH
+  events:
+  - pitch: Db3
+    start_abs_qn: '20'
+    duration_qn: '8'
+    role: reinforcement
+- voice_id: THEME_A_BASS_OBOE_REINFORCEMENT
+  source_instrument: Bass Oboe
+  priority: P4
+  confidence: HIGH
+  events:
+  - pitch: Db3
+    start_abs_qn: '20'
+    duration_qn: '8'
+    role: reinforcement
+theme_a_structure:
+  first_phrase_span_abs_qn:
+  - '10'
+  - '30'
+  sounding_segments:
+  - pitch_class: G
+    start_abs_qn: '10'
+    duration_qn: '8'
+  - pitch_class: D
+    start_abs_qn: '18'
+    duration_qn: '2'
+  - pitch_class: Db
+    start_abs_qn: '20'
+    duration_qn: '8'
+  - rest_start_abs_qn: '28'
+    duration_qn: '2'
+  phrase_total_qn_including_rest: '20'
+  m7_tacet_for_primary_theme: true
+  repeat_entry_abs_qn: '35'
+  repeat_entry_measure: 8
+  priority: P5
+inactive_or_tacet_through_m8:
+- Piccolos
+- Flutes
+- Oboes I-II
+- English Horn
+- Clarinets I-III
+- Bass Clarinet
+- Horns I-IV
+- Trumpets
+- Trombones
+- Tenor Tuba
+- Bass Tuba
+- Timpani II
+- Side/Snare Drum
+- Cymbals
+- Bass Drum
+- Organ
+review_items:
+- id: REVIEW-TAMTAM-001
+  topic: Exact tam-tam roll notation/dynamic shaping in m1-m8
+  status: SOURCE_REVIEW_REQUIRED
+  effect: Does not affect locked pitched ostinato or Theme A pitch/rhythm.
+- id: REVIEW-DYNAMICS-001
+  topic: Event-level crescendo/dynamic markings across m3-m8
+  status: SOURCE_REVIEW_REQUIRED
+  effect: Pitch/rhythm transcription remains locked.
+status:
+  pitched_ostinato: LOCKED
+  theme_a_pitch_rhythm_m1_m8: LOCKED
+  source_force_activity: LOCKED_EXCEPT_REVIEW_ITEMS
+  tam_tam_detail: PARTIAL_LOCK
+  event_level_dynamics: PARTIAL_LOCK
+  minecraft_master: NOT_STARTED

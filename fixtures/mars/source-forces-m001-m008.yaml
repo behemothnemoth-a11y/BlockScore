@@ -1,0 +1,97 @@
+schema_version: 1.0.0
+fixture_id: MARS-SOURCE-FORCES-M001-M008
+scope: measures 1-8
+active_forces:
+- instrument: Timpani I
+  measures: 1-8
+  role: G2 ostinato
+  articulation: wooden sticks
+  confidence: HIGH
+- instrument: Harp I
+  measures: 1-8
+  role: G1/G2 alternating-octave ostinato
+  confidence: HIGH
+- instrument: Harp II
+  measures: 1-8
+  role: opposite-phase G1/G2 alternating-octave ostinato
+  confidence: HIGH
+- instrument: Violins I
+  measures: 1-8
+  role: G3 ostinato
+  articulation: col legno
+  confidence: HIGH
+- instrument: Violins II
+  measures: 1-8
+  role: G3 ostinato
+  articulation: col legno
+  confidence: HIGH
+- instrument: Violas
+  measures: 1-8
+  role: G3 ostinato
+  articulation: col legno
+  confidence: HIGH
+- instrument: Violoncellos
+  measures: 1-8
+  role: G2 ostinato
+  articulation: col legno
+  confidence: HIGH
+- instrument: Contrabasses
+  measures: 1-8
+  role: G1 sounding ostinato
+  articulation: col legno
+  confidence: HIGH
+- instrument: Tam-tam / Gong
+  measures: 1-8
+  role: 3+2 rolled underlay
+  confidence: MEDIUM
+  review_status: SOURCE_REVIEW_REQUIRED
+- instrument: Bassoon I
+  measures: 3-6, 8
+  role: Theme A
+  confidence: HIGH
+- instrument: Bassoon II
+  measures: 3-6, 8
+  role: Theme A a2 with Bassoon I
+  confidence: HIGH
+- instrument: Contrabassoon
+  measures: 3-6, 8
+  role: Theme A one octave below
+  confidence: HIGH
+- instrument: Horn V in F
+  measures: 3-6, 8
+  role: Theme A concert-pitch G2/D3/Db3
+  confidence: HIGH
+- instrument: Horn VI in F
+  measures: 3-6, 8
+  role: Theme A concert-pitch G2/D3/Db3
+  confidence: HIGH
+- instrument: Bassoon III
+  measures: 5-6
+  role: Db3 reinforcement
+  confidence: HIGH
+- instrument: Bass Oboe
+  measures: 5-6
+  role: Db3 reinforcement
+  confidence: HIGH
+tacet_through_measure_8:
+- Piccolos
+- Flutes
+- Oboes I-II
+- English Horn
+- Clarinets I-III
+- Bass Clarinet
+- Horns I-IV
+- Trumpets I-IV
+- Tenor Trombones
+- Bass Trombone
+- Tenor Tuba
+- Bass Tuba
+- Timpani II
+- Side/Snare Drum
+- Cymbals
+- Bass Drum
+- Organ
+source_pitch_policy:
+  horns: stored as concert/sounding pitch
+  contrabasses: stored as sounding pitch
+  score_spelling: Db retained instead of MIDI enharmonic C#

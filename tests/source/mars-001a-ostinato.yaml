@@ -1,0 +1,65 @@
+test_id: SOURCE-MARS-001A-OSTINATO
+fixture: fixtures/mars/source-score-m001-m008.yaml
+rhythm:
+  attack_offsets_qn:
+  - '0'
+  - 1/3
+  - 2/3
+  - '1'
+  - '2'
+  - '3'
+  - 7/2
+  - '4'
+  durations_qn:
+  - 1/3
+  - 1/3
+  - 1/3
+  - '1'
+  - '1'
+  - 1/2
+  - 1/2
+  - '1'
+registers:
+  Timpani I:
+  - G2
+  Harp I:
+  - G2
+  - G1
+  - G2
+  - G1
+  - G2
+  - G1
+  - G2
+  - G1
+  Harp II:
+  - G1
+  - G2
+  - G1
+  - G2
+  - G1
+  - G2
+  - G1
+  - G2
+  Violins I:
+  - G3
+  Violins II:
+  - G3
+  Violas:
+  - G3
+  Violoncellos:
+  - G2
+  Contrabasses:
+  - G1
+articulations:
+  Timpani I: wooden sticks
+  Violins I: col legno
+  Violins II: col legno
+  Violas: col legno
+  Violoncellos: col legno
+  Contrabasses: col legno
+assertions:
+- EIGHT_ATTACKS_PER_MEASURE
+- SIXTY_FOUR_ATTACK_GROUPS_IN_SCOPE
+- HARP_OCTAVES_ALTERNATE_IN_OPPOSITE_PHASE
+- STRING_OSTINATO_IS_G_IN_UNISON_AND_OCTAVES
+- DOUBLE_BASS_PITCH_IS_SOUNDING_G1

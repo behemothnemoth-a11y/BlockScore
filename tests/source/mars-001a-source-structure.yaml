@@ -1,0 +1,36 @@
+test_id: SOURCE-MARS-001A-STRUCTURE
+fixture: fixtures/mars/source-score-m001-m008.yaml
+expected:
+  measure_count: 8
+  measure_length_qn: '5'
+  scope_length_qn: '40'
+  ostinato_attacks_per_measure: 8
+  ostinato_attack_groups_total: 64
+  pitched_ostinato_source_events: 512
+  theme_events: 22
+  expanded_total_events_including_tamtam_review_events: 550
+theme_timeline:
+- start_abs_qn: '10'
+  end_abs_qn: '18'
+  pitch_class: G
+- start_abs_qn: '18'
+  end_abs_qn: '20'
+  pitch_class: D
+- start_abs_qn: '20'
+  end_abs_qn: '28'
+  pitch_class: Db
+- start_abs_qn: '28'
+  end_abs_qn: '30'
+  type: REST
+- start_abs_qn: '30'
+  end_abs_qn: '35'
+  type: PRIMARY_THEME_TACET
+- start_abs_qn: '35'
+  pitch_class: G
+  type: RESTART
+assertions:
+- NO_MEASURE_GAPS
+- OSTINATO_CONTINUES_M1_THROUGH_M8
+- FIRST_THEME_PHRASE_INCLUDING_REST_EQUALS_20_QN
+- M8_THEME_RESTART_EXISTS
+- DB_SPELLING_PRESERVED
