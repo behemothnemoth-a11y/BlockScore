@@ -21,14 +21,26 @@ import net.minecraft.world.level.redstone.Orientation;
 import net.minecraft.world.phys.BlockHitResult;
 import org.jspecify.annotations.Nullable;
 
+/**
+ * A physical dead/muted-string note block.
+ *
+ * Unlike a pitched note block, NOTE is a register selector:
+ *
+ *  0..7   -> low strings
+ *  8..16  -> middle strings
+ * 17..24  -> high strings
+ *
+ * No runtime pitch shifting is applied. Each register sound event has
+ * two string-derived variants in sounds.json, giving automatic variation
+ * during dense ghost/dead-string passages.
+ */
 public final class GuitarDeadNoteBlock extends Block {
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final IntegerProperty NOTE = BlockStateProperties.NOTE;
-    private static final int[] ROOT_STATES = {0, 3, 8, 13, 17, 22, 24};
 
     public GuitarDeadNoteBlock(Properties properties) {
         super(properties);
-        registerDefaultState(stateDefinition.any().setValue(NOTE, 0).setValue(POWERED, false));
+        registerDefaultState(stateDefinition.any().setValue(NOTE, 12).setValue(POWERED, false));
     }
 
     @Override
@@ -83,9 +95,7 @@ public final class GuitarDeadNoteBlock extends Block {
     @Override
     protected boolean triggerEvent(BlockState state, Level level, BlockPos pos, int eventId, int eventParam) {
         int note = state.getValue(NOTE);
-        int root = nearestRoot(note);
-        SoundEvent sound = soundForRoot(root);
-        float pitch = pitchFromOffset(note - root);
+        SoundEvent sound = soundForRegister(note);
 
         level.addParticle(
                 ParticleTypes.NOTE,
@@ -104,41 +114,17 @@ public final class GuitarDeadNoteBlock extends Block {
                 pos.getZ() + 0.5,
                 sound,
                 SoundSource.RECORDS,
-                2.5f,
-                pitch,
+                2.25f,
+                1.0f,
                 level.getRandom().nextLong()
         );
         return true;
     }
 
-    static int nearestRoot(int noteState) {
-        int best = ROOT_STATES[0];
-        int bestDistance = Math.abs(noteState - best);
-        for (int root : ROOT_STATES) {
-            int distance = Math.abs(noteState - root);
-            if (distance < bestDistance) {
-                best = root;
-                bestDistance = distance;
-            }
-        }
-        return best;
-    }
-
-    static float pitchFromOffset(int semitones) {
-        return (float) Math.pow(2.0, semitones / 12.0);
-    }
-
-    private static SoundEvent soundForRoot(int root) {
-        return switch (root) {
-            case 0 -> ModSounds.GUITAR_DEAD_NOTE_N00;
-            case 3 -> ModSounds.GUITAR_DEAD_NOTE_N03;
-            case 8 -> ModSounds.GUITAR_DEAD_NOTE_N08;
-            case 13 -> ModSounds.GUITAR_DEAD_NOTE_N13;
-            case 17 -> ModSounds.GUITAR_DEAD_NOTE_N17;
-            case 22 -> ModSounds.GUITAR_DEAD_NOTE_N22;
-            case 24 -> ModSounds.GUITAR_DEAD_NOTE_N24;
-            default -> throw new IllegalArgumentException("Unsupported multisample root: " + root);
-        };
+    private static SoundEvent soundForRegister(int note) {
+        if (note <= 7) return ModSounds.GUITAR_DEAD_NOTE_LOW;
+        if (note <= 16) return ModSounds.GUITAR_DEAD_NOTE_MID;
+        return ModSounds.GUITAR_DEAD_NOTE_HIGH;
     }
 
     @Override

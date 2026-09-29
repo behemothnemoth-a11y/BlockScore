@@ -1,37 +1,48 @@
-test_id: INSTRUMENT-CUSTOM-002
-name: Crow guitar articulation contract
+test_id: INSTRUMENT-CUSTOM-CROW-002
+name: Crow guitar articulation acceptance v0.3
 profile: java-26.2
 source: jinsankim-crow.gpx
 
-required_custom_instruments:
-  - guitar_natural_harmonic
-  - guitar_tapped_harmonic
-  - guitar_dead_note
+attacks:
+  total: 2674
+  normal_guitar: 1339
+  natural_harmonic: 32
+  tapped_harmonic: 72
+  dead_muted_string: 1009
+  percussion: 222
 
-physical_contract:
-  note_state: 0..24
-  powered_state: boolean
-  plays_on_rising_edge: true
-  held_power_retriggers: false
-  uses_playsound_command: false
-  requires_block_entity: false
+accepted:
+  natural_harmonic:
+    status: VERIFIED
+  tapped_harmonic:
+    status: VERIFIED
 
-multisample_roots:
-  - 0
-  - 3
-  - 8
-  - 13
-  - 17
-  - 22
-  - 24
+dead_note_v03:
+  status: TEST_REQUIRED
+  pitch_mode: percussion_index
+  runtime_pitch_shift_semitones: 0
+  source_string_mapping:
+    "0": LOW
+    "1": LOW
+    "2": MID
+    "3": MID
+    "4": HIGH
+    "5": HIGH
+  canonical_note_states:
+    LOW: 0
+    MID: 12
+    HIGH: 24
+  source_attack_counts:
+    LOW: 407
+    MID: 362
+    HIGH: 240
+  variants_per_register: 2
 
-source_routing:
-  Natural: guitar_natural_harmonic
-  Tap: guitar_tapped_harmonic
-  Muted: guitar_dead_note
-
-acceptance:
-  mod_build: TEST_REQUIRED
-  in_game_smoke_test: TEST_REQUIRED
-  command_rail_crow_playback: TEST_REQUIRED
-  a_b_improvement_over_vanilla: TEST_REQUIRED
+command_rail:
+  tps: 100
+  pulse_ticks: 5
+  dead_note_endpoint_pool:
+    LOW: 2
+    MID: 2
+    HIGH: 2
+  scheduler_changes_required: false

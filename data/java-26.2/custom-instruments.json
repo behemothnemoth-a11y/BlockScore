@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.3.0",
   "profile_id": "java-26.2",
   "minecraft_edition": "java",
   "minecraft_version": "26.2",
@@ -67,9 +67,9 @@
       "verification": {
         "registry_contract": "VERIFIED",
         "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
-        "sample_set": "PROTOTYPE",
-        "command_rail_runtime": "TEST_REQUIRED",
-        "crow_acceptance": "TEST_REQUIRED"
+        "sample_set": "VERIFIED",
+        "command_rail_runtime": "VERIFIED",
+        "crow_acceptance": "VERIFIED"
       },
       "recommended_roles": [
         "natural guitar harmonic",
@@ -126,9 +126,9 @@
       "verification": {
         "registry_contract": "VERIFIED",
         "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
-        "sample_set": "PROTOTYPE",
-        "command_rail_runtime": "TEST_REQUIRED",
-        "crow_acceptance": "TEST_REQUIRED"
+        "sample_set": "VERIFIED",
+        "command_rail_runtime": "VERIFIED",
+        "crow_acceptance": "VERIFIED"
       },
       "recommended_roles": [
         "tapped harmonic",
@@ -141,14 +141,14 @@
       "provider_id": "blockscore-instruments",
       "minecraft_block": "blockscore:guitar_dead_note_block",
       "sound_event": "blockscore:block.note_block.guitar_dead_note",
-      "class": "pitched",
-      "family": "guitar_percussive",
+      "class": "percussion",
+      "family": "guitar_percussion",
       "note_state_min": 0,
       "note_state_max": 24,
-      "low_pitch": "F#2",
-      "high_pitch": "F#4",
-      "register_offset_semitones": -12,
-      "pitch_mode": "chromatic",
+      "low_pitch": null,
+      "high_pitch": null,
+      "register_offset_semitones": null,
+      "pitch_mode": "percussion_index",
       "physical_behavior": {
         "note_property": "note",
         "powered_property": "powered",
@@ -160,19 +160,16 @@
         "command_rail_compatible": true
       },
       "sample_strategy": {
-        "mode": "multisample_nearest_root",
-        "root_note_states": [
-          0,
-          3,
-          8,
-          13,
-          17,
-          22,
-          24
-        ],
-        "maximum_pitch_shift_semitones": 2,
+        "mode": "register_round_robin",
+        "register_note_states": {
+          "low": 0,
+          "mid": 12,
+          "high": 24
+        },
+        "variants_per_register": 2,
+        "runtime_pitch_shift_semitones": 0,
         "asset_directory": "blockscore:sounds/note_block/guitar_dead_note",
-        "file_pattern": "n{note_state_2d}.ogg"
+        "file_pattern": "{register}_{variant}.ogg"
       },
       "source_articulations": [
         "dead_note",
@@ -187,13 +184,13 @@
         "registry_contract": "VERIFIED",
         "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
         "sample_set": "PROTOTYPE",
-        "command_rail_runtime": "TEST_REQUIRED",
+        "command_rail_runtime": "VERIFIED",
         "crow_acceptance": "TEST_REQUIRED"
       },
       "recommended_roles": [
         "muted string",
         "dead note",
-        "percussive guitar click",
+        "fret/string percussion",
         "fingerstyle ghost/dead-string hit"
       ]
     }

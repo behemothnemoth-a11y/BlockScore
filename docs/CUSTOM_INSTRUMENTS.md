@@ -95,3 +95,22 @@ The 100 TPS Command Rail controller remains unchanged.
 ## Governing rule
 
 > Improve the instrument vocabulary without rewriting the playback engine that already works.
+
+
+---
+
+# Dead/Muted Strings — v0.3 rule
+
+A GPX `Muted`/dead-string note is not treated as a chromatic pitch.
+
+BlockScore preserves the source **string register**:
+
+```text
+GPX string 0-1 -> LOW  -> note_state 0
+GPX string 2-3 -> MID  -> note_state 12
+GPX string 4-5 -> HIGH -> note_state 24
+```
+
+The custom block does not pitch-shift these samples. `note` is retained as a Command Rail-compatible block property and register selector.
+
+This is intentionally distinct from **palm mute**, which remains a future pitched articulation.

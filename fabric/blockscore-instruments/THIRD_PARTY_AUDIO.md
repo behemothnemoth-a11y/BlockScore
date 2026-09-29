@@ -46,3 +46,21 @@ Tapped harmonics additionally mix a short filtered picked-string transient into 
 Dead/muted string samples use short heavily damped picked-string transients.
 
 No commercial or restricted sample-library material is included.
+
+
+## v0.3 dead/muted-string redesign
+
+Crow acceptance testing showed that the v0.2 dead-note bank was still too tonal.
+
+v0.3 keeps the same CC0 SpeedY source pack but changes the dead-note derivation:
+
+- low register variants: low E and A picked-string recordings
+- middle register variants: D and G picked-string recordings
+- high register variants: B and high-E picked-string recordings
+- only the recorded attack/string-contact region is retained
+- stable periodic body is aggressively high-passed/differentiated
+- a short shaped broadband component is mixed into the real transient
+- no runtime pitch shifting is applied
+- two variants per register are exposed through `sounds.json`
+
+The result is intentionally **fret/string percussion**, not a short chromatic guitar note.

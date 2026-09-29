@@ -1,15 +1,31 @@
-# Audio Status — v0.2
+# Audio Status — v0.3
 
-The original v0.1 procedural test tones have been replaced.
+The natural-harmonic and tapped-harmonic banks from v0.2 are **accepted** by the Crow in-game test and remain unchanged.
 
-BlockScore Instruments v0.2 uses processed **CC0 real nylon-guitar recordings** from SpeedY's Freesound pack `Nylon Guitar Single notes` (pack 469).
+The dead/muted-string bank is redesigned in v0.3.
 
-The natural-harmonic bank uses the real harmonic recordings.
+Instead of seven pitched dead-note samples, it now has three percussion registers:
 
-The tapped-harmonic bank combines those harmonic bodies with short filtered picked-string transients from the same CC0 pack.
+```text
+LOW   -> note_state 0
+MID   -> note_state 12
+HIGH  -> note_state 24
+```
 
-The dead/muted-string bank uses short damped picked-string transients from the same CC0 pack.
+Each register has two string-derived variants. Minecraft's sound-event variation chooses between them automatically.
 
-These are still considered an acceptance-test sample set until Crow is auditioned in Minecraft, but they are no longer synthetic placeholders.
+No runtime pitch shifting is applied to dead notes.
 
-See `THIRD_PARTY_AUDIO.md` for exact source files and license information.
+The source material remains the CC0 SpeedY `Nylon Guitar Single notes` pack. The audio is processed to emphasize real pick/fret/string transients while suppressing stable pitch.
+
+Crow v3 routes GPX muted notes by their original string number:
+
+```text
+strings 6/5 -> LOW
+strings 4/3 -> MID
+strings 2/1 -> HIGH
+```
+
+(Internally GPX stores the strings low-to-high as indices 0..5.)
+
+See `THIRD_PARTY_AUDIO.md`.
