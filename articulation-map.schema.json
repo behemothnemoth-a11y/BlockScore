@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BlockScore Articulation Mapping",
+  "description": "One active source-articulation to Minecraft-instrument routing entry.",
+  "type": "object",
+  "required": [
+    "source_family",
+    "articulation",
+    "target_instrument",
+    "fallback_instrument",
+    "requires_provider",
+    "status"
+  ],
+  "properties": {
+    "source_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "articulation": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "target_instrument": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "fallback_instrument": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "requires_provider": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+$"
+    },
+    "status": {
+      "enum": [
+        "READY_FOR_IMPLEMENTATION",
+        "IMPLEMENTED",
+        "VERIFIED"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

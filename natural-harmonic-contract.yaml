@@ -1,0 +1,63 @@
+test_id: INSTRUMENT-CUSTOM-001
+name: guitar natural harmonic physical contract
+profile: java-26.2
+instrument_id: guitar_natural_harmonic
+
+registry:
+  file: data/java-26.2/custom-instruments.json
+  expected_provider: blockscore-instruments
+  expected_block: blockscore:guitar_natural_harmonic_note_block
+  expected_sound_event: blockscore:block.note_block.guitar_natural_harmonic
+
+state_contract:
+  note:
+    minimum: 0
+    maximum: 24
+    count: 25
+  powered:
+    values:
+      - false
+      - true
+
+physical_playback:
+  rising_edge_plays: true
+  held_power_retriggers: false
+  falling_edge_plays: false
+  same_note_after_reset_retriggers: true
+  uses_playsound_command: false
+  requires_block_entity: false
+
+tuning:
+  right_click_advances_semitone: true
+  wraps_24_to_0: true
+
+samples:
+  strategy: multisample_nearest_root
+  expected_root_note_states:
+    - 0
+    - 4
+    - 8
+    - 12
+    - 16
+    - 20
+    - 24
+  maximum_pitch_shift_semitones: 2
+
+command_rail:
+  compatible: true
+  endpoint_identity_fields:
+    - instrument_id
+    - note_state
+    - physical_voice_index
+  polyphony_key:
+    - instrument_id
+    - note_state
+
+fallback:
+  vanilla_instrument: pling
+  silent_fallback_allowed: false
+  required_report_code: CUSTOM_INSTRUMENT_FALLBACK
+
+acceptance:
+  mechanical_status: TEST_REQUIRED
+  crow_a_b_status: TEST_REQUIRED

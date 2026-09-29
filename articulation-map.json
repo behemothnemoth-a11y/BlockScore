@@ -1,0 +1,63 @@
+{
+  "schema_version": "0.1.0",
+  "profile_id": "java-26.2",
+  "description": "Canonical source-articulation routing for BlockScore custom physical instruments.",
+  "compile_modes": [
+    "VANILLA_ONLY",
+    "CUSTOM_IF_AVAILABLE",
+    "CUSTOM_REQUIRED"
+  ],
+  "mappings": [
+    {
+      "source_family": "guitar",
+      "articulation": "natural_harmonic",
+      "aliases": [
+        "natural harmonic",
+        "natural-harmonic",
+        "gp:natural_harmonic"
+      ],
+      "target_instrument": "guitar_natural_harmonic",
+      "fallback_instrument": "pling",
+      "requires_provider": "blockscore-instruments",
+      "status": "READY_FOR_IMPLEMENTATION"
+    }
+  ],
+  "reserved_future_mappings": [
+    {
+      "source_family": "guitar",
+      "articulation": "palm_mute",
+      "target_instrument": "guitar_palm_mute",
+      "status": "PLANNED"
+    },
+    {
+      "source_family": "guitar",
+      "articulation": "dead_note",
+      "target_instrument": "guitar_dead_note",
+      "status": "PLANNED"
+    },
+    {
+      "source_family": "guitar",
+      "articulation": "tapped_harmonic",
+      "target_instrument": "guitar_tapped_harmonic",
+      "status": "PLANNED"
+    },
+    {
+      "source_family": "guitar",
+      "articulation": "artificial_harmonic",
+      "target_instrument": "guitar_artificial_harmonic",
+      "status": "PLANNED"
+    },
+    {
+      "source_family": "guitar",
+      "articulation": "pinch_harmonic",
+      "target_instrument": "guitar_pinch_harmonic",
+      "status": "PLANNED"
+    },
+    {
+      "source_family": "guitar",
+      "articulation": "acoustic_body_hit",
+      "target_instrument": "guitar_acoustic_body_hit",
+      "status": "PLANNED"
+    }
+  ]
+}

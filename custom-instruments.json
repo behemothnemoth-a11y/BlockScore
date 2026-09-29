@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1.0",
+  "profile_id": "java-26.2",
+  "minecraft_edition": "java",
+  "minecraft_version": "26.2",
+  "description": "BlockScore-provided custom physical instrument overlay for Minecraft Java Edition 26.2.",
+  "provider": {
+    "id": "blockscore-instruments",
+    "minecraft_namespace": "blockscore",
+    "required_for_custom_playback": true
+  },
+  "default_rules": {
+    "note_state_min": 0,
+    "note_state_max": 24,
+    "semitones_per_step": 1,
+    "physical_endpoints_only": true,
+    "command_rail_compatible": true,
+    "silent_fallback_forbidden": true
+  },
+  "instruments": [
+    {
+      "id": "guitar_natural_harmonic",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_natural_harmonic_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_natural_harmonic",
+      "class": "pitched",
+      "family": "guitar_harmonic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#3",
+      "high_pitch": "F#5",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "multisample_nearest_root",
+        "root_note_states": [
+          0,
+          4,
+          8,
+          12,
+          16,
+          20,
+          24
+        ],
+        "maximum_pitch_shift_semitones": 2,
+        "asset_directory": "blockscore:sounds/note_block/guitar_natural_harmonic",
+        "file_pattern": "n{note_state_2d}.ogg"
+      },
+      "source_articulations": [
+        "natural_harmonic"
+      ],
+      "fallback": {
+        "instrument": "pling",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "NOT_IMPLEMENTED",
+        "sample_set": "NOT_IMPLEMENTED",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "TEST_REQUIRED"
+      },
+      "recommended_roles": [
+        "natural guitar harmonic",
+        "bell-like acoustic guitar harmonic",
+        "fingerstyle harmonic passage"
+      ]
+    }
+  ]
+}

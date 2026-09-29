@@ -1,0 +1,317 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BlockScore Custom Instrument",
+  "description": "One BlockScore-provided physical custom instrument entry.",
+  "type": "object",
+  "required": [
+    "id",
+    "provider_id",
+    "minecraft_block",
+    "sound_event",
+    "class",
+    "family",
+    "note_state_min",
+    "note_state_max",
+    "pitch_mode",
+    "physical_behavior",
+    "sample_strategy",
+    "fallback",
+    "verification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "provider_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9_-]+$"
+    },
+    "minecraft_block": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+:[a-z0-9_./-]+$"
+    },
+    "sound_event": {
+      "type": "string",
+      "pattern": "^[a-z0-9_.-]+:[a-z0-9_./-]+$"
+    },
+    "class": {
+      "enum": [
+        "pitched",
+        "percussion"
+      ]
+    },
+    "family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "note_state_min": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "note_state_max": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 24
+    },
+    "low_pitch": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[A-G](#|b)?-?[0-9]+$"
+    },
+    "high_pitch": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[A-G](#|b)?-?[0-9]+$"
+    },
+    "register_offset_semitones": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "pitch_mode": {
+      "enum": [
+        "chromatic",
+        "percussion_index"
+      ]
+    },
+    "physical_behavior": {
+      "type": "object",
+      "required": [
+        "note_property",
+        "powered_property",
+        "plays_on_rising_edge",
+        "right_click_tunes",
+        "wraps_after_note_state",
+        "requires_block_entity",
+        "requires_air_above",
+        "command_rail_compatible"
+      ],
+      "properties": {
+        "note_property": {
+          "const": "note"
+        },
+        "powered_property": {
+          "const": "powered"
+        },
+        "plays_on_rising_edge": {
+          "const": true
+        },
+        "right_click_tunes": {
+          "type": "boolean"
+        },
+        "wraps_after_note_state": {
+          "const": 24
+        },
+        "requires_block_entity": {
+          "type": "boolean"
+        },
+        "requires_air_above": {
+          "type": "boolean"
+        },
+        "command_rail_compatible": {
+          "const": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "sample_strategy": {
+      "type": "object",
+      "required": [
+        "mode",
+        "root_note_states",
+        "maximum_pitch_shift_semitones",
+        "asset_directory",
+        "file_pattern"
+      ],
+      "properties": {
+        "mode": {
+          "const": "multisample_nearest_root"
+        },
+        "root_note_states": {
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 24
+          },
+          "minItems": 2,
+          "uniqueItems": true
+        },
+        "maximum_pitch_shift_semitones": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 12
+        },
+        "asset_directory": {
+          "type": "string",
+          "minLength": 1
+        },
+        "file_pattern": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_articulations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "fallback": {
+      "type": "object",
+      "required": [
+        "instrument",
+        "quality",
+        "report_code"
+      ],
+      "properties": {
+        "instrument": {
+          "type": "string",
+          "minLength": 1
+        },
+        "quality": {
+          "enum": [
+            "APPROXIMATION",
+            "CLOSE",
+            "FUNCTIONAL_ONLY"
+          ]
+        },
+        "report_code": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "verification": {
+      "type": "object",
+      "required": [
+        "registry_contract",
+        "fabric_implementation",
+        "sample_set",
+        "command_rail_runtime",
+        "crow_acceptance"
+      ],
+      "properties": {
+        "registry_contract": {
+          "enum": [
+            "VERIFIED",
+            "TEST_REQUIRED",
+            "NOT_IMPLEMENTED"
+          ]
+        },
+        "fabric_implementation": {
+          "enum": [
+            "VERIFIED",
+            "TEST_REQUIRED",
+            "NOT_IMPLEMENTED"
+          ]
+        },
+        "sample_set": {
+          "enum": [
+            "VERIFIED",
+            "TEST_REQUIRED",
+            "NOT_IMPLEMENTED"
+          ]
+        },
+        "command_rail_runtime": {
+          "enum": [
+            "VERIFIED",
+            "TEST_REQUIRED",
+            "NOT_IMPLEMENTED"
+          ]
+        },
+        "crow_acceptance": {
+          "enum": [
+            "VERIFIED",
+            "TEST_REQUIRED",
+            "NOT_IMPLEMENTED"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "recommended_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "class": {
+            "const": "pitched"
+          }
+        },
+        "required": [
+          "class"
+        ]
+      },
+      "then": {
+        "properties": {
+          "low_pitch": {
+            "type": "string"
+          },
+          "high_pitch": {
+            "type": "string"
+          },
+          "register_offset_semitones": {
+            "type": "integer"
+          },
+          "pitch_mode": {
+            "const": "chromatic"
+          }
+        },
+        "required": [
+          "low_pitch",
+          "high_pitch",
+          "register_offset_semitones"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "class": {
+            "const": "percussion"
+          }
+        },
+        "required": [
+          "class"
+        ]
+      },
+      "then": {
+        "properties": {
+          "low_pitch": {
+            "type": "null"
+          },
+          "high_pitch": {
+            "type": "null"
+          },
+          "register_offset_semitones": {
+            "type": "null"
+          },
+          "pitch_mode": {
+            "const": "percussion_index"
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}
