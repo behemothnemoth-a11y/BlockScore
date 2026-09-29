@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "blockscore:block/guitar_nylon_low_note_block"
+      }
+    }
+  ]
+}

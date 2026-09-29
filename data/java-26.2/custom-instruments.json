@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.3.0",
+  "schema_version": "0.4.0",
   "profile_id": "java-26.2",
   "minecraft_edition": "java",
   "minecraft_version": "26.2",
@@ -192,6 +192,242 @@
         "dead note",
         "fret/string percussion",
         "fingerstyle ghost/dead-string hit"
+      ]
+    },
+    {
+      "id": "guitar_nylon_low",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_nylon_low_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_nylon",
+      "class": "pitched",
+      "family": "nylon_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "E2",
+      "high_pitch": "E4",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_nylon",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "normal"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "IMPLEMENTED_UNVERIFIED",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "TEST_REQUIRED"
+      },
+      "recommended_roles": [
+        "clean nylon guitar pluck",
+        "fingerstyle guitar"
+      ]
+    },
+    {
+      "id": "guitar_nylon_high",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_nylon_high_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_nylon",
+      "class": "pitched",
+      "family": "nylon_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "G3",
+      "high_pitch": "G5",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_nylon",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "normal"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "IMPLEMENTED_UNVERIFIED",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "TEST_REQUIRED"
+      },
+      "recommended_roles": [
+        "clean nylon guitar pluck",
+        "fingerstyle guitar"
+      ]
+    },
+    {
+      "id": "guitar_nylon_ghost_low",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_nylon_ghost_low_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_nylon",
+      "class": "pitched",
+      "family": "nylon_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "E2",
+      "high_pitch": "E4",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_nylon",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "ghost_note"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "IMPLEMENTED_UNVERIFIED",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "TEST_REQUIRED"
+      },
+      "recommended_roles": [
+        "quiet ghosted nylon guitar pluck",
+        "fingerstyle guitar"
+      ]
+    },
+    {
+      "id": "guitar_nylon_ghost_high",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_nylon_ghost_high_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_nylon",
+      "class": "pitched",
+      "family": "nylon_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "G3",
+      "high_pitch": "G5",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_nylon",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "ghost_note"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "IMPLEMENTED_UNVERIFIED",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "TEST_REQUIRED"
+      },
+      "recommended_roles": [
+        "quiet ghosted nylon guitar pluck",
+        "fingerstyle guitar"
       ]
     }
   ]

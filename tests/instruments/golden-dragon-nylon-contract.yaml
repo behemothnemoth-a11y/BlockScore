@@ -1,0 +1,39 @@
+test_id: INSTRUMENT-CUSTOM-GOLDEN-DRAGON-001
+name: Estas Tonne Golden Dragon clean nylon acceptance
+profile: java-26.2
+source: esras_tonne-the_song_of_the_golden_dragon_2.gp5
+
+source:
+  measures: 784
+  tempo_bpm: 258
+  meter_primary: 6/8
+  attacked_notes: 7202
+  pitch_range_midi: [40, 79]
+
+articulations:
+  dead_notes: 732
+  natural_harmonics: 24
+  ghost_notes_total: 1400
+  normal_ghost_plucks: 1352
+  hammer_pull: 424
+  slides: 265
+
+nylon_v04:
+  low:
+    block: blockscore:guitar_nylon_low_note_block
+    midi_range: [40, 64]
+  high:
+    block: blockscore:guitar_nylon_high_note_block
+    midi_range: [55, 79]
+  roots_midi: [40, 45, 50, 55, 59, 64, 69, 76]
+  max_runtime_pitch_shift_semitones: 3
+  ghost_volume_blocks: true
+  octave_fold_normal_notes: false
+
+frozen_from_v03:
+  natural_harmonic: true
+  dead_note_register_percussion: true
+
+deferred_for_listening_test:
+  hammer_pull_custom_timbre: 424
+  slide_custom_timbre: 265

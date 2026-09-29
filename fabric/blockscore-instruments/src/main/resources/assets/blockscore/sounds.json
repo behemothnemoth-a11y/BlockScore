@@ -127,5 +127,61 @@
       "blockscore:note_block/guitar_dead_note/high_a",
       "blockscore:note_block/guitar_dead_note/high_b"
     ]
+  },
+  "block.note_block.guitar_nylon": {
+    "sounds": [
+      {
+        "name": "blockscore:block.note_block.guitar_nylon.m59",
+        "type": "event"
+      }
+    ]
+  },
+  "block.note_block.guitar_nylon.m40": {
+    "subtitle": "subtitles.blockscore.guitar_nylon",
+    "sounds": [
+      "blockscore:note_block/guitar_nylon/m40"
+    ]
+  },
+  "block.note_block.guitar_nylon.m45": {
+    "subtitle": "subtitles.blockscore.guitar_nylon",
+    "sounds": [
+      "blockscore:note_block/guitar_nylon/m45"
+    ]
+  },
+  "block.note_block.guitar_nylon.m50": {
+    "subtitle": "subtitles.blockscore.guitar_nylon",
+    "sounds": [
+      "blockscore:note_block/guitar_nylon/m50"
+    ]
+  },
+  "block.note_block.guitar_nylon.m55": {
+    "subtitle": "subtitles.blockscore.guitar_nylon",
+    "sounds": [
+      "blockscore:note_block/guitar_nylon/m55"
+    ]
+  },
+  "block.note_block.guitar_nylon.m59": {
+    "subtitle": "subtitles.blockscore.guitar_nylon",
+    "sounds": [
+      "blockscore:note_block/guitar_nylon/m59"
+    ]
+  },
+  "block.note_block.guitar_nylon.m64": {
+    "subtitle": "subtitles.blockscore.guitar_nylon",
+    "sounds": [
+      "blockscore:note_block/guitar_nylon/m64"
+    ]
+  },
+  "block.note_block.guitar_nylon.m69": {
+    "subtitle": "subtitles.blockscore.guitar_nylon",
+    "sounds": [
+      "blockscore:note_block/guitar_nylon/m69"
+    ]
+  },
+  "block.note_block.guitar_nylon.m76": {
+    "subtitle": "subtitles.blockscore.guitar_nylon",
+    "sounds": [
+      "blockscore:note_block/guitar_nylon/m76"
+    ]
   }
 }

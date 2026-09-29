@@ -3,7 +3,7 @@
   "id": "blockscore-instruments",
   "version": "${version}",
   "name": "BlockScore Instruments",
-  "description": "Physical custom guitar articulation note blocks for BlockScore.",
+  "description": "Physical sampled guitar articulation note blocks for BlockScore.",
   "authors": [
     "BlockScore"
   ],

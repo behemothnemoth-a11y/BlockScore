@@ -64,3 +64,23 @@ v0.3 keeps the same CC0 SpeedY source pack but changes the dead-note derivation:
 - two variants per register are exposed through `sounds.json`
 
 The result is intentionally **fret/string percussion**, not a short chromatic guitar note.
+
+
+## v0.4 clean nylon-guitar bank
+
+The clean nylon-guitar multisample bank uses the same SpeedY / Freesound CC0
+`Nylon Guitar Single notes` source pack already documented above.
+
+Roots:
+- MIDI 40 E2: clean low-E string pluck
+- MIDI 45 A2: clean A string pluck
+- MIDI 50 D3: clean D string pluck
+- MIDI 55 G3: clean G string pluck
+- MIDI 59 B3: clean B string pluck
+- MIDI 64 E4: clean high-E string pluck
+- MIDI 69 A4: clean high-E 5th-fret note
+- MIDI 76 E5: clean high-E 12th-fret note
+
+The source recordings are onset-trimmed, decay-trimmed, peak-normalized and
+encoded as mono Ogg Vorbis. Runtime residual pitch shift is at most 3 semitones
+over Golden Dragon's E2-G5 range.

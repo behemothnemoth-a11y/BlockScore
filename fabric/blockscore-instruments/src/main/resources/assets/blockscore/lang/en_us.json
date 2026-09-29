@@ -4,5 +4,10 @@
   "block.blockscore.guitar_dead_note_block": "Guitar Dead / Muted String Note Block",
   "subtitles.blockscore.guitar_natural_harmonic": "Guitar natural harmonic rings",
   "subtitles.blockscore.guitar_tapped_harmonic": "Guitar tapped harmonic rings",
-  "subtitles.blockscore.guitar_dead_note": "Muted guitar string clicks"
+  "subtitles.blockscore.guitar_dead_note": "Muted guitar string clicks",
+  "block.blockscore.guitar_nylon_low_note_block": "Nylon Guitar Note Block (Low)",
+  "block.blockscore.guitar_nylon_high_note_block": "Nylon Guitar Note Block (High)",
+  "block.blockscore.guitar_nylon_ghost_low_note_block": "Nylon Guitar Ghost Note Block (Low)",
+  "block.blockscore.guitar_nylon_ghost_high_note_block": "Nylon Guitar Ghost Note Block (High)",
+  "subtitles.blockscore.guitar_nylon": "Nylon guitar note"
 }

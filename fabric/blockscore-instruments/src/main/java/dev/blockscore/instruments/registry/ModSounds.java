@@ -7,6 +7,17 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundEvent;
 
 public final class ModSounds {
+    public static final SoundEvent GUITAR_NYLON =
+            register("block.note_block.guitar_nylon");
+    public static final SoundEvent GUITAR_NYLON_M40 = register("block.note_block.guitar_nylon.m40");
+    public static final SoundEvent GUITAR_NYLON_M45 = register("block.note_block.guitar_nylon.m45");
+    public static final SoundEvent GUITAR_NYLON_M50 = register("block.note_block.guitar_nylon.m50");
+    public static final SoundEvent GUITAR_NYLON_M55 = register("block.note_block.guitar_nylon.m55");
+    public static final SoundEvent GUITAR_NYLON_M59 = register("block.note_block.guitar_nylon.m59");
+    public static final SoundEvent GUITAR_NYLON_M64 = register("block.note_block.guitar_nylon.m64");
+    public static final SoundEvent GUITAR_NYLON_M69 = register("block.note_block.guitar_nylon.m69");
+    public static final SoundEvent GUITAR_NYLON_M76 = register("block.note_block.guitar_nylon.m76");
+
     public static final SoundEvent GUITAR_NATURAL_HARMONIC =
             register("block.note_block.guitar_natural_harmonic");
     public static final SoundEvent GUITAR_NATURAL_HARMONIC_N00 = register("block.note_block.guitar_natural_harmonic.n00");

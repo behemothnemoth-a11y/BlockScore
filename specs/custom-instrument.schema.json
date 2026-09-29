@@ -220,6 +220,45 @@
             }
           },
           "additionalProperties": false
+        },
+        {
+          "type": "object",
+          "required": [
+            "mode",
+            "root_midi",
+            "maximum_pitch_shift_semitones",
+            "asset_directory",
+            "file_pattern"
+          ],
+          "properties": {
+            "mode": {
+              "const": "absolute_midi_multisample_nearest_root"
+            },
+            "root_midi": {
+              "type": "array",
+              "items": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 127
+              },
+              "minItems": 2,
+              "uniqueItems": true
+            },
+            "maximum_pitch_shift_semitones": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 12
+            },
+            "asset_directory": {
+              "type": "string",
+              "minLength": 1
+            },
+            "file_pattern": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
         }
       ]
     },

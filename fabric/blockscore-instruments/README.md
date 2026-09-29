@@ -49,3 +49,22 @@ so the proven Command Rail redstone driver continues to work without modificatio
 - Java 25
 - Fabric Loader 0.19.5+
 - Fabric API 0.161.0+26.2
+
+
+## v0.4 — clean nylon guitar
+
+Golden Dragon adds four physical sampled nylon-guitar blocks:
+
+```text
+blockscore:guitar_nylon_low_note_block
+blockscore:guitar_nylon_high_note_block
+blockscore:guitar_nylon_ghost_low_note_block
+blockscore:guitar_nylon_ghost_high_note_block
+```
+
+LOW maps note states 0..24 to MIDI 40..64 (E2..E4).
+HIGH maps note states 0..24 to MIDI 55..79 (G3..G5).
+
+The ghost blocks use the identical multisample/tuning map at lower playback
+volume so GP5 ghost-note markings remain audible as dynamics rather than
+becoming full-strength plucks.

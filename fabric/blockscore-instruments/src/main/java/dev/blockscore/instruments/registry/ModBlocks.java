@@ -3,6 +3,7 @@ package dev.blockscore.instruments.registry;
 import dev.blockscore.instruments.BlockScoreInstruments;
 import dev.blockscore.instruments.block.GuitarDeadNoteBlock;
 import dev.blockscore.instruments.block.GuitarNaturalHarmonicNoteBlock;
+import dev.blockscore.instruments.block.GuitarNylonNoteBlock;
 import dev.blockscore.instruments.block.GuitarTappedHarmonicNoteBlock;
 import java.util.function.Function;
 import net.minecraft.core.Registry;
@@ -17,6 +18,31 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public final class ModBlocks {
+
+    public static final Block GUITAR_NYLON_LOW_NOTE_BLOCK = registerWithItem(
+            "guitar_nylon_low_note_block",
+            properties -> new GuitarNylonNoteBlock(properties, 40, 2.65f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_NYLON_HIGH_NOTE_BLOCK = registerWithItem(
+            "guitar_nylon_high_note_block",
+            properties -> new GuitarNylonNoteBlock(properties, 55, 2.65f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_NYLON_GHOST_LOW_NOTE_BLOCK = registerWithItem(
+            "guitar_nylon_ghost_low_note_block",
+            properties -> new GuitarNylonNoteBlock(properties, 40, 1.35f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_NYLON_GHOST_HIGH_NOTE_BLOCK = registerWithItem(
+            "guitar_nylon_ghost_high_note_block",
+            properties -> new GuitarNylonNoteBlock(properties, 55, 1.35f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
     public static final Block GUITAR_NATURAL_HARMONIC_NOTE_BLOCK = registerWithItem(
             "guitar_natural_harmonic_note_block",
             GuitarNaturalHarmonicNoteBlock::new,
