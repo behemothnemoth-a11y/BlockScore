@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1.0",
+  "schema_version": "0.2.0",
   "profile_id": "java-26.2",
   "description": "Canonical source-articulation routing for BlockScore custom physical instruments.",
   "compile_modes": [
@@ -20,6 +20,33 @@
       "fallback_instrument": "pling",
       "requires_provider": "blockscore-instruments",
       "status": "IMPLEMENTED_UNVERIFIED"
+    },
+    {
+      "source_family": "guitar",
+      "articulation": "tapped_harmonic",
+      "aliases": [
+        "tap harmonic",
+        "tapped harmonic",
+        "gp:tap_harmonic"
+      ],
+      "target_instrument": "guitar_tapped_harmonic",
+      "fallback_instrument": "pling",
+      "requires_provider": "blockscore-instruments",
+      "status": "IMPLEMENTED_UNVERIFIED"
+    },
+    {
+      "source_family": "guitar",
+      "articulation": "dead_note",
+      "aliases": [
+        "muted",
+        "dead string",
+        "muted string",
+        "gp:muted"
+      ],
+      "target_instrument": "guitar_dead_note",
+      "fallback_instrument": "hat",
+      "requires_provider": "blockscore-instruments",
+      "status": "IMPLEMENTED_UNVERIFIED"
     }
   ],
   "reserved_future_mappings": [
@@ -27,18 +54,6 @@
       "source_family": "guitar",
       "articulation": "palm_mute",
       "target_instrument": "guitar_palm_mute",
-      "status": "PLANNED"
-    },
-    {
-      "source_family": "guitar",
-      "articulation": "dead_note",
-      "target_instrument": "guitar_dead_note",
-      "status": "PLANNED"
-    },
-    {
-      "source_family": "guitar",
-      "articulation": "tapped_harmonic",
-      "target_instrument": "guitar_tapped_harmonic",
       "status": "PLANNED"
     },
     {

@@ -1,32 +1,15 @@
-# Prototype Natural-Harmonic Audio
+# Audio Status — v0.2
 
-The seven OGG files in this module are **procedurally generated prototype audio**.
+The original v0.1 procedural test tones have been replaced.
 
-They contain no third-party samples.
+BlockScore Instruments v0.2 uses processed **CC0 real nylon-guitar recordings** from SpeedY's Freesound pack `Nylon Guitar Single notes` (pack 469).
 
-Their purpose is to make the first Fabric implementation immediately testable:
+The natural-harmonic bank uses the real harmonic recordings.
 
-- correct block registration
-- correct `note=0..24` behavior
-- correct redstone rising-edge behavior
-- correct nearest-root multisample selection
-- correct residual pitch shift
-- correct Command Rail retrigger behavior
+The tapped-harmonic bank combines those harmonic bodies with short filtered picked-string transients from the same CC0 pack.
 
-They are not intended to be the final Crow-quality guitar library.
+The dead/muted-string bank uses short damped picked-string transients from the same CC0 pack.
 
-After the mechanical test passes, replace:
+These are still considered an acceptance-test sample set until Crow is auditioned in Minecraft, but they are no longer synthetic placeholders.
 
-```text
-n00.ogg
-n04.ogg
-n08.ogg
-n12.ogg
-n16.ogg
-n20.ogg
-n24.ogg
-```
-
-with recorded/licensed natural-harmonic samples tuned to the same sounding roots.
-
-No Java or registry changes are required when swapping the samples.
+See `THIRD_PARTY_AUDIO.md` for exact source files and license information.

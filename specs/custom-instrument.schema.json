@@ -216,7 +216,8 @@
             "VERIFIED",
             "TEST_REQUIRED",
             "NOT_IMPLEMENTED",
-            "IMPLEMENTED_UNVERIFIED"
+            "IMPLEMENTED_UNVERIFIED",
+            "PROTOTYPE"
           ]
         },
         "sample_set": {
@@ -224,7 +225,8 @@
             "VERIFIED",
             "TEST_REQUIRED",
             "NOT_IMPLEMENTED",
-            "PROTOTYPE"
+            "PROTOTYPE",
+            "IMPLEMENTED_UNVERIFIED"
           ]
         },
         "command_rail_runtime": {

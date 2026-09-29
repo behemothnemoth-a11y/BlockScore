@@ -36,11 +36,11 @@ samples:
   strategy: multisample_nearest_root
   expected_root_note_states:
     - 0
-    - 4
+    - 3
     - 8
-    - 12
-    - 16
-    - 20
+    - 13
+    - 17
+    - 22
     - 24
   maximum_pitch_shift_semitones: 2
 

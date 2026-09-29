@@ -1,0 +1,37 @@
+test_id: INSTRUMENT-CUSTOM-002
+name: Crow guitar articulation contract
+profile: java-26.2
+source: jinsankim-crow.gpx
+
+required_custom_instruments:
+  - guitar_natural_harmonic
+  - guitar_tapped_harmonic
+  - guitar_dead_note
+
+physical_contract:
+  note_state: 0..24
+  powered_state: boolean
+  plays_on_rising_edge: true
+  held_power_retriggers: false
+  uses_playsound_command: false
+  requires_block_entity: false
+
+multisample_roots:
+  - 0
+  - 3
+  - 8
+  - 13
+  - 17
+  - 22
+  - 24
+
+source_routing:
+  Natural: guitar_natural_harmonic
+  Tap: guitar_tapped_harmonic
+  Muted: guitar_dead_note
+
+acceptance:
+  mod_build: TEST_REQUIRED
+  in_game_smoke_test: TEST_REQUIRED
+  command_rail_crow_playback: TEST_REQUIRED
+  a_b_improvement_over_vanilla: TEST_REQUIRED

@@ -1,7 +1,9 @@
 package dev.blockscore.instruments.registry;
 
 import dev.blockscore.instruments.BlockScoreInstruments;
+import dev.blockscore.instruments.block.GuitarDeadNoteBlock;
 import dev.blockscore.instruments.block.GuitarNaturalHarmonicNoteBlock;
+import dev.blockscore.instruments.block.GuitarTappedHarmonicNoteBlock;
 import java.util.function.Function;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -21,8 +23,19 @@ public final class ModBlocks {
             BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
     );
 
-    private ModBlocks() {
-    }
+    public static final Block GUITAR_TAPPED_HARMONIC_NOTE_BLOCK = registerWithItem(
+            "guitar_tapped_harmonic_note_block",
+            GuitarTappedHarmonicNoteBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_DEAD_NOTE_BLOCK = registerWithItem(
+            "guitar_dead_note_block",
+            GuitarDeadNoteBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    private ModBlocks() {}
 
     private static Block registerWithItem(
             String name,
@@ -38,15 +51,11 @@ public final class ModBlocks {
 
         BlockItem blockItem = new BlockItem(
                 block,
-                new Item.Properties()
-                        .setId(itemKey)
-                        .useBlockDescriptionPrefix()
+                new Item.Properties().setId(itemKey).useBlockDescriptionPrefix()
         );
         Registry.register(BuiltInRegistries.ITEM, itemKey, blockItem);
-
         return block;
     }
 
-    public static void initialize() {
-    }
+    public static void initialize() {}
 }

@@ -1,77 +1,72 @@
-# BlockScore Instruments — Fabric 26.2 Prototype
+# BlockScore Instruments — Fabric 26.2
 
-This module is the first runnable BlockScore custom-instrument implementation.
+Version 0.2 expands the proven custom physical note-block architecture to the three guitar articulations needed for the Crow acceptance test.
 
-## Implemented
+## Blocks
 
 ```text
 blockscore:guitar_natural_harmonic_note_block
+blockscore:guitar_tapped_harmonic_note_block
+blockscore:guitar_dead_note_block
 ```
 
-State:
+Each block uses:
 
 ```text
 note=0..24
 powered=true|false
 ```
 
-Behavior:
+and works with ordinary redstone rising edges and the existing BlockScore Command Rail endpoint driver.
 
-- right-click with an empty hand advances the note
-- left-click plays the current note
-- a redstone rising edge plays the current note
-- sustained power does not retrigger
-- a falling edge resets the powered state
-- air is required above the block
-- no block entity
-- no `/playsound` Command Rail substitution
-- seven multisample roots: 0, 4, 8, 12, 16, 20, 24
+## Multisample roots
 
-## Requirements
+```text
+0, 3, 8, 13, 17, 22, 24
+```
+
+The harmonic blocks cover F#3–F#5.
+
+The dead-note block covers F#2–F#4.
+
+## Audio
+
+The v0.2 samples are derived from SpeedY's CC0 `Nylon Guitar Single notes` Freesound pack.
+
+See `THIRD_PARTY_AUDIO.md`.
+
+## Build
+
+```text
+gradle build
+```
+
+Requirements:
 
 - Minecraft Java 26.2
 - Java 25
 - Fabric Loader 0.19.5+
 - Fabric API 0.161.0+26.2
 
-## Build
-
-From this directory:
-
-```text
-gradle build
-```
-
-The repository GitHub Action also builds this module with Java 25 and Gradle 9.7.1.
-
-## In-game smoke test
-
-Install the resulting JAR plus Fabric API.
-
-Give yourself the block:
+## Smoke test
 
 ```text
 /give @s blockscore:guitar_natural_harmonic_note_block
+/give @s blockscore:guitar_tapped_harmonic_note_block
+/give @s blockscore:guitar_dead_note_block
 ```
 
-Place it with air above it.
+For each block:
 
-1. Empty-hand right click: pitch advances and plays.
-2. Left click: current pitch plays.
-3. Put a lever beside it.
-4. Lever OFF → ON: one attack.
-5. Leave lever ON: no repeated attack.
-6. Lever ON → OFF: no attack.
-7. Lever OFF → ON again: same pitch attacks again.
+1. keep air above it
+2. right click to tune/play
+3. left click to play current state
+4. test lever OFF→ON
+5. confirm held power does not repeat
+6. confirm OFF→ON retriggers
 
-## Command Rail test
+## Crow
 
-Use it anywhere the existing Command Rail bank would normally use a vanilla note block.
+Crow is the first full musical acceptance test for this version.
 
-The controller should continue toggling an adjacent redstone driver. It should not need to know how the custom block chooses its sample.
-
-## Current audio quality
-
-The included seven OGG files are procedural prototypes so the code can be tested immediately.
-
-Once mechanics pass, the next step is replacing those files with real guitar natural-harmonic multisamples and then recompiling Crow.
+The song datapack should use the same 100 TPS Command Rail controller that already passed Rush E.

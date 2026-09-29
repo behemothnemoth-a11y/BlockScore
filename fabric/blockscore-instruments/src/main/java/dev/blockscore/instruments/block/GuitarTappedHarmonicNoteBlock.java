@@ -21,12 +21,12 @@ import net.minecraft.world.level.redstone.Orientation;
 import net.minecraft.world.phys.BlockHitResult;
 import org.jspecify.annotations.Nullable;
 
-public final class GuitarNaturalHarmonicNoteBlock extends Block {
+public final class GuitarTappedHarmonicNoteBlock extends Block {
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final IntegerProperty NOTE = BlockStateProperties.NOTE;
     private static final int[] ROOT_STATES = {0, 3, 8, 13, 17, 22, 24};
 
-    public GuitarNaturalHarmonicNoteBlock(Properties properties) {
+    public GuitarTappedHarmonicNoteBlock(Properties properties) {
         super(properties);
         registerDefaultState(stateDefinition.any().setValue(NOTE, 0).setValue(POWERED, false));
     }
@@ -130,13 +130,13 @@ public final class GuitarNaturalHarmonicNoteBlock extends Block {
 
     private static SoundEvent soundForRoot(int root) {
         return switch (root) {
-            case 0 -> ModSounds.GUITAR_NATURAL_HARMONIC_N00;
-            case 3 -> ModSounds.GUITAR_NATURAL_HARMONIC_N03;
-            case 8 -> ModSounds.GUITAR_NATURAL_HARMONIC_N08;
-            case 13 -> ModSounds.GUITAR_NATURAL_HARMONIC_N13;
-            case 17 -> ModSounds.GUITAR_NATURAL_HARMONIC_N17;
-            case 22 -> ModSounds.GUITAR_NATURAL_HARMONIC_N22;
-            case 24 -> ModSounds.GUITAR_NATURAL_HARMONIC_N24;
+            case 0 -> ModSounds.GUITAR_TAPPED_HARMONIC_N00;
+            case 3 -> ModSounds.GUITAR_TAPPED_HARMONIC_N03;
+            case 8 -> ModSounds.GUITAR_TAPPED_HARMONIC_N08;
+            case 13 -> ModSounds.GUITAR_TAPPED_HARMONIC_N13;
+            case 17 -> ModSounds.GUITAR_TAPPED_HARMONIC_N17;
+            case 22 -> ModSounds.GUITAR_TAPPED_HARMONIC_N22;
+            case 24 -> ModSounds.GUITAR_TAPPED_HARMONIC_N24;
             default -> throw new IllegalArgumentException("Unsupported multisample root: " + root);
         };
     }
