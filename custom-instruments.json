@@ -66,8 +66,8 @@
       },
       "verification": {
         "registry_contract": "VERIFIED",
-        "fabric_implementation": "NOT_IMPLEMENTED",
-        "sample_set": "NOT_IMPLEMENTED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
         "command_rail_runtime": "TEST_REQUIRED",
         "crow_acceptance": "TEST_REQUIRED"
       },

@@ -215,14 +215,16 @@
           "enum": [
             "VERIFIED",
             "TEST_REQUIRED",
-            "NOT_IMPLEMENTED"
+            "NOT_IMPLEMENTED",
+            "IMPLEMENTED_UNVERIFIED"
           ]
         },
         "sample_set": {
           "enum": [
             "VERIFIED",
             "TEST_REQUIRED",
-            "NOT_IMPLEMENTED"
+            "NOT_IMPLEMENTED",
+            "PROTOTYPE"
           ]
         },
         "command_rail_runtime": {

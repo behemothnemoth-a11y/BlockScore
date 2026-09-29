@@ -78,7 +78,7 @@ The custom overlay must never silently mutate the meaning of a vanilla instrumen
 
 # 3. Mod Identity
 
-Initial provider/mod identifier:
+Provider/mod identifier:
 
 ```text
 blockscore-instruments
@@ -100,7 +100,7 @@ It is not responsible for song scheduling, source parsing, arrangement, or Comma
 
 # 4. Physical Contract
 
-Every pitched BlockScore custom note block in the first implementation must expose the same two state concepts needed by the working physical playback architecture:
+Every pitched BlockScore custom note block in the first implementation exposes:
 
 ```text
 note = 0..24
@@ -117,7 +117,7 @@ Required behavior:
 6. The block can be placed directly into a Command Rail endpoint bank.
 7. No block entity is required for the basic instrument.
 8. The block produces a physical in-world sound. Command Rail must not substitute `/playsound` for the physical endpoint.
-9. The block must be addressable by normal block-state commands so the existing driver strategy can toggle `powered`.
+9. The block remains addressable with ordinary block-state commands and ordinary redstone.
 
 The implementation should remain as close to vanilla note-block interaction behavior as practical.
 
@@ -137,7 +137,7 @@ Minecraft block:
 blockscore:guitar_natural_harmonic_note_block
 ```
 
-Sound event:
+Canonical sound event:
 
 ```text
 blockscore:block.note_block.guitar_natural_harmonic
@@ -177,9 +177,9 @@ Version 0.1 uses seven sample roots:
 24
 ```
 
-That keeps the nearest-root pitch shift to at most two semitones for normal states.
+That keeps the nearest-root pitch shift to at most two semitones.
 
-Suggested asset naming:
+Asset names:
 
 ```text
 assets/blockscore/sounds/note_block/guitar_natural_harmonic/n00.ogg
@@ -193,31 +193,25 @@ assets/blockscore/sounds/note_block/guitar_natural_harmonic/n24.ogg
 
 The mod chooses the nearest sample root for the requested note state and applies only the remaining small pitch ratio.
 
-Future instruments may use more roots when the source articulation changes character strongly across register.
-
 ---
 
-# 7. Sample Requirements
+# 7. Prototype Audio
 
-A source sample used by BlockScore Instruments should be:
+Batch 02 includes procedurally generated prototype harmonic samples.
 
-- clean and isolated
-- mono unless stereo is musically necessary
-- tightly trimmed at the attack
-- free of room noise and unrelated transients
-- normalized consistently across the multisample set
-- long enough for the articulation's natural decay
-- legally redistributable with the mod
+They exist only to prove the complete physical path:
 
-Do not commit copyrighted commercial sample-library audio unless its license explicitly permits redistribution.
+```text
+custom block → multisample selection → redstone edge → audible sound
+```
 
-The sample source and license must be documented before release.
+They contain no third-party sampled audio.
+
+Once the block mechanics are verified, these OGG files can be replaced one-for-one with better recorded guitar harmonic samples without changing the block code or BlockScore registry contract.
 
 ---
 
 # 8. Articulation Routing
-
-The source event retains its articulation.
 
 Example:
 
@@ -236,21 +230,19 @@ minecraft.origin = PHYSICAL
 
 Without the mod, BlockScore may use the declared vanilla fallback and must report the substitution.
 
-The first fallback is:
+Current fallback:
 
 ```text
 pling
 ```
 
-This is a perceptual fallback only. It is not considered articulation-faithful.
+This is a perceptual fallback only. It is not articulation-faithful.
 
 ---
 
 # 9. Guitar Pro Mapping
 
-Guitar Pro natural harmonics should route to the custom instrument when the source parser positively identifies the articulation.
-
-Conceptual mapping:
+Guitar Pro natural harmonics should route to the custom instrument only when the source parser positively identifies the articulation:
 
 ```text
 Guitar Pro NaturalHarmonic
@@ -262,13 +254,11 @@ guitar_natural_harmonic
 
 Do not infer a natural harmonic only because a note is high or bell-like.
 
-Explicit source articulation wins.
-
 ---
 
 # 10. Planned Guitar Articulations
 
-The initial roadmap after natural harmonics is:
+After natural harmonics:
 
 ```text
 guitar_palm_mute
@@ -281,7 +271,7 @@ guitar_clean
 guitar_distorted
 ```
 
-These names are reserved by the articulation map but are not compile-eligible until their custom-instrument registry entries exist and their implementation status is enabled.
+These are planned identifiers, not implemented instruments.
 
 ---
 
@@ -289,7 +279,7 @@ These names are reserved by the articulation map but are not compile-eligible un
 
 Custom instruments do not change the proven Command Rail scheduler.
 
-For a custom pitched endpoint, the build compiler needs only:
+For a custom pitched endpoint, the build compiler needs:
 
 ```text
 instrument_id
@@ -298,21 +288,17 @@ note_state
 physical_voice_index
 ```
 
-Polyphony allocation remains based on simultaneous demand for the same:
+Polyphony allocation remains based on simultaneous demand for:
 
 ```text
 instrument_id + note_state
 ```
 
-If the same natural-harmonic pitch requires three simultaneous attacks, allocate three physical custom blocks.
+If the same harmonic pitch requires three simultaneous attacks, allocate three physical custom blocks.
 
 ---
 
 # 12. Vanilla Compatibility
-
-BlockScore must remain capable of producing vanilla-only builds.
-
-Custom instrument use is therefore a compilation capability, not a mandatory project dependency.
 
 Recommended compile modes:
 
@@ -322,11 +308,9 @@ CUSTOM_IF_AVAILABLE
 CUSTOM_REQUIRED
 ```
 
-Behavior:
-
-- `VANILLA_ONLY` — ignore custom targets and use declared fallbacks.
-- `CUSTOM_IF_AVAILABLE` — use custom instruments when the required mod capability exists; otherwise report and fall back.
-- `CUSTOM_REQUIRED` — fail compilation if a required custom articulation cannot be provided.
+- `VANILLA_ONLY` — use declared vanilla fallbacks.
+- `CUSTOM_IF_AVAILABLE` — use custom instruments when available; otherwise report and fall back.
+- `CUSTOM_REQUIRED` — fail if a required custom articulation is unavailable.
 
 No fallback may occur silently.
 
@@ -334,7 +318,7 @@ No fallback may occur silently.
 
 # 13. NBS Interoperability
 
-A later export layer may generate Note Block Studio custom-instrument definitions from the same BlockScore custom registry.
+A later export layer may generate Note Block Studio custom-instrument definitions from the same registry.
 
 The BlockScore registry remains authoritative.
 
@@ -344,9 +328,7 @@ NBS metadata is an export target, not the source of truth.
 
 # 14. Acceptance Test — Crow
 
-The first musical acceptance test should be the harmonic-heavy **Crow** arrangement that previously sounded poor with vanilla timbres.
-
-The comparison must use the same timing/master data where possible.
+The first musical acceptance test is the harmonic-heavy **Crow** arrangement that previously sounded poor with vanilla timbres.
 
 Compare:
 
@@ -363,15 +345,13 @@ Pass criteria:
 - repeated harmonics retrigger reliably under Command Rail
 - chords allocate enough endpoints
 - the custom block does not require `/playsound`
-- disabling the mod path still produces an explicit vanilla fallback report
-
-This is an audible acceptance test as well as a mechanical one.
+- disabling the mod path still produces an explicit fallback report
 
 ---
 
 # 15. Version 0.1 Boundary
 
-Version 0.1 intentionally implements only enough custom-instrument architecture to prove:
+Version 0.1 proves only:
 
 ```text
 source articulation
@@ -382,9 +362,7 @@ physical custom block
     ↓
 existing Command Rail driver
     ↓
-correct multisampled sound
+multisampled sound
 ```
 
 Do not expand the first implementation into a general synthesizer, DAW, or replacement scheduling engine.
-
-Prove one articulation end-to-end first.

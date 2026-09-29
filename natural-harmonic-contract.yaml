@@ -26,6 +26,7 @@ physical_playback:
   same_note_after_reset_retriggers: true
   uses_playsound_command: false
   requires_block_entity: false
+  requires_air_above: true
 
 tuning:
   right_click_advances_semitone: true
@@ -59,5 +60,6 @@ fallback:
   required_report_code: CUSTOM_INSTRUMENT_FALLBACK
 
 acceptance:
+  build_status: TEST_REQUIRED
   mechanical_status: TEST_REQUIRED
   crow_a_b_status: TEST_REQUIRED

@@ -1,0 +1,52 @@
+{
+  "block.note_block.guitar_natural_harmonic": {
+    "sounds": [
+      {
+        "name": "blockscore:block.note_block.guitar_natural_harmonic.n12",
+        "type": "event"
+      }
+    ]
+  },
+  "block.note_block.guitar_natural_harmonic.n00": {
+    "subtitle": "subtitles.blockscore.guitar_natural_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_natural_harmonic/n00"
+    ]
+  },
+  "block.note_block.guitar_natural_harmonic.n04": {
+    "subtitle": "subtitles.blockscore.guitar_natural_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_natural_harmonic/n04"
+    ]
+  },
+  "block.note_block.guitar_natural_harmonic.n08": {
+    "subtitle": "subtitles.blockscore.guitar_natural_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_natural_harmonic/n08"
+    ]
+  },
+  "block.note_block.guitar_natural_harmonic.n12": {
+    "subtitle": "subtitles.blockscore.guitar_natural_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_natural_harmonic/n12"
+    ]
+  },
+  "block.note_block.guitar_natural_harmonic.n16": {
+    "subtitle": "subtitles.blockscore.guitar_natural_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_natural_harmonic/n16"
+    ]
+  },
+  "block.note_block.guitar_natural_harmonic.n20": {
+    "subtitle": "subtitles.blockscore.guitar_natural_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_natural_harmonic/n20"
+    ]
+  },
+  "block.note_block.guitar_natural_harmonic.n24": {
+    "subtitle": "subtitles.blockscore.guitar_natural_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_natural_harmonic/n24"
+    ]
+  }
+}

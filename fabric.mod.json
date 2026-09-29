@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "blockscore-instruments",
+  "version": "${version}",
+  "name": "BlockScore Instruments",
+  "description": "Physical custom note-block-compatible instruments for BlockScore.",
+  "authors": [
+    "BlockScore"
+  ],
+  "contact": {
+    "sources": "https://github.com/behemothnemoth-a11y/BlockScore"
+  },
+  "license": "All-Rights-Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.blockscore.instruments.BlockScoreInstruments"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}

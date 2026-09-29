@@ -43,6 +43,7 @@
     "status": {
       "enum": [
         "READY_FOR_IMPLEMENTATION",
+        "IMPLEMENTED_UNVERIFIED",
         "IMPLEMENTED",
         "VERIFIED"
       ]

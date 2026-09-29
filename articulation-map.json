@@ -19,7 +19,7 @@
       "target_instrument": "guitar_natural_harmonic",
       "fallback_instrument": "pling",
       "requires_provider": "blockscore-instruments",
-      "status": "READY_FOR_IMPLEMENTATION"
+      "status": "IMPLEMENTED_UNVERIFIED"
     }
   ],
   "reserved_future_mappings": [
