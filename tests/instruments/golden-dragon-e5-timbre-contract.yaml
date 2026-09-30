@@ -1,0 +1,28 @@
+test_id: INSTRUMENT-GOLDEN-DRAGON-E5-001
+name: Golden Dragon high-E5 nylon timbre regression
+profile: java-26.2
+
+issue:
+  sample: blockscore:sounds/note_block/guitar_nylon/m76.ogg
+  root_midi: 76
+  pitch: E5
+  symptom: excessively bright pick transient sounded like a metronome click
+  observed_in: Golden Dragon CR01/CR02 in-game recording
+
+v042_fix:
+  source_recording: 8390__speedy__clean_e1st_12th.wav
+  source_license: CC0-1.0
+  duration_seconds: 2.6
+  attack_softening_ms: 55
+  fade_in_ms: 10
+  low_pass_hz: 6000
+  runtime_mapping_changed: false
+  datapack_changed: false
+
+accepted_unchanged:
+  nylon_m40_through_m69: true
+  harmonics: true
+  tapped_harmonics: true
+  standard_dead_note: true
+  nylon_soft_dead_note: true
+  command_rail_timing: true
