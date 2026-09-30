@@ -84,3 +84,16 @@ Roots:
 The source recordings are onset-trimmed, decay-trimmed, peak-normalized and
 encoded as mono Ogg Vorbis. Runtime residual pitch shift is at most 3 semitones
 over Golden Dragon's E2-G5 range.
+
+
+## v0.5 static articulation audition banks
+
+The first-pass v0.5 Steel Clean, Distorted Guitar, Palm Mute, Artificial
+Harmonic, Pinch Harmonic, and Acoustic Body Hit banks are derived from the
+SpeedY CC0 guitar recordings already documented above.
+
+No new restricted/commercial sample library was introduced.
+
+The v0.5 steel/distorted/palm/body timbres are audition prototypes: their
+physical block IDs and note/register contracts are intended to stay stable
+while their OGG assets may be refined after in-game listening tests.

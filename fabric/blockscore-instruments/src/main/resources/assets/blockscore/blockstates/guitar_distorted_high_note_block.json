@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "blockscore:block/guitar_distorted_high_note_block"
+      }
+    }
+  ]
+}

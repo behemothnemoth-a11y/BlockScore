@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "blockscore:block/guitar_steel_clean_high_note_block"
+      }
+    }
+  ]
+}

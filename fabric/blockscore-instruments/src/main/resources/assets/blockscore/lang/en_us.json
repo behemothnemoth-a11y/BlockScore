@@ -10,5 +10,22 @@
   "block.blockscore.guitar_nylon_high_note_block": "Nylon Guitar Note Block (High)",
   "block.blockscore.guitar_nylon_ghost_low_note_block": "Nylon Guitar Ghost Note Block (Low)",
   "block.blockscore.guitar_nylon_ghost_high_note_block": "Nylon Guitar Ghost Note Block (High)",
-  "subtitles.blockscore.guitar_nylon": "Nylon guitar note"
+  "subtitles.blockscore.guitar_nylon": "Nylon guitar note",
+  "block.blockscore.guitar_steel_clean_low_note_block": "Steel-String Clean Guitar Note Block (Low)",
+  "block.blockscore.guitar_steel_clean_high_note_block": "Steel-String Clean Guitar Note Block (High)",
+  "block.blockscore.guitar_distorted_low_note_block": "Distorted Guitar Note Block (Low)",
+  "block.blockscore.guitar_distorted_high_note_block": "Distorted Guitar Note Block (High)",
+  "block.blockscore.guitar_palm_mute_low_note_block": "Guitar Palm-Mute Note Block (Low)",
+  "block.blockscore.guitar_palm_mute_high_note_block": "Guitar Palm-Mute Note Block (High)",
+  "block.blockscore.guitar_palm_mute_ghost_low_note_block": "Guitar Palm-Mute Ghost Note Block (Low)",
+  "block.blockscore.guitar_palm_mute_ghost_high_note_block": "Guitar Palm-Mute Ghost Note Block (High)",
+  "block.blockscore.guitar_artificial_harmonic_note_block": "Guitar Artificial Harmonic Note Block",
+  "block.blockscore.guitar_pinch_harmonic_note_block": "Guitar Pinch Harmonic Note Block",
+  "block.blockscore.guitar_acoustic_body_hit_block": "Acoustic Guitar Body Hit Block",
+  "subtitles.blockscore.guitar_steel_clean": "Steel-string guitar note",
+  "subtitles.blockscore.guitar_distorted": "Distorted guitar note",
+  "subtitles.blockscore.guitar_palm_mute": "Palm-muted guitar note",
+  "subtitles.blockscore.guitar_artificial_harmonic": "Artificial guitar harmonic rings",
+  "subtitles.blockscore.guitar_pinch_harmonic": "Pinch harmonic squeals",
+  "subtitles.blockscore.guitar_acoustic_body_hit": "Acoustic guitar body hit"
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.2.0",
+  "schema_version": "0.5.0",
   "profile_id": "java-26.2",
   "description": "Canonical source-articulation routing for BlockScore custom physical instruments.",
   "compile_modes": [
@@ -47,32 +47,58 @@
       "fallback_instrument": "hat",
       "requires_provider": "blockscore-instruments",
       "status": "IMPLEMENTED_UNVERIFIED"
-    }
-  ],
-  "reserved_future_mappings": [
+    },
     {
       "source_family": "guitar",
       "articulation": "palm_mute",
-      "target_instrument": "guitar_palm_mute",
-      "status": "PLANNED"
+      "aliases": [
+        "palm mute",
+        "palm-muted",
+        "gp:palm_mute"
+      ],
+      "target_instrument": "guitar_palm_mute_low",
+      "fallback_instrument": "guitar",
+      "requires_provider": "blockscore-instruments",
+      "status": "IMPLEMENTED_UNVERIFIED"
     },
     {
       "source_family": "guitar",
       "articulation": "artificial_harmonic",
+      "aliases": [
+        "artificial harmonic",
+        "gp:artificial_harmonic"
+      ],
       "target_instrument": "guitar_artificial_harmonic",
-      "status": "PLANNED"
+      "fallback_instrument": "pling",
+      "requires_provider": "blockscore-instruments",
+      "status": "IMPLEMENTED_UNVERIFIED"
     },
     {
       "source_family": "guitar",
       "articulation": "pinch_harmonic",
+      "aliases": [
+        "pinch harmonic",
+        "pinch",
+        "gp:pinch_harmonic"
+      ],
       "target_instrument": "guitar_pinch_harmonic",
-      "status": "PLANNED"
+      "fallback_instrument": "pling",
+      "requires_provider": "blockscore-instruments",
+      "status": "IMPLEMENTED_UNVERIFIED"
     },
     {
       "source_family": "guitar",
       "articulation": "acoustic_body_hit",
+      "aliases": [
+        "body hit",
+        "guitar body hit",
+        "guitar percussion"
+      ],
       "target_instrument": "guitar_acoustic_body_hit",
-      "status": "PLANNED"
+      "fallback_instrument": "basedrum",
+      "requires_provider": "blockscore-instruments",
+      "status": "IMPLEMENTED_UNVERIFIED"
     }
-  ]
+  ],
+  "reserved_future_mappings": []
 }

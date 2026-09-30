@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "blockscore:block/guitar_acoustic_body_hit_block"
+      }
+    }
+  ]
+}

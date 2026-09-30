@@ -1,0 +1,38 @@
+test_id: INSTRUMENT-STATIC-V05-001
+name: BlockScore static guitar articulation v0.5 contract
+profile: java-26.2
+minecraft: 26.2
+
+new_blocks:
+  steel_clean:
+    low: blockscore:guitar_steel_clean_low_note_block
+    high: blockscore:guitar_steel_clean_high_note_block
+  distorted:
+    low: blockscore:guitar_distorted_low_note_block
+    high: blockscore:guitar_distorted_high_note_block
+  palm_mute:
+    low: blockscore:guitar_palm_mute_low_note_block
+    high: blockscore:guitar_palm_mute_high_note_block
+    ghost_low: blockscore:guitar_palm_mute_ghost_low_note_block
+    ghost_high: blockscore:guitar_palm_mute_ghost_high_note_block
+  harmonics:
+    artificial: blockscore:guitar_artificial_harmonic_note_block
+    pinch: blockscore:guitar_pinch_harmonic_note_block
+  percussion:
+    body_hit: blockscore:guitar_acoustic_body_hit_block
+
+physical_contract:
+  note_states: 25
+  note_min: 0
+  note_max: 24
+  powered: boolean
+  trigger: rising_edge
+  held_power_retriggers: false
+  air_above_required: true
+  block_entity_required: false
+  command_rail_compatible: true
+
+test_status:
+  compile: REQUIRED
+  manual_block_smoke_test: REQUIRED
+  musical_acceptance: REQUIRED

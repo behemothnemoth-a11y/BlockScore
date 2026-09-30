@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "blockscore:block/guitar_palm_mute_ghost_low_note_block"
+      }
+    }
+  ]
+}

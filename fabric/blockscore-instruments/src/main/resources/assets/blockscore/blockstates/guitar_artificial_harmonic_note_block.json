@@ -1,0 +1,9 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "blockscore:block/guitar_artificial_harmonic_note_block"
+      }
+    }
+  ]
+}

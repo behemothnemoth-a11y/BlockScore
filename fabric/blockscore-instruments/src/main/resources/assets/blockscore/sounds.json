@@ -183,5 +183,302 @@
     "sounds": [
       "blockscore:note_block/guitar_nylon/m76"
     ]
+  },
+  "block.note_block.guitar_steel_clean": {
+    "sounds": [
+      {
+        "name": "blockscore:block.note_block.guitar_steel_clean.m59",
+        "type": "event"
+      }
+    ]
+  },
+  "block.note_block.guitar_steel_clean.m40": {
+    "subtitle": "subtitles.blockscore.guitar_steel_clean",
+    "sounds": [
+      "blockscore:note_block/guitar_steel_clean/m40"
+    ]
+  },
+  "block.note_block.guitar_steel_clean.m45": {
+    "subtitle": "subtitles.blockscore.guitar_steel_clean",
+    "sounds": [
+      "blockscore:note_block/guitar_steel_clean/m45"
+    ]
+  },
+  "block.note_block.guitar_steel_clean.m50": {
+    "subtitle": "subtitles.blockscore.guitar_steel_clean",
+    "sounds": [
+      "blockscore:note_block/guitar_steel_clean/m50"
+    ]
+  },
+  "block.note_block.guitar_steel_clean.m55": {
+    "subtitle": "subtitles.blockscore.guitar_steel_clean",
+    "sounds": [
+      "blockscore:note_block/guitar_steel_clean/m55"
+    ]
+  },
+  "block.note_block.guitar_steel_clean.m59": {
+    "subtitle": "subtitles.blockscore.guitar_steel_clean",
+    "sounds": [
+      "blockscore:note_block/guitar_steel_clean/m59"
+    ]
+  },
+  "block.note_block.guitar_steel_clean.m64": {
+    "subtitle": "subtitles.blockscore.guitar_steel_clean",
+    "sounds": [
+      "blockscore:note_block/guitar_steel_clean/m64"
+    ]
+  },
+  "block.note_block.guitar_steel_clean.m69": {
+    "subtitle": "subtitles.blockscore.guitar_steel_clean",
+    "sounds": [
+      "blockscore:note_block/guitar_steel_clean/m69"
+    ]
+  },
+  "block.note_block.guitar_steel_clean.m76": {
+    "subtitle": "subtitles.blockscore.guitar_steel_clean",
+    "sounds": [
+      "blockscore:note_block/guitar_steel_clean/m76"
+    ]
+  },
+  "block.note_block.guitar_distorted": {
+    "sounds": [
+      {
+        "name": "blockscore:block.note_block.guitar_distorted.m59",
+        "type": "event"
+      }
+    ]
+  },
+  "block.note_block.guitar_distorted.m40": {
+    "subtitle": "subtitles.blockscore.guitar_distorted",
+    "sounds": [
+      "blockscore:note_block/guitar_distorted/m40"
+    ]
+  },
+  "block.note_block.guitar_distorted.m45": {
+    "subtitle": "subtitles.blockscore.guitar_distorted",
+    "sounds": [
+      "blockscore:note_block/guitar_distorted/m45"
+    ]
+  },
+  "block.note_block.guitar_distorted.m50": {
+    "subtitle": "subtitles.blockscore.guitar_distorted",
+    "sounds": [
+      "blockscore:note_block/guitar_distorted/m50"
+    ]
+  },
+  "block.note_block.guitar_distorted.m55": {
+    "subtitle": "subtitles.blockscore.guitar_distorted",
+    "sounds": [
+      "blockscore:note_block/guitar_distorted/m55"
+    ]
+  },
+  "block.note_block.guitar_distorted.m59": {
+    "subtitle": "subtitles.blockscore.guitar_distorted",
+    "sounds": [
+      "blockscore:note_block/guitar_distorted/m59"
+    ]
+  },
+  "block.note_block.guitar_distorted.m64": {
+    "subtitle": "subtitles.blockscore.guitar_distorted",
+    "sounds": [
+      "blockscore:note_block/guitar_distorted/m64"
+    ]
+  },
+  "block.note_block.guitar_distorted.m69": {
+    "subtitle": "subtitles.blockscore.guitar_distorted",
+    "sounds": [
+      "blockscore:note_block/guitar_distorted/m69"
+    ]
+  },
+  "block.note_block.guitar_distorted.m76": {
+    "subtitle": "subtitles.blockscore.guitar_distorted",
+    "sounds": [
+      "blockscore:note_block/guitar_distorted/m76"
+    ]
+  },
+  "block.note_block.guitar_palm_mute": {
+    "sounds": [
+      {
+        "name": "blockscore:block.note_block.guitar_palm_mute.m59",
+        "type": "event"
+      }
+    ]
+  },
+  "block.note_block.guitar_palm_mute.m40": {
+    "subtitle": "subtitles.blockscore.guitar_palm_mute",
+    "sounds": [
+      "blockscore:note_block/guitar_palm_mute/m40"
+    ]
+  },
+  "block.note_block.guitar_palm_mute.m45": {
+    "subtitle": "subtitles.blockscore.guitar_palm_mute",
+    "sounds": [
+      "blockscore:note_block/guitar_palm_mute/m45"
+    ]
+  },
+  "block.note_block.guitar_palm_mute.m50": {
+    "subtitle": "subtitles.blockscore.guitar_palm_mute",
+    "sounds": [
+      "blockscore:note_block/guitar_palm_mute/m50"
+    ]
+  },
+  "block.note_block.guitar_palm_mute.m55": {
+    "subtitle": "subtitles.blockscore.guitar_palm_mute",
+    "sounds": [
+      "blockscore:note_block/guitar_palm_mute/m55"
+    ]
+  },
+  "block.note_block.guitar_palm_mute.m59": {
+    "subtitle": "subtitles.blockscore.guitar_palm_mute",
+    "sounds": [
+      "blockscore:note_block/guitar_palm_mute/m59"
+    ]
+  },
+  "block.note_block.guitar_palm_mute.m64": {
+    "subtitle": "subtitles.blockscore.guitar_palm_mute",
+    "sounds": [
+      "blockscore:note_block/guitar_palm_mute/m64"
+    ]
+  },
+  "block.note_block.guitar_palm_mute.m69": {
+    "subtitle": "subtitles.blockscore.guitar_palm_mute",
+    "sounds": [
+      "blockscore:note_block/guitar_palm_mute/m69"
+    ]
+  },
+  "block.note_block.guitar_palm_mute.m76": {
+    "subtitle": "subtitles.blockscore.guitar_palm_mute",
+    "sounds": [
+      "blockscore:note_block/guitar_palm_mute/m76"
+    ]
+  },
+  "block.note_block.guitar_artificial_harmonic": {
+    "sounds": [
+      {
+        "name": "blockscore:block.note_block.guitar_artificial_harmonic.m67",
+        "type": "event"
+      }
+    ]
+  },
+  "block.note_block.guitar_artificial_harmonic.m54": {
+    "subtitle": "subtitles.blockscore.guitar_artificial_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_artificial_harmonic/m54"
+    ]
+  },
+  "block.note_block.guitar_artificial_harmonic.m57": {
+    "subtitle": "subtitles.blockscore.guitar_artificial_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_artificial_harmonic/m57"
+    ]
+  },
+  "block.note_block.guitar_artificial_harmonic.m62": {
+    "subtitle": "subtitles.blockscore.guitar_artificial_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_artificial_harmonic/m62"
+    ]
+  },
+  "block.note_block.guitar_artificial_harmonic.m67": {
+    "subtitle": "subtitles.blockscore.guitar_artificial_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_artificial_harmonic/m67"
+    ]
+  },
+  "block.note_block.guitar_artificial_harmonic.m71": {
+    "subtitle": "subtitles.blockscore.guitar_artificial_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_artificial_harmonic/m71"
+    ]
+  },
+  "block.note_block.guitar_artificial_harmonic.m76": {
+    "subtitle": "subtitles.blockscore.guitar_artificial_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_artificial_harmonic/m76"
+    ]
+  },
+  "block.note_block.guitar_artificial_harmonic.m78": {
+    "subtitle": "subtitles.blockscore.guitar_artificial_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_artificial_harmonic/m78"
+    ]
+  },
+  "block.note_block.guitar_pinch_harmonic": {
+    "sounds": [
+      {
+        "name": "blockscore:block.note_block.guitar_pinch_harmonic.m79",
+        "type": "event"
+      }
+    ]
+  },
+  "block.note_block.guitar_pinch_harmonic.m66": {
+    "subtitle": "subtitles.blockscore.guitar_pinch_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_pinch_harmonic/m66"
+    ]
+  },
+  "block.note_block.guitar_pinch_harmonic.m69": {
+    "subtitle": "subtitles.blockscore.guitar_pinch_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_pinch_harmonic/m69"
+    ]
+  },
+  "block.note_block.guitar_pinch_harmonic.m74": {
+    "subtitle": "subtitles.blockscore.guitar_pinch_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_pinch_harmonic/m74"
+    ]
+  },
+  "block.note_block.guitar_pinch_harmonic.m79": {
+    "subtitle": "subtitles.blockscore.guitar_pinch_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_pinch_harmonic/m79"
+    ]
+  },
+  "block.note_block.guitar_pinch_harmonic.m83": {
+    "subtitle": "subtitles.blockscore.guitar_pinch_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_pinch_harmonic/m83"
+    ]
+  },
+  "block.note_block.guitar_pinch_harmonic.m88": {
+    "subtitle": "subtitles.blockscore.guitar_pinch_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_pinch_harmonic/m88"
+    ]
+  },
+  "block.note_block.guitar_pinch_harmonic.m90": {
+    "subtitle": "subtitles.blockscore.guitar_pinch_harmonic",
+    "sounds": [
+      "blockscore:note_block/guitar_pinch_harmonic/m90"
+    ]
+  },
+  "block.note_block.guitar_acoustic_body_hit": {
+    "sounds": [
+      {
+        "name": "blockscore:block.note_block.guitar_acoustic_body_hit.mid",
+        "type": "event"
+      }
+    ]
+  },
+  "block.note_block.guitar_acoustic_body_hit.low": {
+    "subtitle": "subtitles.blockscore.guitar_acoustic_body_hit",
+    "sounds": [
+      "blockscore:note_block/guitar_acoustic_body_hit/low_a",
+      "blockscore:note_block/guitar_acoustic_body_hit/low_b"
+    ]
+  },
+  "block.note_block.guitar_acoustic_body_hit.mid": {
+    "subtitle": "subtitles.blockscore.guitar_acoustic_body_hit",
+    "sounds": [
+      "blockscore:note_block/guitar_acoustic_body_hit/mid_a",
+      "blockscore:note_block/guitar_acoustic_body_hit/mid_b"
+    ]
+  },
+  "block.note_block.guitar_acoustic_body_hit.high": {
+    "subtitle": "subtitles.blockscore.guitar_acoustic_body_hit",
+    "sounds": [
+      "blockscore:note_block/guitar_acoustic_body_hit/high_a",
+      "blockscore:note_block/guitar_acoustic_body_hit/high_b"
+    ]
   }
 }

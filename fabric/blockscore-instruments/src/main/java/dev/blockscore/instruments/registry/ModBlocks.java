@@ -5,6 +5,9 @@ import dev.blockscore.instruments.block.GuitarDeadNoteBlock;
 import dev.blockscore.instruments.block.GuitarNaturalHarmonicNoteBlock;
 import dev.blockscore.instruments.block.GuitarNylonNoteBlock;
 import dev.blockscore.instruments.block.GuitarTappedHarmonicNoteBlock;
+import dev.blockscore.instruments.block.GuitarSampledNoteBlock;
+import dev.blockscore.instruments.block.GuitarBodyHitBlock;
+import net.minecraft.sounds.SoundEvent;
 import java.util.function.Function;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -72,6 +75,95 @@ public final class ModBlocks {
     public static final Block GUITAR_DEAD_NOTE_BLOCK = registerWithItem(
             "guitar_dead_note_block",
             GuitarDeadNoteBlock::new,
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+
+    // ---- v0.5 static guitar articulation family ----
+
+    public static final Block GUITAR_STEEL_CLEAN_LOW_NOTE_BLOCK = registerWithItem(
+            "guitar_steel_clean_low_note_block",
+            properties -> new GuitarSampledNoteBlock(properties, 40,
+                    new int[]{40,45,50,55,59,64,69,76},
+                    new SoundEvent[]{ModSounds.GUITAR_STEEL_CLEAN_M40, ModSounds.GUITAR_STEEL_CLEAN_M45, ModSounds.GUITAR_STEEL_CLEAN_M50, ModSounds.GUITAR_STEEL_CLEAN_M55, ModSounds.GUITAR_STEEL_CLEAN_M59, ModSounds.GUITAR_STEEL_CLEAN_M64, ModSounds.GUITAR_STEEL_CLEAN_M69, ModSounds.GUITAR_STEEL_CLEAN_M76}, 2.45f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_STEEL_CLEAN_HIGH_NOTE_BLOCK = registerWithItem(
+            "guitar_steel_clean_high_note_block",
+            properties -> new GuitarSampledNoteBlock(properties, 55,
+                    new int[]{40,45,50,55,59,64,69,76},
+                    new SoundEvent[]{ModSounds.GUITAR_STEEL_CLEAN_M40, ModSounds.GUITAR_STEEL_CLEAN_M45, ModSounds.GUITAR_STEEL_CLEAN_M50, ModSounds.GUITAR_STEEL_CLEAN_M55, ModSounds.GUITAR_STEEL_CLEAN_M59, ModSounds.GUITAR_STEEL_CLEAN_M64, ModSounds.GUITAR_STEEL_CLEAN_M69, ModSounds.GUITAR_STEEL_CLEAN_M76}, 2.45f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_DISTORTED_LOW_NOTE_BLOCK = registerWithItem(
+            "guitar_distorted_low_note_block",
+            properties -> new GuitarSampledNoteBlock(properties, 40,
+                    new int[]{40,45,50,55,59,64,69,76},
+                    new SoundEvent[]{ModSounds.GUITAR_DISTORTED_M40, ModSounds.GUITAR_DISTORTED_M45, ModSounds.GUITAR_DISTORTED_M50, ModSounds.GUITAR_DISTORTED_M55, ModSounds.GUITAR_DISTORTED_M59, ModSounds.GUITAR_DISTORTED_M64, ModSounds.GUITAR_DISTORTED_M69, ModSounds.GUITAR_DISTORTED_M76}, 2.25f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_DISTORTED_HIGH_NOTE_BLOCK = registerWithItem(
+            "guitar_distorted_high_note_block",
+            properties -> new GuitarSampledNoteBlock(properties, 55,
+                    new int[]{40,45,50,55,59,64,69,76},
+                    new SoundEvent[]{ModSounds.GUITAR_DISTORTED_M40, ModSounds.GUITAR_DISTORTED_M45, ModSounds.GUITAR_DISTORTED_M50, ModSounds.GUITAR_DISTORTED_M55, ModSounds.GUITAR_DISTORTED_M59, ModSounds.GUITAR_DISTORTED_M64, ModSounds.GUITAR_DISTORTED_M69, ModSounds.GUITAR_DISTORTED_M76}, 2.25f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_PALM_MUTE_LOW_NOTE_BLOCK = registerWithItem(
+            "guitar_palm_mute_low_note_block",
+            properties -> new GuitarSampledNoteBlock(properties, 40,
+                    new int[]{40,45,50,55,59,64,69,76},
+                    new SoundEvent[]{ModSounds.GUITAR_PALM_MUTE_M40, ModSounds.GUITAR_PALM_MUTE_M45, ModSounds.GUITAR_PALM_MUTE_M50, ModSounds.GUITAR_PALM_MUTE_M55, ModSounds.GUITAR_PALM_MUTE_M59, ModSounds.GUITAR_PALM_MUTE_M64, ModSounds.GUITAR_PALM_MUTE_M69, ModSounds.GUITAR_PALM_MUTE_M76}, 2.15f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_PALM_MUTE_HIGH_NOTE_BLOCK = registerWithItem(
+            "guitar_palm_mute_high_note_block",
+            properties -> new GuitarSampledNoteBlock(properties, 55,
+                    new int[]{40,45,50,55,59,64,69,76},
+                    new SoundEvent[]{ModSounds.GUITAR_PALM_MUTE_M40, ModSounds.GUITAR_PALM_MUTE_M45, ModSounds.GUITAR_PALM_MUTE_M50, ModSounds.GUITAR_PALM_MUTE_M55, ModSounds.GUITAR_PALM_MUTE_M59, ModSounds.GUITAR_PALM_MUTE_M64, ModSounds.GUITAR_PALM_MUTE_M69, ModSounds.GUITAR_PALM_MUTE_M76}, 2.15f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_PALM_MUTE_GHOST_LOW_NOTE_BLOCK = registerWithItem(
+            "guitar_palm_mute_ghost_low_note_block",
+            properties -> new GuitarSampledNoteBlock(properties, 40,
+                    new int[]{40,45,50,55,59,64,69,76},
+                    new SoundEvent[]{ModSounds.GUITAR_PALM_MUTE_M40, ModSounds.GUITAR_PALM_MUTE_M45, ModSounds.GUITAR_PALM_MUTE_M50, ModSounds.GUITAR_PALM_MUTE_M55, ModSounds.GUITAR_PALM_MUTE_M59, ModSounds.GUITAR_PALM_MUTE_M64, ModSounds.GUITAR_PALM_MUTE_M69, ModSounds.GUITAR_PALM_MUTE_M76}, 1.10f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_PALM_MUTE_GHOST_HIGH_NOTE_BLOCK = registerWithItem(
+            "guitar_palm_mute_ghost_high_note_block",
+            properties -> new GuitarSampledNoteBlock(properties, 55,
+                    new int[]{40,45,50,55,59,64,69,76},
+                    new SoundEvent[]{ModSounds.GUITAR_PALM_MUTE_M40, ModSounds.GUITAR_PALM_MUTE_M45, ModSounds.GUITAR_PALM_MUTE_M50, ModSounds.GUITAR_PALM_MUTE_M55, ModSounds.GUITAR_PALM_MUTE_M59, ModSounds.GUITAR_PALM_MUTE_M64, ModSounds.GUITAR_PALM_MUTE_M69, ModSounds.GUITAR_PALM_MUTE_M76}, 1.10f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_ARTIFICIAL_HARMONIC_NOTE_BLOCK = registerWithItem(
+            "guitar_artificial_harmonic_note_block",
+            properties -> new GuitarSampledNoteBlock(properties, 54,
+                    new int[]{54,57,62,67,71,76,78},
+                    new SoundEvent[]{ModSounds.GUITAR_ARTIFICIAL_HARMONIC_M54, ModSounds.GUITAR_ARTIFICIAL_HARMONIC_M57, ModSounds.GUITAR_ARTIFICIAL_HARMONIC_M62, ModSounds.GUITAR_ARTIFICIAL_HARMONIC_M67, ModSounds.GUITAR_ARTIFICIAL_HARMONIC_M71, ModSounds.GUITAR_ARTIFICIAL_HARMONIC_M76, ModSounds.GUITAR_ARTIFICIAL_HARMONIC_M78}, 2.35f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_PINCH_HARMONIC_NOTE_BLOCK = registerWithItem(
+            "guitar_pinch_harmonic_note_block",
+            properties -> new GuitarSampledNoteBlock(properties, 66,
+                    new int[]{66,69,74,79,83,88,90},
+                    new SoundEvent[]{ModSounds.GUITAR_PINCH_HARMONIC_M66, ModSounds.GUITAR_PINCH_HARMONIC_M69, ModSounds.GUITAR_PINCH_HARMONIC_M74, ModSounds.GUITAR_PINCH_HARMONIC_M79, ModSounds.GUITAR_PINCH_HARMONIC_M83, ModSounds.GUITAR_PINCH_HARMONIC_M88, ModSounds.GUITAR_PINCH_HARMONIC_M90}, 2.15f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
+    public static final Block GUITAR_ACOUSTIC_BODY_HIT_BLOCK = registerWithItem(
+            "guitar_acoustic_body_hit_block",
+            GuitarBodyHitBlock::new,
             BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
     );
 

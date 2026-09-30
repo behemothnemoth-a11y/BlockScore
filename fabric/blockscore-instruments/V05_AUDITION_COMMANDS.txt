@@ -1,0 +1,18 @@
+BlockScore Instruments v0.5 — quick give commands
+
+/give @s blockscore:guitar_steel_clean_low_note_block
+/give @s blockscore:guitar_steel_clean_high_note_block
+/give @s blockscore:guitar_distorted_low_note_block
+/give @s blockscore:guitar_distorted_high_note_block
+/give @s blockscore:guitar_palm_mute_low_note_block
+/give @s blockscore:guitar_palm_mute_high_note_block
+/give @s blockscore:guitar_palm_mute_ghost_low_note_block
+/give @s blockscore:guitar_palm_mute_ghost_high_note_block
+/give @s blockscore:guitar_artificial_harmonic_note_block
+/give @s blockscore:guitar_pinch_harmonic_note_block
+/give @s blockscore:guitar_acoustic_body_hit_block
+
+Body-hit canonical registers:
+  note=0  LOW
+  note=12 MID
+  note=24 HIGH

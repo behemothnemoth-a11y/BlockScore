@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.4.0",
+  "schema_version": "0.5.0",
   "profile_id": "java-26.2",
   "minecraft_edition": "java",
   "minecraft_version": "26.2",
@@ -428,6 +428,708 @@
       "recommended_roles": [
         "quiet ghosted nylon guitar pluck",
         "fingerstyle guitar"
+      ]
+    },
+    {
+      "id": "guitar_nylon_dead_note",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_nylon_dead_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_dead_note",
+      "class": "percussion",
+      "family": "guitar_percussion",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": null,
+      "high_pitch": null,
+      "register_offset_semitones": null,
+      "pitch_mode": "percussion_index",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "register_round_robin",
+        "register_note_states": {
+          "low": 0,
+          "mid": 12,
+          "high": 24
+        },
+        "variants_per_register": 2,
+        "runtime_pitch_shift_semitones": 0,
+        "asset_directory": "blockscore:sounds/note_block/guitar_dead_note",
+        "file_pattern": "{register}_{variant}.ogg"
+      },
+      "source_articulations": [
+        "dead_note",
+        "muted_string"
+      ],
+      "fallback": {
+        "instrument": "hat",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "VERIFIED",
+        "sample_set": "VERIFIED",
+        "command_rail_runtime": "VERIFIED",
+        "crow_acceptance": "VERIFIED"
+      },
+      "recommended_roles": [
+        "soft acoustic dead string",
+        "fingerstyle muted string"
+      ]
+    },
+    {
+      "id": "guitar_steel_clean_low",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_steel_clean_low_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_steel_clean",
+      "class": "pitched",
+      "family": "steel_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "E2",
+      "high_pitch": "E4",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_steel_clean",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "track_timbre:steel_clean"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "steel-string clean guitar",
+        "clean picked guitar"
+      ]
+    },
+    {
+      "id": "guitar_steel_clean_high",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_steel_clean_high_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_steel_clean",
+      "class": "pitched",
+      "family": "steel_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "G3",
+      "high_pitch": "G5",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_steel_clean",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "track_timbre:steel_clean"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "upper steel-string clean guitar",
+        "clean lead guitar"
+      ]
+    },
+    {
+      "id": "guitar_distorted_low",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_distorted_low_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_distorted",
+      "class": "pitched",
+      "family": "distorted_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "E2",
+      "high_pitch": "E4",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_distorted",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "track_timbre:distorted"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "distorted rhythm guitar",
+        "open metal rhythm notes"
+      ]
+    },
+    {
+      "id": "guitar_distorted_high",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_distorted_high_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_distorted",
+      "class": "pitched",
+      "family": "distorted_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "G3",
+      "high_pitch": "G5",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_distorted",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "track_timbre:distorted"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "distorted lead guitar",
+        "upper metal rhythm notes"
+      ]
+    },
+    {
+      "id": "guitar_palm_mute_low",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_palm_mute_low_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_palm_mute",
+      "class": "pitched",
+      "family": "distorted_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "E2",
+      "high_pitch": "E4",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_palm_mute",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "palm_mute"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "palm-muted metal rhythm",
+        "tight chug"
+      ]
+    },
+    {
+      "id": "guitar_palm_mute_high",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_palm_mute_high_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_palm_mute",
+      "class": "pitched",
+      "family": "distorted_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "G3",
+      "high_pitch": "G5",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_palm_mute",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "palm_mute"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "upper-register palm mute"
+      ]
+    },
+    {
+      "id": "guitar_palm_mute_ghost_low",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_palm_mute_ghost_low_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_palm_mute",
+      "class": "pitched",
+      "family": "distorted_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "E2",
+      "high_pitch": "E4",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_palm_mute",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "palm_mute",
+        "ghost_note"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "quiet palm mute",
+        "ghosted chug"
+      ]
+    },
+    {
+      "id": "guitar_palm_mute_ghost_high",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_palm_mute_ghost_high_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_palm_mute",
+      "class": "pitched",
+      "family": "distorted_guitar",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "G3",
+      "high_pitch": "G5",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          40,
+          45,
+          50,
+          55,
+          59,
+          64,
+          69,
+          76
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_palm_mute",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "palm_mute",
+        "ghost_note"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "quiet upper palm mute"
+      ]
+    },
+    {
+      "id": "guitar_artificial_harmonic",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_artificial_harmonic_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_artificial_harmonic",
+      "class": "pitched",
+      "family": "guitar_harmonic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#3",
+      "high_pitch": "F#5",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          54,
+          57,
+          62,
+          67,
+          71,
+          76,
+          78
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_artificial_harmonic",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "artificial_harmonic"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "artificial harmonic",
+        "picked harmonic"
+      ]
+    },
+    {
+      "id": "guitar_pinch_harmonic",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_pinch_harmonic_note_block",
+      "sound_event": "blockscore:block.note_block.guitar_pinch_harmonic",
+      "class": "pitched",
+      "family": "guitar_harmonic",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": "F#4",
+      "high_pitch": "F#6",
+      "register_offset_semitones": 0,
+      "pitch_mode": "chromatic",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "absolute_midi_multisample_nearest_root",
+        "root_midi": [
+          66,
+          69,
+          74,
+          79,
+          83,
+          88,
+          90
+        ],
+        "maximum_pitch_shift_semitones": 3,
+        "asset_directory": "blockscore:sounds/note_block/guitar_pinch_harmonic",
+        "file_pattern": "m{midi}.ogg"
+      },
+      "source_articulations": [
+        "pinch_harmonic"
+      ],
+      "fallback": {
+        "instrument": "guitar",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "pinch harmonic",
+        "metal squeal"
+      ]
+    },
+    {
+      "id": "guitar_acoustic_body_hit",
+      "provider_id": "blockscore-instruments",
+      "minecraft_block": "blockscore:guitar_acoustic_body_hit_block",
+      "sound_event": "blockscore:block.note_block.guitar_acoustic_body_hit",
+      "class": "percussion",
+      "family": "guitar_percussion",
+      "note_state_min": 0,
+      "note_state_max": 24,
+      "low_pitch": null,
+      "high_pitch": null,
+      "register_offset_semitones": null,
+      "pitch_mode": "percussion_index",
+      "physical_behavior": {
+        "note_property": "note",
+        "powered_property": "powered",
+        "plays_on_rising_edge": true,
+        "right_click_tunes": true,
+        "wraps_after_note_state": 24,
+        "requires_block_entity": false,
+        "requires_air_above": true,
+        "command_rail_compatible": true
+      },
+      "sample_strategy": {
+        "mode": "register_round_robin",
+        "register_note_states": {
+          "low": 0,
+          "mid": 12,
+          "high": 24
+        },
+        "variants_per_register": 2,
+        "runtime_pitch_shift_semitones": 0,
+        "asset_directory": "blockscore:sounds/note_block/guitar_acoustic_body_hit",
+        "file_pattern": "{register}_{variant}.ogg"
+      },
+      "source_articulations": [
+        "acoustic_body_hit",
+        "body_hit",
+        "guitar_percussion"
+      ],
+      "fallback": {
+        "instrument": "basedrum",
+        "quality": "APPROXIMATION",
+        "report_code": "CUSTOM_INSTRUMENT_FALLBACK"
+      },
+      "verification": {
+        "registry_contract": "VERIFIED",
+        "fabric_implementation": "IMPLEMENTED_UNVERIFIED",
+        "sample_set": "PROTOTYPE",
+        "command_rail_runtime": "TEST_REQUIRED",
+        "crow_acceptance": "NOT_APPLICABLE"
+      },
+      "recommended_roles": [
+        "guitar body kick",
+        "wood knock",
+        "fingerstyle body percussion"
       ]
     }
   ]
