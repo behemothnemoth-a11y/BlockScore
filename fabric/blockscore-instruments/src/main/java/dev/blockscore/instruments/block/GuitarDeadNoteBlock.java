@@ -22,24 +22,30 @@ import net.minecraft.world.phys.BlockHitResult;
 import org.jspecify.annotations.Nullable;
 
 /**
- * A physical dead/muted-string note block.
+ * Physical register-based dead/muted-string block.
  *
- * Unlike a pitched note block, NOTE is a register selector:
+ * NOTE selects register, not chromatic pitch:
+ *   0..7   LOW
+ *   8..16  MID
+ *   17..24 HIGH
  *
- *  0..7   -> low strings
- *  8..16  -> middle strings
- * 17..24  -> high strings
- *
- * No runtime pitch shifting is applied. Each register sound event has
- * two string-derived variants in sounds.json, giving automatic variation
- * during dense ghost/dead-string passages.
+ * The one-argument constructor preserves the accepted Crow v0.3/v0.4 mix.
+ * A second constructor permits softer acoustic/fingerstyle variants without
+ * changing Crow's sound.
  */
 public final class GuitarDeadNoteBlock extends Block {
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
     public static final IntegerProperty NOTE = BlockStateProperties.NOTE;
 
+    private final float volume;
+
     public GuitarDeadNoteBlock(Properties properties) {
+        this(properties, 2.25f);
+    }
+
+    public GuitarDeadNoteBlock(Properties properties, float volume) {
         super(properties);
+        this.volume = volume;
         registerDefaultState(stateDefinition.any().setValue(NOTE, 12).setValue(POWERED, false));
     }
 
@@ -114,7 +120,7 @@ public final class GuitarDeadNoteBlock extends Block {
                 pos.getZ() + 0.5,
                 sound,
                 SoundSource.RECORDS,
-                2.25f,
+                volume,
                 1.0f,
                 level.getRandom().nextLong()
         );

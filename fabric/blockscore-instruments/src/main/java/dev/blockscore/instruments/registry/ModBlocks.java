@@ -43,6 +43,19 @@ public final class ModBlocks {
             BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
     );
 
+    /**
+     * Softer acoustic/fingerstyle dead-note endpoint.
+     *
+     * It deliberately reuses the accepted LOW/MID/HIGH dead-note samples and
+     * register semantics, but at 0.85 volume instead of Crow's 2.25. This is
+     * approximately -8.5 dB relative to the standard dead-note block.
+     */
+    public static final Block GUITAR_NYLON_DEAD_NOTE_BLOCK = registerWithItem(
+            "guitar_nylon_dead_note_block",
+            properties -> new GuitarDeadNoteBlock(properties, 0.85f),
+            BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
+    );
+
     public static final Block GUITAR_NATURAL_HARMONIC_NOTE_BLOCK = registerWithItem(
             "guitar_natural_harmonic_note_block",
             GuitarNaturalHarmonicNoteBlock::new,
@@ -55,6 +68,7 @@ public final class ModBlocks {
             BlockBehaviour.Properties.ofFullCopy(Blocks.NOTE_BLOCK)
     );
 
+    // Accepted Crow mix remains unchanged.
     public static final Block GUITAR_DEAD_NOTE_BLOCK = registerWithItem(
             "guitar_dead_note_block",
             GuitarDeadNoteBlock::new,

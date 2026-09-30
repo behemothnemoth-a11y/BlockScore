@@ -2,6 +2,7 @@
   "block.blockscore.guitar_natural_harmonic_note_block": "Guitar Natural Harmonic Note Block",
   "block.blockscore.guitar_tapped_harmonic_note_block": "Guitar Tapped Harmonic Note Block",
   "block.blockscore.guitar_dead_note_block": "Guitar Dead / Muted String Note Block",
+  "block.blockscore.guitar_nylon_dead_note_block": "Nylon Guitar Soft Dead Note Block",
   "subtitles.blockscore.guitar_natural_harmonic": "Guitar natural harmonic rings",
   "subtitles.blockscore.guitar_tapped_harmonic": "Guitar tapped harmonic rings",
   "subtitles.blockscore.guitar_dead_note": "Muted guitar string clicks",

@@ -1,0 +1,28 @@
+test_id: INSTRUMENT-GOLDEN-DRAGON-MIX-001
+name: Golden Dragon soft nylon dead-note mix
+profile: java-26.2
+source: esras_tonne-the_song_of_the_golden_dragon_2.gp5
+
+accepted_from_v04:
+  nylon_low_high: VERIFIED
+  nylon_ghost_low_high: VERIFIED
+  natural_harmonic: VERIFIED
+  standard_dead_note_for_crow: UNCHANGED
+
+golden_dragon_dead_lane:
+  attacks: 732
+  block: blockscore:guitar_nylon_dead_note_block
+  register_semantics:
+    LOW: 0
+    MID: 12
+    HIGH: 24
+  source_samples: same accepted v0.3 dead-note bank
+  runtime_pitch_shift_semitones: 0
+  playback_volume: 0.85
+  standard_dead_note_volume: 2.25
+  relative_gain_db: -8.46
+
+command_rail:
+  timing_changes_required: false
+  endpoint_changes_required: block_id_only
+  action_schedule_changes_required: false
