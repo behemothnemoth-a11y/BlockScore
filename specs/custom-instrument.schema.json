@@ -342,7 +342,8 @@
           "enum": [
             "VERIFIED",
             "TEST_REQUIRED",
-            "NOT_IMPLEMENTED"
+            "NOT_IMPLEMENTED",
+            "NOT_APPLICABLE"
           ]
         }
       },

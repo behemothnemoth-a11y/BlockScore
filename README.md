@@ -12,14 +12,14 @@ The chat workflow is currently the authoritative development environment.
 
 ## Project Status
 
-**Current stage:** Specification and test design  
+**Current stage:** Specification + repository-owned compiler/validation foundation
 **Minecraft target:** Java Edition 26.2  
 **Primary benchmark:** Gustav Holst — *Mars, the Bringer of War*  
 **First test:** TEST-001A — opening measures
 
-BlockScore is currently being designed before major implementation begins.
+BlockScore now includes a Python compiler core that consumes the existing Minecraft Master event format and emits validated physical Command Rail datapacks. The repository also executes a growing subset of its YAML contracts in CI instead of treating them as documentation only.
 
-The goal is to define the musical model, Minecraft mechanics, compiler behavior, backend requirements, test cases, and failure reporting first so implementation can follow an explicit specification.
+Source import/transcription remains upstream of the compiler. Minecraft installation and in-game testing remain user-side. See `docs/COMPILER_CORE.md` for the compiler boundary and validation commands.
 
 ---
 
